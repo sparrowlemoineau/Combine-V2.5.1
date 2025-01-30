@@ -1,3 +1,10 @@
+{% comment %}
+  Renders cart form (drawer version).
+
+  Usage:
+  {% render 'cart-form' %}
+{% endcomment %}
+
 <cart-form id="AjaxCartForm">
 
   {%- liquid
@@ -92,7 +99,7 @@
 
 									{%- if item.line_level_discount_allocations.size > 0 -%}
 										{%- for discount_allocation in item.line_level_discount_allocations -%}
-											<spann class="text-size--small">{{ 'cart.discount' | t }} {{ discount_allocation.discount_application.title }} (-{{ discount_allocation.amount | money | append: iso_code }})</spann>
+											<span class="pill pill--has-icon pill--compact pill--discount"><span class="pill__icon" aria-hidden="true"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><g style="fill:none;stroke:#202020;stroke-miterlimit:10;stroke-width:5;stroke-linejoin:round;stroke-linecap:round"><path d="m24.5 62-22.5-22.5 29.6-29.6 21.1 1.4 1.4 21.1z"/><circle cx="42.8" cy="21.2" r="2" transform="matrix(.70710678 -.70710678 .70710678 .70710678 -2.399784 36.50041)"/><path d="m45.7 5.7c4.2-4.3 10.5-4.9 14-1.4s2.9 9.8-1.4 14.1-10.6 4.9-14.1 1.4"/></g></svg></span><span class="visually-hidden">{{ 'cart.discount' | t }}</span><span class="pill__label">{{ discount_allocation.discount_application.title }} (-{{ discount_allocation.amount | money | append: iso_code }})</span></span>
 										{%- endfor -%}
 									{%- endif -%}
 
@@ -120,7 +127,7 @@
 												<button class="qty-button qty-minus no-js-hidden" aria-label="{{ 'general.accessibility_labels.decrease_quantity' | t }}" role="button" controls="updates_{{ item.id }}">
 													{%- render 'theme-symbols', icon: 'minus' -%}
 												</button>
-												<label for="qty-{{ id }}" class="visually-hidden">{{ 'general.accessibility_labels.quantity' | t }}</label>
+												<label for="updates_{{ item.id }}" class="visually-hidden">{{ 'general.accessibility_labels.quantity' | t }}</label>
 												<input type="number" name="updates[]" value="{{ item.quantity }}" min="0" class="qty qty-selector product__quantity" id="updates_{{ item.id }}" data-href="{{ routes.cart_change_url }}?line={{ forloop.index }}&amp;quantity=$qty">
 												<button class="qty-button qty-plus no-js-hidden" aria-label="{{ 'general.accessibility_labels.increase_quantity' | t }}" role="button" controls="updates_{{ item.id }}">
 													{%- render 'theme-symbols', icon: 'plus' -%}

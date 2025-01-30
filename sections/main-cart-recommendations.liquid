@@ -28,9 +28,12 @@
   
 </product-recommendations>
 
+<div style="display:none" data-js-product-item-skeleton>{%- render 'product-item-skeleton', section_blocks: section.blocks, layout: grid_class_desktop, mobile_layout: section.settings.layout_mobile -%}</div>
+
 {% schema %}
   {
     "name": "t:sections.bundle-extra-words.sections.main-cart-page.cart-recommendations.name",
+    "class": "has-skeleton",
     "blocks": [
       {
         "type": "price",
@@ -128,6 +131,22 @@
         "limit": 1,
         "settings": [
           {
+            "type": "select",
+            "label": "t:bundle-250.modal_quick_buy.label",
+            "id": "type",
+            "options": [
+              {
+                "value": "inline",
+                "label": "t:bundle-250.modal_quick_buy.options.option_1"
+              },
+              {
+                "value": "modal",
+                "label": "t:bundle-250.modal_quick_buy.options.option_2"
+              }
+            ],
+            "default": "inline"
+          },
+          {
             "type": "checkbox",
             "id": "show_only_available",
             "label": "t:sections.bundle-extra-words.sections.product_grid.blocks.quick_buy.settings.show_only_available.label",
@@ -135,16 +154,20 @@
           },
           {
             "type": "checkbox",
+            "id": "show_price",
+            "label": "t:sections.bundle-extra-words.sections.product_grid.blocks.quick_buy.settings.show_price.label",
+            "default": true
+          },
+          {
+            "type": "header",
+            "content": "t:bundle-250.modal_quick_buy.settings.inline_label"
+          },
+          {
+            "type": "checkbox",
             "id": "variant_default",
             "label": "t:sections.bundle-extra-words.sections.product_grid.blocks.quick_buy.settings.variant_default.label",
             "info": "t:sections.bundle-extra-words.sections.product_grid.blocks.quick_buy.settings.variant_default.info",
             "default": false
-          },
-          {
-            "type": "checkbox",
-            "id": "show_price",
-            "label": "t:sections.bundle-extra-words.sections.product_grid.blocks.quick_buy.settings.show_price.label",
-            "default": true
           },
           { 
             "type": "select",
@@ -165,6 +188,11 @@
               }
             ],
             "default": "hide"
+          },
+          {
+            "type": "header",
+            "content": "t:bundle-250.modal_quick_buy.settings.modal_label",
+            "info": "t:bundle-250.modal_quick_buy.settings.modal_info"
           }
         ]
       },

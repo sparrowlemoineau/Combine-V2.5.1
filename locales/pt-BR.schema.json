@@ -1,4 +1,22 @@
 {
+  "video-extra-functions": {
+    "autoplay": {
+      "label": "Ativar reprodução automática",
+      "info": "O vídeo estará mudo e sem controles."
+    },
+    "video_upload": {
+      "label": "Arquivo de vídeo",
+      "info": "Hospedado pelo Shopify. Substitui as configurações de URL de vídeo."
+    },
+    "poster": {
+      "info": "Usado como pôster ou imagem de substituição."
+    }
+  },
+  "variant_metafields": {
+    "name": "Metacampo de variante",
+    "label": "Chave do metacampo de variante",
+    "info": "Este tema pode mostrar um metacampo de variante na página do produto. [Saiba mais](https://shopify-support.krownthemes.com/article/884-using-variant-metafields-in-product-pages)."
+  },
   "new_color_swatches": "Este tema também oferece suporte para amostras de cores criadas com metacampos de categoria. [Saiba mais](https://help.shopify.com/en/manual/custom-data/metafields/category-metafields/using-category-metafields).",
   "video_controls": "Mostrar controles de vídeo",
   "sticky_cart_actions": "Ativar ações de carrinho adesivo",
@@ -31,7 +49,9 @@
   },
   "sticky_atc": {
     "label": "Adicionar ao carrinho fixo",
-    "enable_sticky_atc": "Habilitar adicionar ao carrinho fixo"
+    "enable_sticky_atc": "Habilitar adicionar ao carrinho fixo",
+    "sticky_atc_style_wide": "Wide",
+    "sticky_atc_style_floating": "Floating"
   },
   "performance": {
     "header": "SEO & desempenho",
@@ -300,14 +320,17 @@
         "footer_group": "Grupo de rodapés",
         "header_group": "Grupo de cabeçalho",
         "overlay_group": "Grupo de sobreposição",
-        "embellishments": "Adornos"
+        "embellishments": "Adornos",
+        "show_button": "Show button",
+        "optional": "Optional"
       },
       "text": {
         "icons_info": "Para visualizar e descarregar mais ícones, por favor visite [este link](https://resources.krownthemes.com/icons/)."
       },
       "borders": {
         "top_border": "Borda superior",
-        "bottom_border": "Borda inferior"
+        "bottom_border": "Borda inferior",
+        "show_border": "Show border"
       },
       "colors": {
         "heading_background": "Contexto do título",
@@ -334,13 +357,18 @@
                 "option_2": "Parte inferior",
                 "option_3": "Esquerda",
                 "option_4": "Direita"
-              }
-            }
-          }
+              },
+              "show_tooltip": "Show tooltip"
+            },
+            "mobile_info": "Only if a mobile image is set"
+          },
+          "image_on_mobile": "Mobile image",
+          "position_on_mobile": "Position on mobile"
         },
         "scrolling_images": {
           "label": "Imagens rolantes",
-          "image_size": "Tamanho da imagem"
+          "image_size": "Tamanho da imagem",
+          "columns": "Columns"
         },
         "video": {
           "label": "Vídeo",
@@ -527,6 +555,12 @@
             "border_color": "Cor da borda"
           }
         }
+      },
+      "seo_late": {
+        "breadcrumbs": {
+          "label": "Improve product breadcrumb navigation",
+          "info": "Adds collection names to the breadcrumb navigation, by duplicating product url's. [Learn more](https://shopify-support.krownthemes.com/article/697-seo#breadcrumbs)"
+        }
       }
     },
     "local-extra-words": {
@@ -539,7 +573,8 @@
           "settings": {
             "borders": "Fronteira",
             "hide_border": "Ocultar Fronteira",
-            "accent": "Realse"
+            "accent": "Realse",
+            "overlay": "Overlay"
           }
         },
         "typography": {
@@ -596,6 +631,14 @@
             "amount": {
               "label": "Montante mínimo para envio gratuito",
               "info": "Escreva um número, sem letras ou caracteres especiais."
+            },
+            "info": "This feature only works with a single currency and shipping method. If you're using multiple shipping methods or currencies, it might show false values to the customer."
+          },
+          "settings": {
+            "media": {
+              "header": "Media aspect ratio",
+              "label": "Aspect ratio",
+              "info_cart": "Changes the aspect ratio for small product thumbnails used in the cart, search popup and some other areas that require small product thumbnails."
             }
           }
         },
@@ -644,10 +687,21 @@
               "name__3": "Emblema personalizado 3",
               "text": "Texto",
               "tags": "Identificador",
-              "color": "Cor de fundo"
+              "color": "Cor de fundo",
+              "text_color": "Text color"
             }
           },
-          "icons_list": "Lista de ícones dinâmica"
+          "icons_list": "Lista de ícones dinâmica",
+          "products-list": {
+            "name": "Products list"
+          }
+        },
+        "embellishments": {
+          "settings": {
+            "show_gotop": {
+              "label": "Show go to top button"
+            }
+          }
         }
       },
       "sections": {
@@ -1053,6 +1107,9 @@
           "blocks": {
             "shipping-calculator": {
               "name": "Calculador de envio"
+            },
+            "related-products": {
+              "info": "The product recommendations are based on products that are commonly purchased together or products in related collections. If there are no recommendations, the block will not appear."
             }
           }
         },
@@ -1071,7 +1128,9 @@
           "name": "Página de produto",
           "settings": {
             "gallery_pagination": "Paginação do slider de galeria",
-            "show_border": "Mostrar fronteira em torno da galeria"
+            "show_border": "Mostrar fronteira em torno da galeria",
+            "gallery_border": "Gallery border",
+            "gallery_border_color": "Gallery border color"
           },
           "blocks": {
             "pickup_availability": {
@@ -1158,7 +1217,13 @@
           "blocks": {
             "payment": {
               "name": "Ícones de pagamento",
-              "info": "Os ícones mostrados são determinados pelas [definições de pagamento](/administrador/definições/pagamentos) da sua loja e a região e moeda do cliente."
+              "info": "Os ícones mostrados são determinados pelas [definições de pagamento](/administrador/definições/pagamentos) da sua loja e a região e moeda do cliente.",
+              "custom_icons": "Custom icons",
+              "custom_icons_info": "Upload 114 x 72px .png images",
+              "only_show_custom_icons": "Only show the custom icons"
+            },
+            "text": {
+              "name": "Text & social icons"
             }
           }
         },
@@ -1176,7 +1241,10 @@
             "name": "Página de ativação de conta"
           },
           "login": {
-            "name": "Página de autenticação"
+            "name": "Página de autenticação",
+            "shop_login_button": {
+              "enable": "Ativar a opção Fazer login com o Shop"
+            }
           },
           "account": {
             "name": "Página de conta"
@@ -1203,7 +1271,8 @@
           "option__2": "3 colunas",
           "option__3": "4 colunas",
           "option__4": "5 colunas",
-          "option__5": "6 colunas"
+          "option__5": "6 colunas",
+          "name_mobile": "Mobile layout"
         },
         "promotion-cards": {
           "name": "Cartões de promoção",
@@ -2517,6 +2586,9 @@
     "popup": {
       "name": "Pop-up",
       "settings": {
+        "enable_scroll_based_trigger": "Ativar gatilho baseado em rolagem",
+        "enable_scroll_based_trigger_info": "Mostrar o popup somente se a página for rolada para uma posição específica.",
+        "scroll_position": "Posição de rolagem",
         "title": {
           "label": "Cabeçalho"
         },
@@ -2771,6 +2843,14 @@
         }
       }
     },
+    "words_210": {
+      "text_columns": {
+        "name": "Text columns",
+        "block": {
+          "name": "Text"
+        }
+      }
+    },
     "bundle-extra-words-v110": {
       "settings_schema": {
         "labels": {
@@ -2819,7 +2899,8 @@
             "option_6": "Um quarto",
             "option_7": "Um terço",
             "option_8": "Um meio",
-            "option_9": "Dois terços"
+            "option_9": "Dois terços",
+            "option_10": "Full"
           },
           "spacing": "Espaçamento do texto"
         },
@@ -2891,6 +2972,10 @@
           "quick_buy": {
             "name": "Pop-up de compra rápida",
             "info": "Este tema pode exibir um pop-up de compra rápida quando um utilizador clicar no botão \"Adicionar ao carrinho\"."
+          },
+          "rating": {
+            "app": "Reviews app",
+            "default_option": "Default"
           }
         },
         "cart": {
@@ -2950,7 +3035,8 @@
           },
           "gutter": {
             "label": "Medianiz",
-            "content": "Diminuir margem superior"
+            "content": "Diminuir margem superior",
+            "content_bottom": "Decrease bottom margin"
           }
         },
         "video": {
@@ -3256,6 +3342,16 @@
             "products_list": {
               "name": "Produtos"
             }
+          },
+          "layout": {
+            "option_1": "One row",
+            "option_2": "Two rows"
+          },
+          "menu_style": {
+            "label": "Desktop menu style (one row)",
+            "option_1": "Classic (text)",
+            "option_2": "Minimal (drawer)",
+            "info": "On mobile devices or when the classic menu is too wide to fit the screen's size, the menu will automatically switch to the drawer style."
           }
         },
         "slideshow": {
@@ -3286,6 +3382,9 @@
               "info": "A reprodução automática é interrompida quando o utilizador passa com o rato sobre o separador."
             }
           }
+        },
+        "countdown": {
+          "name": "Countdown"
         }
       }
     },
@@ -3293,6 +3392,31 @@
       "label_1": "Imagem 1",
       "label_2": "Imagem 2",
       "label_3": "Imagem 3"
+    },
+    "cookies": {
+      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent. [Learn more](https://shopify-support.krownthemes.com/article/790-cookies-popup)."
+    }
+  },
+  "color-schemes": {
+    "name_plural": "Color schemes",
+    "name_singular": "Color scheme",
+    "default": "Default color scheme",
+    "default_info": "Used to set colors for account pages, 404 pages, and other pages or sections without color scheme settings.",
+    "drawers": "Modals/drawers",
+    "other": "Other colors"
+  },
+  "bundle-250": {
+    "modal_quick_buy": {
+      "label": "Tipo de exibição de opções",
+      "options": {
+        "option_1": "Em linha (na grade de produtos)",
+        "option_2": "Modal (ao clicar)"
+      },
+      "settings": {
+        "inline_label": "Configurações de exibição em linha",
+        "modal_label": "Configurações de exibição modal",
+        "modal_info": "As opções modais podem ser configuradas no modelo da página de produto Quick Buy. [Saiba mais](https://shopify-support.krownthemes.com/article/824-combine-product-page#Editing-the-quick-buy-modal-template-WsS0q)"
+      }
     }
   },
   "bundle-240": {
@@ -3318,7 +3442,8 @@
     "container_border": "Borda do recipiente",
     "gallery_border": "Borda da galeria",
     "opacity": "Opacidade",
-    "secondary_color": "Cor secundária do estilo"
+    "secondary_color": "Cor secundária do estilo",
+    "header_border_top_info": "For \"two rows\" layout only."
   },
   "footer-menu-items": {
     "open_links_in_new_window": "Abrir hiperligações numa nova janela",

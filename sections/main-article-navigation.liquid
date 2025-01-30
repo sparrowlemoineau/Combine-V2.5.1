@@ -21,7 +21,7 @@
 -%}
 
 {%- if previous_article or next_article -%}
-  <div class="grid grid--layout grid-2 grid-palm-1 grid-tiny-1 gutter-top--small" style="--blog-item-border-radius: {{ block.settings.image_border_radius }}px">
+  <div class="grid grid--layout grid-2 grid-palm-1 grid-tiny-1 gutter-top--small" style="--blog-item-border-radius: {{ section.settings.image_border_radius }}px">
     {%- liquid
 
       if previous_article

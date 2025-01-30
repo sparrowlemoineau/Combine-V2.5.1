@@ -1,6 +1,19 @@
+{% comment %}
+  Renders filtering options for collection or search pages (horizontal version).
+
+  Accepts:
+  - results: {Object} collection or search object.
+  - enable_filtering: {Boolean} enable filtering.
+  - enable_sorting: {Boolean} enable sorting.
+  - image_filter_layout: {String} layout for image filters (onecolumn or twocolumns).
+  - location: {String} type of location (desktop or mobile).
+
+  Usage:
+  {% render 'facets-horizontal', results: results, enable_filtering: true, enable_sorting: true, image_filter_layout: 'twocolumns', location: 'desktop' %}
+{% endcomment %}
+
 {{ 'component-facets-horizontal.css' | asset_url | stylesheet_tag }}
-{{ 'component-range-slider.css' | asset_url | stylesheet_tag }}
-{{ 'component-swatch.css' | asset_url | stylesheet_tag }}
+{{ 'component-facets-elements.css' | asset_url | stylesheet_tag }}
 
 <facet-filters-form class="facets lap-hide facets--horiz" >
 
@@ -67,7 +80,7 @@
                       <a href="{{ filter.url_to_remove }}" class="facets__reset link underlined-link js-facet-remove" >{{ 'collections.reset' | t }}</a>
                     </div>
 
-                    {%- render 'filter-price-range', filter: filter -%}
+                    {%- render 'filter-price-range', filter: filter, location: 'desktop' -%}
 
                   </div>
                 </details>

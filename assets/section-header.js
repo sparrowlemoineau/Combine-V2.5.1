@@ -452,9 +452,11 @@ if ( typeof SidebarDrawer !== 'function' ) {
 			this.style.display = 'grid';
 			setTimeout(()=>{
 				this.classList.add('sidebar--opened');
-				window.inertElems.forEach(elm=>{
-					elm.setAttribute('inert', '');
-				})
+				if ( window.inertElems ) {
+					window.inertElems.forEach(elm=>{
+						elm.setAttribute('inert', '');
+					})
+				}
 			}, 15);
 
 		}
@@ -467,9 +469,11 @@ if ( typeof SidebarDrawer !== 'function' ) {
 			document.body.classList.remove('sidebar-opened');
 			document.body.classList.remove('sidebar-opened--left');
 			document.body.classList.remove('sidebar-opened--right');
-			window.inertElems.forEach(elm=>{
-				elm.removeAttribute('inert');
-			})
+			if ( window.inertElems ) {
+				window.inertElems.forEach(elm=>{
+					elm.removeAttribute('inert');
+				})
+			}
 
 			document.querySelector(`[aria-controls="${this.id}"]`)?.setAttribute('aria-expanded', 'false');
 

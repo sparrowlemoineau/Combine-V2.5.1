@@ -1,3 +1,17 @@
+{% comment %}
+  Renders inline CSS style for custom colors in sections & blocks.
+
+  Accepts:
+  - id: {String} section or block id.
+  - text: {String} text color (hex format).
+  - background {String} background color (hex format).
+  - borders: {String} border color (hex format).
+  - hide_borders: {Boolean} hide borders.
+
+  Usage:
+  {% render 'custom-colors', id: section.id, text: '#ff0000', background: '#000000', hide_borders: true %}
+{% endcomment %}
+
 {%- if background != blank and background != "rgba(0,0,0,0)" -%}
   {% style %}
     #element-{{ id }} {

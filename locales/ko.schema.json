@@ -1,4 +1,22 @@
 {
+  "video-extra-functions": {
+    "autoplay": {
+      "label": "자동 재생 활성화",
+      "info": "비디오는 음소거되고 컨트롤 없이 재생됩니다."
+    },
+    "video_upload": {
+      "label": "비디오 파일",
+      "info": "Shopify에서 호스팅합니다. 비디오 URL 설정을 대체합니다."
+    },
+    "poster": {
+      "info": "포스터 또는 대체 이미지로 사용됩니다."
+    }
+  },
+  "variant_metafields": {
+    "name": "변형 메타필드",
+    "label": "변형 메타필드 키",
+    "info": "이 테마는 제품 페이지에 변형 메타필드를 표시할 수 있습니다. [자세히 알아보기](https://shopify-support.krownthemes.com/article/884-using-variant-metafields-in-product-pages)."
+  },
   "new_color_swatches": "이 테마는 카테고리 메타필드를 사용하여 생성된 색상 견본도 지원합니다. [자세히 알아보기](https://help.shopify.com/en/manual/custom-data/metafields/category-metafields/using-category-metafields).",
   "video_controls": "비디오 제어 표시",
   "sticky_cart_actions": "고정된 드로어 장바구니 동작 활성화",
@@ -31,7 +49,9 @@
   },
   "sticky_atc": {
     "label": "스티키 장바구니에 추가",
-    "enable_sticky_atc": "스티키 장바구니에 추가 활성화"
+    "enable_sticky_atc": "스티키 장바구니에 추가 활성화",
+    "sticky_atc_style_wide": "Wide",
+    "sticky_atc_style_floating": "Floating"
   },
   "performance": {
     "header": "SEO 및 성능",
@@ -300,14 +320,17 @@
         "footer_group": "꼬리말 그룹",
         "header_group": "표제 그룹",
         "overlay_group": "오버레이 그룹",
-        "embellishments": "장식"
+        "embellishments": "장식",
+        "show_button": "Show button",
+        "optional": "Optional"
       },
       "text": {
         "icons_info": "시각화를 위해 더 많은 아이콘을 다운로드하려면 [이 링크](https://resources.krownthemes.com/icons/)를 방문해 주십시오."
       },
       "borders": {
         "top_border": "상단 테두리",
-        "bottom_border": "하단 테두리"
+        "bottom_border": "하단 테두리",
+        "show_border": "Show border"
       },
       "colors": {
         "heading_background": "표제 배경",
@@ -334,13 +357,18 @@
                 "option_2": "바닥",
                 "option_3": "왼쪽",
                 "option_4": "오른쪽"
-              }
-            }
-          }
+              },
+              "show_tooltip": "Show tooltip"
+            },
+            "mobile_info": "Only if a mobile image is set"
+          },
+          "image_on_mobile": "Mobile image",
+          "position_on_mobile": "Position on mobile"
         },
         "scrolling_images": {
           "label": "이미지 스크롤",
-          "image_size": "이미지 크기"
+          "image_size": "이미지 크기",
+          "columns": "Columns"
         },
         "video": {
           "label": "동영상",
@@ -527,6 +555,12 @@
             "border_color": "테두리 색상"
           }
         }
+      },
+      "seo_late": {
+        "breadcrumbs": {
+          "label": "Improve product breadcrumb navigation",
+          "info": "Adds collection names to the breadcrumb navigation, by duplicating product url's. [Learn more](https://shopify-support.krownthemes.com/article/697-seo#breadcrumbs)"
+        }
       }
     },
     "local-extra-words": {
@@ -664,7 +698,10 @@
               "text_color": "글자 색상"
             }
           },
-          "icons_list": "동적 아이콘 목록"
+          "icons_list": "동적 아이콘 목록",
+          "products-list": {
+            "name": "Products list"
+          }
         }
       },
       "sections": {
@@ -1091,7 +1128,9 @@
           "name": "제품 페이지",
           "settings": {
             "gallery_pagination": "갤러리 슬라이더 페이지 매기기",
-            "show_border": "갤러리 주위 경계 표시"
+            "show_border": "갤러리 주위 경계 표시",
+            "gallery_border": "Gallery border",
+            "gallery_border_color": "Gallery border color"
           },
           "blocks": {
             "pickup_availability": {
@@ -1178,7 +1217,10 @@
           "blocks": {
             "payment": {
               "name": "결제 아이콘",
-              "info": "표시되는 아이콘은 매의 [결제 설정](/admin/settings/payments) 및 고객의 지역과 통화에 따라 결정됩니다."
+              "info": "표시되는 아이콘은 매의 [결제 설정](/admin/settings/payments) 및 고객의 지역과 통화에 따라 결정됩니다.",
+              "custom_icons": "Custom icons",
+              "custom_icons_info": "Upload 114 x 72px .png images",
+              "only_show_custom_icons": "Only show the custom icons"
             },
             "text": {
               "name": "글 및 소셜 아이콘"
@@ -1199,7 +1241,10 @@
             "name": "계정 활성화 페이지"
           },
           "login": {
-            "name": "로그인 페이지"
+            "name": "로그인 페이지",
+            "shop_login_button": {
+              "enable": "Shop으로 로그인 활성화"
+            }
           },
           "account": {
             "name": "계정 페이지"
@@ -1226,7 +1271,8 @@
           "option__2": "3 문단",
           "option__3": "4 문단",
           "option__4": "5 문단",
-          "option__5": "6 문단"
+          "option__5": "6 문단",
+          "name_mobile": "Mobile layout"
         },
         "promotion-cards": {
           "name": "프로모션 카드",
@@ -2540,6 +2586,9 @@
     "popup": {
       "name": "팝업",
       "settings": {
+        "enable_scroll_based_trigger": "스크롤 기반 트리거 활성화",
+        "enable_scroll_based_trigger_info": "페이지가 특정 위치로 스크롤되었을 때만 팝업을 표시합니다.",
+        "scroll_position": "스크롤 위치",
         "title": {
           "label": "제목"
         },
@@ -2794,6 +2843,14 @@
         }
       }
     },
+    "words_210": {
+      "text_columns": {
+        "name": "Text columns",
+        "block": {
+          "name": "Text"
+        }
+      }
+    },
     "bundle-extra-words-v110": {
       "settings_schema": {
         "labels": {
@@ -2842,7 +2899,8 @@
             "option_6": "사분의 일",
             "option_7": "삼분의 일",
             "option_8": "이분의 일",
-            "option_9": "삼분의 이"
+            "option_9": "삼분의 이",
+            "option_10": "Full"
           },
           "spacing": "텍스트 간격"
         },
@@ -2914,6 +2972,10 @@
           "quick_buy": {
             "name": "빠른 구매 팝업",
             "info": "이 테마는 사용자가 카트에 추가 버튼을 클릭했을 때 빠른 구매 팝업을 보여줄 수 있습니다."
+          },
+          "rating": {
+            "app": "Reviews app",
+            "default_option": "Default"
           }
         },
         "cart": {
@@ -2973,7 +3035,8 @@
           },
           "gutter": {
             "label": "간격",
-            "content": "상단 여백 감소"
+            "content": "상단 여백 감소",
+            "content_bottom": "Decrease bottom margin"
           }
         },
         "video": {
@@ -3279,6 +3342,16 @@
             "products_list": {
               "name": "제품"
             }
+          },
+          "layout": {
+            "option_1": "One row",
+            "option_2": "Two rows"
+          },
+          "menu_style": {
+            "label": "Desktop menu style (one row)",
+            "option_1": "Classic (text)",
+            "option_2": "Minimal (drawer)",
+            "info": "On mobile devices or when the classic menu is too wide to fit the screen's size, the menu will automatically switch to the drawer style."
           }
         },
         "slideshow": {
@@ -3309,6 +3382,9 @@
               "info": "사용자가 탭 위에 마우스를 올려놓으면 자동 재생이 정지됩니다."
             }
           }
+        },
+        "countdown": {
+          "name": "Countdown"
         }
       }
     },
@@ -3316,6 +3392,31 @@
       "label_1": "이미지 1",
       "label_2": "이미지 2",
       "label_3": "이미지 3"
+    },
+    "cookies": {
+      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent. [Learn more](https://shopify-support.krownthemes.com/article/790-cookies-popup)."
+    }
+  },
+  "color-schemes": {
+    "name_plural": "Color schemes",
+    "name_singular": "Color scheme",
+    "default": "Default color scheme",
+    "default_info": "Used to set colors for account pages, 404 pages, and other pages or sections without color scheme settings.",
+    "drawers": "Modals/drawers",
+    "other": "Other colors"
+  },
+  "bundle-250": {
+    "modal_quick_buy": {
+      "label": "옵션 표시 유형",
+      "options": {
+        "option_1": "인라인 (제품 그리드에)",
+        "option_2": "모달 (클릭 시)"
+      },
+      "settings": {
+        "inline_label": "인라인 표시 설정",
+        "modal_label": "모달 표시 설정",
+        "modal_info": "모달 옵션은 퀵 구매 제품 페이지 템플릿에서 구성할 수 있습니다. [자세히 알아보기](https://shopify-support.krownthemes.com/article/824-combine-product-page#Editing-the-quick-buy-modal-template-WsS0q)"
+      }
     }
   },
   "bundle-240": {
@@ -3341,7 +3442,8 @@
     "container_border": "컨테이너 테두리",
     "gallery_border": "갤러리 테두리",
     "opacity": "투명도",
-    "secondary_color": "보조 스타일 색상"
+    "secondary_color": "보조 스타일 색상",
+    "header_border_top_info": "For \"two rows\" layout only."
   },
   "footer-menu-items": {
     "open_links_in_new_window": "새 창에서 링크 열기",

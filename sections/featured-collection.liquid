@@ -8,7 +8,7 @@
     {%- liquid
       if section.settings.collection != blank
         for product in collections[section.settings.collection].products limit: section.settings.products_number
-          render 'product-item', product: product, section_blocks: section.blocks, index: forloop.index, layout: section.settings.layout, mobile_layout: section.settings.layout_mobile, show_badges: settings.show_badges, section_id: section.id, product_collection: collections[section.settings.collection]
+          render 'product-item', product: product, section_blocks: section.blocks, index: forloop.index, layout: section.settings.layout, mobile_layout: section.settings.layout_mobile, section_id: section.id, product_collection: collections[section.settings.collection]
         endfor
       else 
         for i in (1..section.settings.products_number)
@@ -53,9 +53,12 @@
   {%- endif -%}
 </style>
 
+<div style="display:none" data-js-product-item-skeleton>{%- render 'product-item-skeleton', section_blocks: section.blocks, layout: section.settings.layout, mobile_layout: section.settings.layout_mobile, product_collection: collections[section.settings.collection] -%}</div>
+
 {% schema %}
   {
     "name": "t:sections.featured-collection.name",
+    "class": "has-skeleton",
     "blocks": [
       {
         "type": "price",

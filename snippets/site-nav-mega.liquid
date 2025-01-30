@@ -1,3 +1,21 @@
+{% comment %}
+	Renders the mega menu site navigation.
+
+	Accepts:
+	- items: {Array} the items to display. Can be either products list or collection list.
+  - isproduct: {Boolean} set true if items are products.
+  - iscollection: {Boolean} set true if items are collections.
+  - show_more_label: {String} the label for the "show more" button (just when items are present).
+  - show_more_url: {String} the url for the "show more" button.
+  - linklist: {String} the linklist handle (in case items are not provided, a menu will be rendered).
+  - menu_name: {String} the menu name (to be shown in the top level navigation).
+  - type: {String} the type of mega menu (can be "classic" or "sidebar").
+	- shopify_attributes: {Object} block.shopify_attributes object.
+	
+	Usage:
+  {% render 'site-nav-mega', items: products, isproduct: true, show_more_label: 'Show more', show_more_url: '', linklist: 'main-menu', menu_name: 'Shop', type: 'classic', shopify_attributes: block.shopify_attributes %}
+{% endcomment %}
+
 {%- liquid
 	if type == 'classic' 
 		assign links_class = 'text-animation--underline-in-header'
@@ -31,7 +49,7 @@
           </li>
         {%- endif -%}
 
-        <div class="grid grid--layout grid-6 grid-portable-2" style="width:100%">
+        <div class="grid grid--layout {% if type == 'sidebar' %} grid-2 {% else %} grid-6 {% endif %} grid-portable-2" style="width:100%">
 
           {%- for item in items limit: products_limit -%}
 
@@ -240,10 +258,12 @@
           <li class="mega-link has-promotion">
 
             <div class="menu-promotion">
-  
-              {% if promotion_image_link_1 != blank %} <a href="{{ promotion_image_link_1 }}" {% else %} <div {% endif %}
-                class="menu-promotion-background-image"
-              >
+              
+              {%- if promotion_image_link_1 != blank -%} 
+                <a href="{{ promotion_image_link_1 }}" class="menu-promotion-background-image">
+              {%- else -%} 
+                <div class="menu-promotion-background-image"> 
+              {%- endif -%}
                 {%- liquid
                   unless promotion_image_1 == blank 
                     render 'lazy-image', image: promotion_image_1, sizes: sizes
@@ -269,9 +289,11 @@
 
             <div class="menu-promotion">
   
-              {% if promotion_image_link_2 != blank %} <a href="{{ promotion_image_link_2 }}" {% else %} <div {% endif %}
-                class="menu-promotion-background-image"
-              >
+              {%- if promotion_image_link_2 != blank -%} 
+                <a href="{{ promotion_image_link_2 }}" class="menu-promotion-background-image">
+              {%- else -%} 
+                <div class="menu-promotion-background-image">
+              {%- endif -%}
                 {%- liquid
                   unless promotion_image_2 == blank 
                     render 'lazy-image', image: promotion_image_2, sizes: sizes

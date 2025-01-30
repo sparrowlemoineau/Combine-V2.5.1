@@ -8,13 +8,15 @@
 
       {%- for block in section.blocks -%}
 
-        {% if block.settings.button_label == blank and block.settings.button_link != blank %}
-          <a href="{{ block.settings.button_link }}" {% unless block.settings.open_in_new_window == false %} target="_blank" {% endunless %}
-        {% else %}
-          <div
-        {% endif %}
+        {%- capture element_attributes -%}
           id="element-{{ block.id }}" class="card card--animation" {{ block.shopify_attributes }}
-        >
+        {%- endcapture -%}
+
+        {%- if block.settings.button_label == blank and block.settings.button_link != blank -%}
+          <a href="{{ block.settings.button_link }}" {% unless block.settings.open_in_new_window == false %} target="_blank" {% endunless %} {{ element_attributes }}>
+        {%- else -%}
+          <div {{  element_attributes }}>
+        {%- endif -%}
           
           <div>
 
@@ -142,7 +144,7 @@
             {% endstyle %}
           {%- endif -%}
  
-        </{%- if block.settings.button_label == blank and block.settings.button_link != blank -%} a {%- else -%} div {%- endif -%}>
+          {%- if block.settings.button_label == blank and block.settings.button_link != blank -%} </a> {%- else -%} </div> {%- endif -%}
 
       {%- endfor %}
 

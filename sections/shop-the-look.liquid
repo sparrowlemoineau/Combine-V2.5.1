@@ -54,7 +54,7 @@
 
       {%- capture sizes -%} (max-width: 1023px) calc(50vw - 50px), (max-width: {{ settings.theme_max_width }}px) calc((100vw - 120px) / 4), {{ settings.theme_max_width | minus: 120 | divided_by: 4 }}px" {%- endcapture -%}
       {%- liquid
-        if mobile_layout contains 'palm-1'
+        if section.settings.layout_mobile contains 'palm-1'
           assign sizes = sizes | prepend: 'sizes="(max-width: 474px) calc(100vw - 30px), '
         else 
           assign sizes = sizes | prepend: 'sizes="(max-width: 474px) calc(50vw - 20px), '
@@ -65,7 +65,7 @@
         {%- liquid
           if section.settings.product_list != blank
             for product in section.settings.product_list
-              render 'product-item', product: product, section_blocks: section.blocks, index: forloop.index, layout: 'set', sizes: sizes, show_badges: settings.show_badges, section_id: section.id
+              render 'product-item', product: product, section_blocks: section.blocks, index: forloop.index, layout: 'set', sizes: sizes, section_id: section.id
             endfor
           else
             for i in (1..4)
@@ -82,10 +82,13 @@
   
 </div>
 
+{%- assign sizes_skeleton =  sizes | remove: 'sizes=' | remove: '"' -%}
+<div style="display:none" data-js-product-item-skeleton>{%- render 'product-item-skeleton', section_blocks: section.blocks, layout: 'set', sizes: sizes_skeleton -%}</div>
+
 {% schema %}
   {
     "name": "t:sections.shop-the-look.name",
-    "class": "can-be-fullwidth mount-css-slider",
+    "class": "can-be-fullwidth mount-css-slider has-skeleton",
     "blocks": [
       {
         "type": "price",
@@ -183,6 +186,22 @@
         "limit": 1,
         "settings": [
           {
+            "type": "select",
+            "label": "t:bundle-250.modal_quick_buy.label",
+            "id": "type",
+            "options": [
+              {
+                "value": "inline",
+                "label": "t:bundle-250.modal_quick_buy.options.option_1"
+              },
+              {
+                "value": "modal",
+                "label": "t:bundle-250.modal_quick_buy.options.option_2"
+              }
+            ],
+            "default": "inline"
+          },
+          {
             "type": "checkbox",
             "id": "show_only_available",
             "label": "t:sections.bundle-extra-words.sections.product_grid.blocks.quick_buy.settings.show_only_available.label",
@@ -190,16 +209,20 @@
           },
           {
             "type": "checkbox",
+            "id": "show_price",
+            "label": "t:sections.bundle-extra-words.sections.product_grid.blocks.quick_buy.settings.show_price.label",
+            "default": true
+          },
+          {
+            "type": "header",
+            "content": "t:bundle-250.modal_quick_buy.settings.inline_label"
+          },
+          {
+            "type": "checkbox",
             "id": "variant_default",
             "label": "t:sections.bundle-extra-words.sections.product_grid.blocks.quick_buy.settings.variant_default.label",
             "info": "t:sections.bundle-extra-words.sections.product_grid.blocks.quick_buy.settings.variant_default.info",
             "default": false
-          },
-          {
-            "type": "checkbox",
-            "id": "show_price",
-            "label": "t:sections.bundle-extra-words.sections.product_grid.blocks.quick_buy.settings.show_price.label",
-            "default": true
           },
           { 
             "type": "select",
@@ -220,6 +243,11 @@
               }
             ],
             "default": "hide"
+          },
+          {
+            "type": "header",
+            "content": "t:bundle-250.modal_quick_buy.settings.modal_label",
+            "info": "t:bundle-250.modal_quick_buy.settings.modal_info"
           }
         ]
       },

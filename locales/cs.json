@@ -42,7 +42,8 @@
       "powered_by_shopify_html": "Tento obchod bude používat technologii {{ shopify }}"
     },
     "prefixes": {
-      "by": "od"
+      "by": "od",
+      "or": "nebo"
     },
     "account_link": {
       "logged_in": "Můj účet",
@@ -109,6 +110,7 @@
       "form_error": "Chyba",
       "go_to_top": "Přejít nahoru",
       "top": "Nahoře",
+      "slide": "Zobrazit snímek {{ count }}",
       "time_left": "Zbývající čas",
       "show_more": "Zobrazit více",
       "show_less": "Zobrazit méně",
@@ -175,6 +177,7 @@
       "save_amount_html": "Ušetřete {{ amount }}",
       "save_up_to_amount_html": "Ušetřete až {{ amount }}",
       "save_percent": "Až {{ percent }}",
+      "quick_view": "Rychlý náhled",
       "choose_variant_first": "Nejprve vyberte variantu",
       "select_variant": "Vyberte {{ variant }}",
       "color_variants_count": {
@@ -346,7 +349,8 @@
         "date": "Datum",
         "payment_status": "Stav platby",
         "fulfillment_status": "Stav vyhotovení",
-        "total": "Celkem"
+        "total": "Celkem",
+        "view_order": "Zobrazit objednávku"
       },
       "no_orders_message": "Zatím jste nezadali žádnou objednávku.",
       "account_details_title": "Podrobnosti o účtu",

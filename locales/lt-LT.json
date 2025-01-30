@@ -42,7 +42,8 @@
       "powered_by_shopify_html": "Ši parduotuvė veikia naudodama {{ shopify }}"
     },
     "prefixes": {
-      "by": "pateikė"
+      "by": "pateikė",
+      "or": "arba"
     },
     "account_link": {
       "logged_in": "Mano paskyra",
@@ -109,6 +110,7 @@
       "form_error": "Klaida",
       "go_to_top": "Eiti į viršų",
       "top": "Į viršų",
+      "slide": "Rodyti skaidrę {{ count }}",
       "time_left": "Liko laiko",
       "show_more": "Rodyti daugiau",
       "show_less": "Rodyti mažiau",
@@ -175,7 +177,8 @@
       "save_amount_html": "Sutaupykite {{ amount }}",
       "save_up_to_amount_html": "Sutaupykite iki {{ amount }}",
       "save_percent": "Iki {{ percent }}",
-      "choose_variant_first": "Pirmiausia pasirinkite variantą",
+      "quick_view": "Greita peržiūra",
+      "choose_variant_first": "Psirinkite variantą",
       "select_variant": "Pasirinkti {{ variant }}",
       "color_variants_count": {
         "one": "{{ count }} galima spalva",
@@ -346,7 +349,8 @@
         "date": "Data",
         "payment_status": "Apmokėjimo būsena",
         "fulfillment_status": "Įvykdymo būsena",
-        "total": "Iš viso"
+        "total": "Iš viso",
+        "view_order": "Peržiūrėti užsakymą"
       },
       "no_orders_message": "Dar nepateikėte jokių užsakymų.",
       "account_details_title": "Paskyros informacija",

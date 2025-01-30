@@ -105,7 +105,12 @@
             endif
           -%}
 
-          <div class="card__image card__image--background {% if block.settings.color_background_main != "rgba(0,0,0,0)" %} card__image--with-overlay {% if block.type == 'video' %} lazy-image--revealed {% endif %} {% endif %}" aria-hidden="true">
+          <div class="card__image card__image--background 
+            {% if block.settings.color_background_main != "rgba(0,0,0,0)" %} 
+              card__image--with-overlay 
+                {% if block.type == 'video' %} lazy-image--revealed {% endif %} 
+                {% if section.settings.is_auto_height %} card__image--with-overlay-z-index {% endif %}
+            {% endif %}" aria-hidden="true">
 
             {%- if block.type == 'image' -%}
 
@@ -119,7 +124,7 @@
                     sizes="(max-width: 1023px) calc({{ section.settings.mobile_height }} * {{ block.settings.image.aspect_ratio }}), calc({{ section.settings.desktop_height }} * {{ block.settings.image.aspect_ratio }})"
                   {%- endcapture -%}
                 {%- else -%}
-                  {%- if is_fullwidth -%}
+                  {%- if section.settings.is_fullwidth -%}
                     {%- assign sizes = 'sizes="100vw"' -%}
                   {%- else -%}
                     {%- capture sizes -%}
@@ -312,7 +317,6 @@
       "step": 1,
       "min": 3,
       "max": 10,
-      "step": 1,
       "default": 5,
       "unit": "s"
     },

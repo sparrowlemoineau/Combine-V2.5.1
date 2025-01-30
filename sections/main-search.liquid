@@ -71,166 +71,164 @@
 
             <div id="main-collection-product-grid" data-id="{{ section.id }}" class="collection grid grid--layout {{ section.settings.layout }} {{ section.settings.layout_mobile }}">
 
+              {%- liquid
+                if products_results.size > 0
+                  for product in products_results
+                    render 'product-item', product: product, section_blocks: section.blocks, index: forloop.index, layout: section.settings.layout, mobile_layout: section.settings.layout_mobile, section_id: section.id
+                  endfor
+                endif
+              -%}
+
+              {%- if search.results.size == 0 and search.filters != empty -%}
                 {%- liquid
-                  if products_results.size > 0
-                    for product in products_results
-                      render 'product-item', product: product, section_blocks: section.blocks, index: forloop.index, layout: section.settings.layout, mobile_layout: section.settings.layout_mobile, show_badges: settings.show_badges, section_id: section.id
-                    endfor
-                  endif
+                  assign sort_by = search.sort_by | default: search.default_sort_by
+                  assign terms = search.terms | escape
+                  assign search_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by
                 -%}
+                <p class="no-content-message text-size--large rte">
+                  {{ 'collections.empty' | t }}<br/>
+                  {{ 'collections.use_fewer_filters_html' | t: link: search_url, class: 'button--text' }}
+                </p>
+              {%- endif -%}
 
-                {%- if search.results.size == 0 and search.filters != empty -%}
-                  {%- liquid
-                    assign sort_by = search.sort_by | default: search.default_sort_by
-                    assign terms = search.terms | escape
-                    assign search_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by
-                  -%}
-                  <p class="no-content-message text-size--large rte">
-                    {{ 'collections.empty' | t }}<br/>
-                    {{ 'collections.use_fewer_filters_html' | t: link: search_url, class: 'button--text' }}
-                  </p>
-                {%- endif -%}
-
-              </div>
-              
             </div>
-
+              
           </div>
 
-          {%- assign article_search_results_found = 0 -%}
-          {%- if search.types contains 'article' -%}
-
-            {%- capture article_search_results -%}
-
-              {%- for result in search.results -%}
-
-                {%- liquid
-                  if result.object_type == 'product' or result.object_type == 'page'
-                    continue
-                  endif
-                  assign article_search_results_found = article_search_results_found | plus: 1
-                -%}
-
-                <div class="blog-item spacing--large remove-empty-space">
-
-                  {%- assign date_format = 'general.date_format.month_day_year' | t -%}
-
-                  {%- if section.settings.blog_show_image -%}
-
-                    <a class="blog-item__image increased-spacing" href="{{ result.url }}" title="{{ result.title | escape }}">
-                      {%- if result.image == blank -%}
-                        {%- render 'lazy-svg', image: 'image', ratio: section.settings.image_aspect_ratio, class: 'svg-placeholder' -%}
-                      {%- else -%}
-                        {%- capture sizes -%}
-                          sizes="(max-width: 767px) 100vw, (max-width: {{ settings.theme_max_width }}px) 33vw, {{ settings.theme_max_width | divided_by: 3 }}px"
-                        {%- endcapture -%}
-                        {%- render 'lazy-image', image: result.image.src, alt: result.title, ratio: section.settings.image_aspect_ratio, class: 'lazy-image--animation lazy-image--to-reveal', sizes: sizes -%}
-                      {%- endif -%}
-                    </a>
-
-                  {%- endif -%}
-
-                  <div class="blog-item__title-holder">
-                    <a href="{{ result.url }}" title="{{ result.title | escape }}">
-                      <span class="text-line-height--small text-animation--underline text-size--larger text-weight--medium">
-                        {{ result.title | escape }}
-                      </span>
-                    </a>
-                  </div>
-
-                  <div class="blog-item__meta">
-
-                    {%- if section.settings.show_author -%}
-                      <span class="blog-item__author text-size--small">
-                        {{ result.author | escape }}
-                      </span>
-                    {%- endif -%}
-          
-                    {%- if section.settings.show_date -%}
-                      <span class="blog-item__date text-size--small">
-                        {{ result.published_at | date: date_format }}
-                      </span>
-                    {%- endif -%}
-          
-                    {%- if section.settings.show_comments_number -%}
-                      <span class="blog-item__date text-size--small">
-                        {{ 'blog.grid.comments_count' | t: count: result.comments_count }}
-                      </span>
-                    {%- endif -%}
-          
-                  </div>
-
-                  {%- unless section.settings.blog_show_image -%}
-                    <div class="blog-item__excerpt">
-                      <span class="element--is-inline-block">
-                        {{ article.content | strip_html | truncatewords: 15, "..." }}
-                      </span>
-                    </div>
-                  {%- endunless -%}
-
-                </div>
-
-              {%- endfor -%}
-
-            {%- endcapture -%}
-
-            {%- if article_search_results != blank -%}
-
-              <h2 class="heading-size--xsmall {% if products_in_current %} gutter-top--xlarge {% endif %}">
-                {{ 'search.form.article_results_title' | t }} ({{ article_search_results_found }})
-              </h2>
-              <div class="grid grid--layout grid-3 grid-lap-1">
-                {{ article_search_results }}
-              </div>
-
-            {%- endif -%}
-
-          {%- endif -%}
-
-          {%- if search.types contains 'page' -%}
-
-            {%- assign page_search_results_found = 0 -%}
-            {%- capture page_search_results -%}
-
-              {%- for result in search.results -%}
-
-                {%- liquid
-                  if result.object_type == 'product' or result.object_type == 'article'
-                    continue
-                  endif
-                  assign page_search_results_found = page_search_results_found | plus: 1
-                -%}
-
-                <div class="search-item">
-                  <a href="{{ result.url | escape }}" title="{{ result.title | escape }}">
-                    <span class="text-animation--underline text-weight--medium text-size--larger text-line-height--medium">{{ result.title | escape }}</span>
-                  </a>
-                  {{ result.content | strip_html | truncatewords: 60, "..." | prepend: '<div style="margin-top:.5em;max-width:580px">' | append: '</div>' }}
-                </div>
-              {%- endfor -%}
-
-            {%- endcapture -%}
-
-            {%- if page_search_results != blank -%}
-              
-              <h2 class="heading-size--xsmall margin-bottom--regular {% if products_in_current or article_search_results != blank %} gutter-top--xlarge {% endif %}">
-                {{ 'search.form.page_results_title' | t }} ({{ page_search_results_found }})
-              </h2>
-              <div class="">
-                {{ page_search_results }}
-              </div>
-
-            {%- endif -%}
-
-          {%- endif -%}
-
-          {%- liquid
-            if paginate.pages > 1
-              render 'pagination', paginate: paginate
-            endif
-          -%}
-
         </div>
+
+        {%- assign article_search_results_found = 0 -%}
+        {%- if search.types contains 'article' -%}
+
+          {%- capture article_search_results -%}
+
+            {%- for result in search.results -%}
+
+              {%- liquid
+                if result.object_type == 'product' or result.object_type == 'page'
+                  continue
+                endif
+                assign article_search_results_found = article_search_results_found | plus: 1
+              -%}
+
+              <div class="blog-item spacing--large remove-empty-space">
+
+                {%- assign date_format = 'general.date_format.month_day_year' | t -%}
+
+                {%- if section.settings.blog_show_image -%}
+
+                  <a class="blog-item__image increased-spacing" href="{{ result.url }}" title="{{ result.title | escape }}">
+                    {%- if result.image == blank -%}
+                      {%- render 'lazy-svg', image: 'image', ratio: section.settings.image_aspect_ratio, class: 'svg-placeholder' -%}
+                    {%- else -%}
+                      {%- capture sizes -%}
+                        sizes="(max-width: 767px) 100vw, (max-width: {{ settings.theme_max_width }}px) 33vw, {{ settings.theme_max_width | divided_by: 3 }}px"
+                      {%- endcapture -%}
+                      {%- render 'lazy-image', image: result.image.src, alt: result.title, ratio: section.settings.image_aspect_ratio, class: 'lazy-image--animation lazy-image--to-reveal', sizes: sizes -%}
+                    {%- endif -%}
+                  </a>
+
+                {%- endif -%}
+
+                <div class="blog-item__title-holder">
+                  <a href="{{ result.url }}" title="{{ result.title | escape }}">
+                    <span class="text-line-height--small text-animation--underline text-size--larger text-weight--medium">
+                      {{ result.title | escape }}
+                    </span>
+                  </a>
+                </div>
+
+                <div class="blog-item__meta">
+
+                  {%- if section.settings.show_author -%}
+                    <span class="blog-item__author text-size--small">
+                      {{ result.author | escape }}
+                    </span>
+                  {%- endif -%}
+        
+                  {%- if section.settings.show_date -%}
+                    <span class="blog-item__date text-size--small">
+                      {{ result.published_at | date: date_format }}
+                    </span>
+                  {%- endif -%}
+        
+                  {%- if section.settings.show_comments_number -%}
+                    <span class="blog-item__date text-size--small">
+                      {{ 'blog.grid.comments_count' | t: count: result.comments_count }}
+                    </span>
+                  {%- endif -%}
+        
+                </div>
+
+                {%- unless section.settings.blog_show_image -%}
+                  <div class="blog-item__excerpt">
+                    <span class="element--is-inline-block">
+                      {{ article.content | strip_html | truncatewords: 15, "..." }}
+                    </span>
+                  </div>
+                {%- endunless -%}
+
+              </div>
+
+            {%- endfor -%}
+
+          {%- endcapture -%}
+
+          {%- if article_search_results != blank -%}
+
+            <h2 class="heading-size--xsmall {% if products_in_current %} gutter-top--xlarge {% endif %}">
+              {{ 'search.form.article_results_title' | t }} ({{ article_search_results_found }})
+            </h2>
+            <div class="grid grid--layout grid-3 grid-lap-1">
+              {{ article_search_results }}
+            </div>
+
+          {%- endif -%}
+
+        {%- endif -%}
+
+        {%- if search.types contains 'page' -%}
+
+          {%- assign page_search_results_found = 0 -%}
+          {%- capture page_search_results -%}
+
+            {%- for result in search.results -%}
+
+              {%- liquid
+                if result.object_type == 'product' or result.object_type == 'article'
+                  continue
+                endif
+                assign page_search_results_found = page_search_results_found | plus: 1
+              -%}
+
+              <div class="search-item">
+                <a href="{{ result.url | escape }}" title="{{ result.title | escape }}">
+                  <span class="text-animation--underline text-weight--medium text-size--larger text-line-height--medium">{{ result.title | escape }}</span>
+                </a>
+                {{ result.content | strip_html | truncatewords: 60, "..." | prepend: '<div style="margin-top:.5em;max-width:580px">' | append: '</div>' }}
+              </div>
+            {%- endfor -%}
+
+          {%- endcapture -%}
+
+          {%- if page_search_results != blank -%}
+            
+            <h2 class="heading-size--xsmall margin-bottom--regular {% if products_in_current or article_search_results != blank %} gutter-top--xlarge {% endif %}">
+              {{ 'search.form.page_results_title' | t }} ({{ page_search_results_found }})
+            </h2>
+            <div class="">
+              {{ page_search_results }}
+            </div>
+
+          {%- endif -%}
+
+        {%- endif -%}
+
+        {%- liquid
+          if paginate.pages > 1
+            render 'pagination', paginate: paginate
+          endif
+        -%}
 
       {%- endpaginate -%}
 
@@ -256,12 +254,14 @@
     </div>
   </sidebar-drawer>
   <script src="{{ 'component-facets.js' | asset_url }}" defer></script>
-{%- endif -%}
+{%- endif -%} 
+
+<div style="display:none" data-js-product-item-skeleton>{%- render 'product-item-skeleton', section_blocks: section.blocks, layout: section.settings.layout, mobile_layout: section.settings.layout_mobile -%}</div>
 
 {% schema %}
 {
   "name": "t:sections.main-search.name",
-  "class": "main-search no-inert",
+  "class": "main-search has-skeleton no-inert",
   "blocks": [
     {
       "type": "price",
@@ -359,6 +359,22 @@
       "limit": 1,
       "settings": [
         {
+          "type": "select",
+          "label": "t:bundle-250.modal_quick_buy.label",
+          "id": "type",
+          "options": [
+            {
+              "value": "inline",
+              "label": "t:bundle-250.modal_quick_buy.options.option_1"
+            },
+            {
+              "value": "modal",
+              "label": "t:bundle-250.modal_quick_buy.options.option_2"
+            }
+          ],
+          "default": "inline"
+        },
+        {
           "type": "checkbox",
           "id": "show_only_available",
           "label": "t:sections.bundle-extra-words.sections.product_grid.blocks.quick_buy.settings.show_only_available.label",
@@ -366,16 +382,20 @@
         },
         {
           "type": "checkbox",
+          "id": "show_price",
+          "label": "t:sections.bundle-extra-words.sections.product_grid.blocks.quick_buy.settings.show_price.label",
+          "default": true
+        },
+        {
+          "type": "header",
+          "content": "t:bundle-250.modal_quick_buy.settings.inline_label"
+        },
+        {
+          "type": "checkbox",
           "id": "variant_default",
           "label": "t:sections.bundle-extra-words.sections.product_grid.blocks.quick_buy.settings.variant_default.label",
           "info": "t:sections.bundle-extra-words.sections.product_grid.blocks.quick_buy.settings.variant_default.info",
           "default": false
-        },
-        {
-          "type": "checkbox",
-          "id": "show_price",
-          "label": "t:sections.bundle-extra-words.sections.product_grid.blocks.quick_buy.settings.show_price.label",
-          "default": true
         },
         { 
           "type": "select",
@@ -396,6 +416,11 @@
             }
           ],
           "default": "hide"
+        },
+        {
+          "type": "header",
+          "content": "t:bundle-250.modal_quick_buy.settings.modal_label",
+          "info": "t:bundle-250.modal_quick_buy.settings.modal_info"
         }
       ]
     },

@@ -89,6 +89,12 @@ html[dir=ltr] .sidebar--left {
   text-transform: uppercase;
   font-weight: var(--font-weight-body-primary-bold);
 }
+@media screen and (max-width: 474px) {
+  .sidebar__header {
+    padding-top: 0.625rem;
+    padding-bottom: 0.375rem;
+  }
+}
 .sidebar__close {
   width: 40px;
   height: 40px;

@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class="card__image card__image--background {% if section.settings.color_background_main != "rgba(0,0,0,0)" %} card__image--with-overlay {% endif %}" aria-hidden="true">
-        {%- render 'lazy-image', image: cover_image, type: 'background', alt: page.title, sizes: 'sizes="100vw"', class: 'lazy-image--to-reveal', id: section.id, overlay: true -%} 
+        {%- render 'lazy-image', image: cover_image, type: 'background', alt: page.title, sizes: 'sizes="100vw"', class: 'lazy-image--to-reveal', id: section.id, overlay: true, preload: true -%} 
       </div>
       {%- render 'custom-colors', id: section.id, text: section.settings.color_text_main, background: section.settings.color_background_main, hide_borders: true -%}
     </div>

@@ -42,7 +42,8 @@
       "powered_by_shopify_html": "Этот магазин будет работать на {{ shopify }}"
     },
     "prefixes": {
-      "by": "от"
+      "by": "от",
+      "or": "или"
     },
     "account_link": {
       "logged_in": "Моя учетная запись",
@@ -109,6 +110,7 @@
       "rating_info": "Оценка: {{ rating_value }} из {{ rating_max }}",
       "top": "Вверх",
       "go_to_top": "Вверх",
+      "slide": "Показать слайд {{ count }}",
       "time_left": "Время осталось",
       "show_more": "Показывать больше",
       "show_less": "Показывать меньше",
@@ -175,6 +177,7 @@
       "save_amount_html": "Сэкономить {{ amount }}",
       "save_up_to_amount_html": "сэкономить до {{ amount }}",
       "save_percent": "до {{ percent }}",
+      "quick_view": "Быстрый просмотр",
       "choose_variant_first": "Сначала выберите вариант",
       "select_variant": "Выберите {{ variant }}",
       "color_variants_count": {
@@ -346,7 +349,8 @@
         "date": "Дата",
         "payment_status": "Статус оплаты",
         "fulfillment_status": "Статус выполнения",
-        "total": "Всего"
+        "total": "Всего",
+        "view_order": "Просмотр заказа"
       },
       "no_orders_message": "Вы пока не оформили ни одного заказа.",
       "account_details_title": "Детали учетной записи",

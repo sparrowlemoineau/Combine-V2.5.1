@@ -3,9 +3,9 @@
 		"name": "theme_info",
 		"theme_name": "A Combine",
 		"theme_author": "A KrownThemes",
-		"theme_version": "2.4.2.1",
+		"theme_version": "2.5.1",
 		"theme_documentation_url": "https://support.com/",
-		"theme_support_url": "https://support.com/shopify-support-contact/"
+		"theme_support_url": "https://support.com/"
 	},
 	{
 		"name": "t:settings_schema.typography.name",
@@ -852,6 +852,12 @@
         "id": "cart_recommendations_heading",
         "label": "t:sections.product-recommendations.settings.heading.label",
         "default": "Often bought together"
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_recommendations_quick_buy",
+        "label": "t:sections.split-extra-words.settings_schema.product-grid.quick_buy.label",
+        "default": false
       },
       {
         "type": "header",

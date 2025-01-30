@@ -42,7 +42,8 @@
       "powered_by_shopify_html": "Deze winkel wordt gesponsord door {{ shopify }}"
     },
     "prefixes": {
-      "by": "op"
+      "by": "op",
+      "or": "of"
     },
     "account_link": {
       "logged_in": "Mijn account",
@@ -109,6 +110,7 @@
       "rating_info": "Rating: {{ rating_value }} van de {{ rating_max }}",
       "top": "Top",
       "go_to_top": "Ga naar boven",
+      "slide": "Toon dia {{ count }}",
       "time_left": "Resterende tijd",
       "show_more": "Bekijk meer",
       "show_less": "Bekijk minder",
@@ -175,7 +177,8 @@
       "save_amount_html": "Bespaar {{ amount }}",
       "save_up_to_amount_html": "Bespaar tot {{ amount }}",
       "save_percent": "Tot {{ percent }}",
-      "choose_variant_first": "Kies eerst een variant",
+      "quick_view": "Snelle weergave",
+      "choose_variant_first": "Kies een variant",
       "select_variant": "Selecteer {{ variant }}",
       "color_variants_count": {
         "one": "{{ count }} kleur beschikbaar",
@@ -346,7 +349,8 @@
         "date": "Datum",
         "payment_status": "Betalingsstatus",
         "fulfillment_status": "Afhandelingsstatus",
-        "total": "Totaal"
+        "total": "Totaal",
+        "view_order": "Bestelling bekijken"
       },
       "no_orders_message": "Je hebt nog geen bestellingen geplaatst",
       "account_details_title": "Accountgegevens",

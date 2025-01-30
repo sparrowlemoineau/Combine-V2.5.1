@@ -1,3 +1,15 @@
+{% comment %}
+  Renders breadcrumb navigation
+
+	Accepts:
+	-	container: {String} container class (compact, large).
+	- vertical_space: {String} vertical space class (vertical-space-xsmall, vertical-space-small).
+	- style: {String} additional style class.
+
+  Usage:
+	{% render 'breadcrumb', container: 'compact', vertical_space: 'vertical-space-xsmall', style: 'breadcrumb-main--margin' %}
+{% endcomment %}
+
 {%- if settings.show_breadcrumb and template != 'index' and template != blank -%}
 
 	<div class="container--{{ container }} container--{{ vertical_space }}">
@@ -62,9 +74,9 @@
 								<span class="breadcrumb__separator">/</span>
 								<span class="breadcrumb__current">
 									{%- if template contains 'addresses' -%}
-										{{ 'general.breadcrumb.account.addresses' | t }}</span>
+										{{ 'general.breadcrumb.account.addresses' | t }}
 									{%- elsif template contains 'order' -%}
-										{{ 'general.breadcrumb.account.orders' | t }}</span>
+										{{ 'general.breadcrumb.account.orders' | t }}
 									{%- endif -%}
 								</span>
 							{%- else -%}

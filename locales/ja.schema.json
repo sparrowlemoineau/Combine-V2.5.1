@@ -1,4 +1,22 @@
 {
+  "video-extra-functions": {
+    "autoplay": {
+      "label": "自動再生を有効にする",
+      "info": "ビデオはミュートされ、コントロールはありません。"
+    },
+    "video_upload": {
+      "label": "ビデオファイル",
+      "info": "Shopifyによってホストされます。ビデオURL設定を置き換えます。"
+    },
+    "poster": {
+      "info": "ポスターまたは代替画像として使用されます。"
+    }
+  },
+  "variant_metafields": {
+    "name": "バリアントメタフィールド",
+    "label": "バリアントメタフィールドキー",
+    "info": "このテーマでは、商品ページにバリアントメタフィールドを表示できます。 [詳細はこちら](https://shopify-support.krownthemes.com/article/884-using-variant-metafields-in-product-pages)."
+  },
   "new_color_swatches": "このテーマでは、カテゴリーメタフィールドで作成されたカラースウォッチにも対応しています。 [詳細はこちら](https://help.shopify.com/en/manual/custom-data/metafields/category-metafields/using-category-metafields).",
   "video_controls": "ビデオコントロールを表示",
   "sticky_cart_actions": "スティッキードロワーカートアクションを有効にする",
@@ -31,7 +49,9 @@
   },
   "sticky_atc": {
     "label": "スティッキーにカートに追加",
-    "enable_sticky_atc": "スティッキーにカートに追加を有効にする"
+    "enable_sticky_atc": "スティッキーにカートに追加を有効にする",
+    "sticky_atc_style_wide": "Wide",
+    "sticky_atc_style_floating": "Floating"
   },
   "performance": {
     "header": "SEO & パフォーマンス",
@@ -300,14 +320,17 @@
         "footer_group": "フッターグループ",
         "header_group": "ヘッダーグループ",
         "overlay_group": "オーバーレイグループ",
-        "embellishments": "装飾"
+        "embellishments": "装飾",
+        "show_button": "Show button",
+        "optional": "Optional"
       },
       "text": {
         "icons_info": "より多くのアイコンをビジュアル化・ダウンロードするには、[このリンク](https://resources.krownthemes.com/icons/)をご覧ください。"
       },
       "borders": {
         "top_border": "上辺ボーダー",
-        "bottom_border": "下辺ボーダー"
+        "bottom_border": "下辺ボーダー",
+        "show_border": "Show border"
       },
       "colors": {
         "heading_background": "見出しの背景",
@@ -334,13 +357,18 @@
                 "option_2": "下辺",
                 "option_3": "左",
                 "option_4": "右"
-              }
-            }
-          }
+              },
+              "show_tooltip": "Show tooltip"
+            },
+            "mobile_info": "Only if a mobile image is set"
+          },
+          "image_on_mobile": "Mobile image",
+          "position_on_mobile": "Position on mobile"
         },
         "scrolling_images": {
           "label": "画像スクロール",
-          "image_size": "画像サイズ"
+          "image_size": "画像サイズ",
+          "columns": "Columns"
         },
         "video": {
           "label": "動画",
@@ -527,6 +555,12 @@
             "border_color": "ボーダーの色"
           }
         }
+      },
+      "seo_late": {
+        "breadcrumbs": {
+          "label": "Improve product breadcrumb navigation",
+          "info": "Adds collection names to the breadcrumb navigation, by duplicating product url's. [Learn more](https://shopify-support.krownthemes.com/article/697-seo#breadcrumbs)"
+        }
       }
     },
     "local-extra-words": {
@@ -539,7 +573,8 @@
           "settings": {
             "borders": "ボーダー",
             "hide_border": "ボーダーを隠す",
-            "accent": "アクセント"
+            "accent": "アクセント",
+            "overlay": "Overlay"
           }
         },
         "typography": {
@@ -596,6 +631,14 @@
             "amount": {
               "label": "無料配送最小金額",
               "info": "数字を記入し、文字や特殊文字は使わないでください。"
+            },
+            "info": "This feature only works with a single currency and shipping method. If you're using multiple shipping methods or currencies, it might show false values to the customer."
+          },
+          "settings": {
+            "media": {
+              "header": "Media aspect ratio",
+              "label": "Aspect ratio",
+              "info_cart": "Changes the aspect ratio for small product thumbnails used in the cart, search popup and some other areas that require small product thumbnails."
             }
           }
         },
@@ -644,10 +687,21 @@
               "name__3": "カスタムバッジ 3",
               "text": "テキスト",
               "tags": "タグ",
-              "color": "背景色"
+              "color": "背景色",
+              "text_color": "Text color"
             }
           },
-          "icons_list": "ダイナミックアイコンリスト"
+          "icons_list": "ダイナミックアイコンリスト",
+          "products-list": {
+            "name": "Products list"
+          }
+        },
+        "embellishments": {
+          "settings": {
+            "show_gotop": {
+              "label": "Show go to top button"
+            }
+          }
         }
       },
       "sections": {
@@ -1053,6 +1107,9 @@
           "blocks": {
             "shipping-calculator": {
               "name": "配送料計算機"
+            },
+            "related-products": {
+              "info": "The product recommendations are based on products that are commonly purchased together or products in related collections. If there are no recommendations, the block will not appear."
             }
           }
         },
@@ -1071,7 +1128,9 @@
           "name": "商品ページ",
           "settings": {
             "gallery_pagination": "ギャラリースライダーページ設定",
-            "show_border": "ギャラリーの周囲に枠線を表示"
+            "show_border": "ギャラリーの周囲に枠線を表示",
+            "gallery_border": "Gallery border",
+            "gallery_border_color": "Gallery border color"
           },
           "blocks": {
             "pickup_availability": {
@@ -1158,7 +1217,13 @@
           "blocks": {
             "payment": {
               "name": "決済アイコン",
-              "info": "表示されるアイコンは、ストアの[決済設定]（/admin/settings/payments）および顧客の地域と通貨によって決定されます。"
+              "info": "表示されるアイコンは、ストアの[決済設定]（/admin/settings/payments）および顧客の地域と通貨によって決定されます。",
+              "custom_icons": "Custom icons",
+              "custom_icons_info": "Upload 114 x 72px .png images",
+              "only_show_custom_icons": "Only show the custom icons"
+            },
+            "text": {
+              "name": "Text & social icons"
             }
           }
         },
@@ -1176,7 +1241,10 @@
             "name": "アカウント有効化ページ"
           },
           "login": {
-            "name": "ログインページ"
+            "name": "ログインページ",
+            "shop_login_button": {
+              "enable": "[Shopにログインする] を有効にする"
+            }
           },
           "account": {
             "name": "アカウントページ"
@@ -1203,7 +1271,8 @@
           "option__2": "3カラム",
           "option__3": "4カラム",
           "option__4": "5カラム",
-          "option__5": "6カラム"
+          "option__5": "6カラム",
+          "name_mobile": "Mobile layout"
         },
         "promotion-cards": {
           "name": "プロモーションカード",
@@ -2517,6 +2586,9 @@
     "popup": {
       "name": "ポップアップ",
       "settings": {
+        "enable_scroll_based_trigger": "スクロールベースのトリガーを有効にする",
+        "enable_scroll_based_trigger_info": "ページが特定の位置にスクロールされた場合にのみポップアップを表示します。",
+        "scroll_position": "スクロール位置",
         "title": {
           "label": "見出し"
         },
@@ -2771,6 +2843,14 @@
         }
       }
     },
+    "words_210": {
+      "text_columns": {
+        "name": "Text columns",
+        "block": {
+          "name": "Text"
+        }
+      }
+    },
     "bundle-extra-words-v110": {
       "settings_schema": {
         "labels": {
@@ -2819,7 +2899,8 @@
             "option_6": "1/4",
             "option_7": "1/3",
             "option_8": "1/2",
-            "option_9": "2/3"
+            "option_9": "2/3",
+            "option_10": "Full"
           },
           "spacing": "字間"
         },
@@ -2891,6 +2972,10 @@
           "quick_buy": {
             "name": "「今すぐ購入」ポップアップ",
             "info": "このテーマでは、ユーザーが「カートに追加」ボタンをクリックするとき、「今すぐ購入」ポップアップを表示できます。"
+          },
+          "rating": {
+            "app": "Reviews app",
+            "default_option": "Default"
           }
         },
         "cart": {
@@ -2950,7 +3035,8 @@
           },
           "gutter": {
             "label": "ガター",
-            "content": "上部の余白を狭くする"
+            "content": "上部の余白を狭くする",
+            "content_bottom": "Decrease bottom margin"
           }
         },
         "video": {
@@ -3256,6 +3342,16 @@
             "products_list": {
               "name": "商品"
             }
+          },
+          "layout": {
+            "option_1": "One row",
+            "option_2": "Two rows"
+          },
+          "menu_style": {
+            "label": "Desktop menu style (one row)",
+            "option_1": "Classic (text)",
+            "option_2": "Minimal (drawer)",
+            "info": "On mobile devices or when the classic menu is too wide to fit the screen's size, the menu will automatically switch to the drawer style."
           }
         },
         "slideshow": {
@@ -3286,6 +3382,9 @@
               "info": "タブ上にマウスオーバーしたときに自動再生を停止します。"
             }
           }
+        },
+        "countdown": {
+          "name": "Countdown"
         }
       }
     },
@@ -3293,6 +3392,31 @@
       "label_1": "画像1",
       "label_2": "画像2",
       "label_3": "画像3"
+    },
+    "cookies": {
+      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent. [Learn more](https://shopify-support.krownthemes.com/article/790-cookies-popup)."
+    }
+  },
+  "color-schemes": {
+    "name_plural": "Color schemes",
+    "name_singular": "Color scheme",
+    "default": "Default color scheme",
+    "default_info": "Used to set colors for account pages, 404 pages, and other pages or sections without color scheme settings.",
+    "drawers": "Modals/drawers",
+    "other": "Other colors"
+  },
+  "bundle-250": {
+    "modal_quick_buy": {
+      "label": "オプション表示タイプ",
+      "options": {
+        "option_1": "インライン（商品グリッド内）",
+        "option_2": "モーダル（クリックで）"
+      },
+      "settings": {
+        "inline_label": "インライン表示設定",
+        "modal_label": "モーダル表示設定",
+        "modal_info": "モーダルオプションは、クイックバイ商品ページテンプレートで設定できます。 [詳細はこちら](https://shopify-support.krownthemes.com/article/824-combine-product-page#Editing-the-quick-buy-modal-template-WsS0q)"
+      }
     }
   },
   "bundle-240": {
@@ -3318,7 +3442,8 @@
     "container_border": "コンテナの境界線",
     "gallery_border": "ギャラリーの境界線",
     "opacity": "不透明度",
-    "secondary_color": "セカンダリスタイルの色"
+    "secondary_color": "セカンダリスタイルの色",
+    "header_border_top_info": "For \"two rows\" layout only."
   },
   "footer-menu-items": {
     "open_links_in_new_window": "新しいウィンドウでリンクを開く",

@@ -1,4 +1,22 @@
 {
+  "video-extra-functions": {
+    "autoplay": {
+      "label": "Bật tự động phát",
+      "info": "Video sẽ bị tắt tiếng và không có điều khiển."
+    },
+    "video_upload": {
+      "label": "Tệp video",
+      "info": "Lưu trữ bởi Shopify. Thay thế các thiết lập URL video."
+    },
+    "poster": {
+      "info": "Được sử dụng làm hình ảnh poster hoặc hình ảnh dự phòng."
+    }
+  },
+  "variant_metafields": {
+    "name": "Trường siêu dữ liệu biến thể",
+    "label": "Khóa trường siêu dữ liệu biến thể",
+    "info": "Giao diện này có thể hiển thị trường siêu dữ liệu biến thể trên trang sản phẩm. [Tìm hiểu thêm](https://shopify-support.krownthemes.com/article/884-using-variant-metafields-in-product-pages)."
+  },
   "new_color_swatches": "Chủ đề này cũng hỗ trợ các mẫu màu được tạo bằng các trường siêu dữ liệu danh mục. [Tìm hiểu thêm](https://help.shopify.com/en/manual/custom-data/metafields/category-metafields/using-category-metafields).",
   "video_controls": "Hiển thị điều khiển video",
   "sticky_cart_actions": "Bật hành động giỏ hàng cố định",
@@ -31,7 +49,9 @@
   },
   "sticky_atc": {
     "label": "Thêm vào giỏ hàng cố định",
-    "enable_sticky_atc": "Kích hoạt thêm vào giỏ hàng cố định"
+    "enable_sticky_atc": "Kích hoạt thêm vào giỏ hàng cố định",
+    "sticky_atc_style_wide": "Wide",
+    "sticky_atc_style_floating": "Floating"
   },
   "performance": {
     "header": "SEO & hiệu suất",
@@ -918,7 +938,10 @@
           "blocks": {
             "payment": {
               "name": "Biểu tượng thanh toán",
-              "info": "Các biểu tượng hiển thị được xác định theo mục [cài đặt thanh toán](/admin/settings/payments) trong cửa hàng của bạn cũng như khu vực và đơn vị tiền tệ của khách hàng."
+              "info": "Các biểu tượng hiển thị được xác định theo mục [cài đặt thanh toán](/admin/settings/payments) trong cửa hàng của bạn cũng như khu vực và đơn vị tiền tệ của khách hàng.",
+              "custom_icons": "Custom icons",
+              "custom_icons_info": "Upload 114 x 72px .png images",
+              "only_show_custom_icons": "Only show the custom icons"
             },
             "text": {
               "name": "Văn bản &amp; biểu tượng mạng xã hội"
@@ -939,7 +962,10 @@
             "name": "Trang kích hoạt tài khoản"
           },
           "login": {
-            "name": "Trang đăng nhập"
+            "name": "Trang đăng nhập",
+            "shop_login_button": {
+              "enable": "Bật Đăng nhập bằng Shop"
+            }
           },
           "account": {
             "name": "Trang tài khoản"
@@ -966,7 +992,8 @@
           "option__2": "3 cột",
           "option__3": "4 cột",
           "option__4": "5 cột",
-          "option__5": "6 cột"
+          "option__5": "6 cột",
+          "name_mobile": "Mobile layout"
         },
         "promotion-cards": {
           "name": "Thẻ khuyến mãi",
@@ -2567,6 +2594,9 @@
     "popup": {
       "name": "Cửa sổ bật lên",
       "settings": {
+        "enable_scroll_based_trigger": "Kích hoạt kích hoạt dựa trên cuộn",
+        "enable_scroll_based_trigger_info": "Chỉ hiển thị popup nếu trang được cuộn đến một vị trí cụ thể.",
+        "scroll_position": "Vị trí cuộn",
         "title": {
           "label": "Tiêu đề"
         },
@@ -3005,7 +3035,8 @@
           },
           "gutter": {
             "label": "Khoảng cách giữa các cột",
-            "content": "Giảm lề trên"
+            "content": "Giảm lề trên",
+            "content_bottom": "Decrease bottom margin"
           }
         },
         "video": {
@@ -3314,6 +3345,16 @@
             "products_list": {
               "name": "Sản phẩm"
             }
+          },
+          "layout": {
+            "option_1": "One row",
+            "option_2": "Two rows"
+          },
+          "menu_style": {
+            "label": "Desktop menu style (one row)",
+            "option_1": "Classic (text)",
+            "option_2": "Minimal (drawer)",
+            "info": "On mobile devices or when the classic menu is too wide to fit the screen's size, the menu will automatically switch to the drawer style."
           }
         },
         "slideshow": {
@@ -3351,6 +3392,31 @@
       "label_1": "Hình ảnh 1",
       "label_2": "Hình ảnh 2",
       "label_3": "Hình ảnh 3"
+    },
+    "cookies": {
+      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent. [Learn more](https://shopify-support.krownthemes.com/article/790-cookies-popup)."
+    }
+  },
+  "color-schemes": {
+    "name_plural": "Color schemes",
+    "name_singular": "Color scheme",
+    "default": "Default color scheme",
+    "default_info": "Used to set colors for account pages, 404 pages, and other pages or sections without color scheme settings.",
+    "drawers": "Modals/drawers",
+    "other": "Other colors"
+  },
+  "bundle-250": {
+    "modal_quick_buy": {
+      "label": "Loại hiển thị tùy chọn",
+      "options": {
+        "option_1": "Trong dòng (trong lưới sản phẩm)",
+        "option_2": "Modal (khi nhấp chuột)"
+      },
+      "settings": {
+        "inline_label": "Cài đặt hiển thị trong dòng",
+        "modal_label": "Cài đặt hiển thị Modal",
+        "modal_info": "Các tùy chọn modal có thể được cấu hình trong mẫu trang sản phẩm Mua nhanh. [Tìm hiểu thêm](https://shopify-support.krownthemes.com/article/824-combine-product-page#Editing-the-quick-buy-modal-template-WsS0q)"
+      }
     }
   },
   "bundle-240": {
@@ -3376,7 +3442,8 @@
     "container_border": "Biên của bộ chứa",
     "gallery_border": "Biên của bộ sưu tập",
     "opacity": "Độ mờ",
-    "secondary_color": "Màu sắc phụ của phong cách"
+    "secondary_color": "Màu sắc phụ của phong cách",
+    "header_border_top_info": "For \"two rows\" layout only."
   },
   "footer-menu-items": {
     "open_links_in_new_window": "Mở liên kết trong một cửa sổ mới",

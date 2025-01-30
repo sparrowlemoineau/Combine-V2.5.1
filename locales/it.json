@@ -42,7 +42,8 @@
       "powered_by_shopify_html": "Questo negozio sarà basato su {{ shopify }}"
     },
     "prefixes": {
-      "by": "da"
+      "by": "da",
+      "or": "oppure"
     },
     "account_link": {
       "logged_in": "Il mio account",
@@ -109,6 +110,7 @@
       "rating_info": "Rating: {{ rating_value }} out of {{ rating_max }}",
       "top": "Top",
       "go_to_top": "Vai in cima",
+      "slide": "Mostra diapositiva {{ count }}",
       "time_left": "Tempo rimanente",
       "show_more": "Mostra di più",
       "show_less": "Mostra di meno",
@@ -175,7 +177,8 @@
       "save_amount_html": "Risparmia {{ amount }}",
       "save_up_to_amount_html": "Salva fino a {{ amount }}",
       "save_percent": "Fino al {{ percent }}",
-      "choose_variant_first": "Scegli prima una variante",
+      "quick_view": "Vista rapida",
+      "choose_variant_first": "Scegli una variante",
       "select_variant": "Seleziona {{ variant }}",
       "color_variants_count": {
         "one": "{{ count }} colore disponibile",
@@ -258,8 +261,8 @@
     "added_items_count": {
       "one": "{{ count }} prodotto è stato aggiunto al tuo carrello",
       "other": "{{ count }} prodotti sono stati aggiunti al tuo carrello",
-      "one_html": "<strong>1 product</strong><br/> è stato aggiunto al tuo carrello",
-      "other_html": "<strong>{{ count }} products</strong><br/> sono stati aggiunti al tuo carrello"
+      "one_html": "<strong>1 prodotto</strong><br/> è stato aggiunto al tuo carrello",
+      "other_html": "<strong>{{ count }} prodotti</strong><br/> sono stati aggiunti al tuo carrello"
     },
     "free_shipping_remaining_html": "Ti mancano {{ remaining_amount }} per la spedizione gratuita.",
     "free_shipping_eligible": "Hai diritto alla spedizione gratuita!",
@@ -346,7 +349,8 @@
         "date": "Data",
         "payment_status": "Stato del pagamento",
         "fulfillment_status": "Stato di esecuzione",
-        "total": "Totale"
+        "total": "Totale",
+        "view_order": "Visualizza ordine"
       },
       "no_orders_message": "Non hai ancora effettuato nessun ordine.",
       "account_details_title": "Dettagli dell'account",

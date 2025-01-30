@@ -42,7 +42,8 @@
       "powered_by_shopify_html": "這家商店將由 {{ shopify }} 提供支援"
     },
     "prefixes": {
-      "by": "作者"
+      "by": "作者",
+      "or": "或者"
     },
     "account_link": {
       "logged_in": "我的帳戶",
@@ -109,6 +110,7 @@
       "rating_info": "評等：{{ rating_value }} 中的 {{ rating_max }}",
       "top": "向上",
       "go_to_top": "轉到頂部",
+      "slide": "顯示投影片 {{ count }}",
       "time_left": "剩餘時間",
       "show_more": "顯示更多",
       "show_less": "顯示更少",
@@ -173,8 +175,9 @@
       "preorder_product": "預購",
       "no_products_text": "此產品系列中目前沒有產品。",
       "save_amount_html": "節省 {{ amount }}",
-      "save_up_to_amount_html": "節省高達 {{ amount }} 美元",
+      "save_up_to_amount_html": "節省高達 {{ amount }}",
       "save_percent": "高達 {{ percent }}",
+      "quick_view": "快速檢視",
       "choose_variant_first": "先選擇一個子類",
       "select_variant": "選取{{ variant }}",
       "color_variants_count": {
@@ -258,8 +261,8 @@
     "added_items_count": {
       "one": "您的購物車加入了 {{ count }} 產品",
       "other": "您的購物車加入了 {{ count }} 產品",
-      "one_html": "<strong>1 product</strong><br/> 已新增至您的購物車",
-      "other_html": "<strong>{{ count }} products</strong><br/> 已新增至您的購物車"
+      "one_html": "<strong>1 件商品</strong><br/> 已加入購物車",
+      "other_html": "<strong>{{ count }} 件商品</strong><br/> 已加入購物車"
     },
     "free_shipping_remaining_html": "您還差 {{ remaining_amount }} 就享有免運費資格。",
     "free_shipping_eligible": "您符合免運費資格！",
@@ -346,7 +349,8 @@
         "date": "日期",
         "payment_status": "付款狀態",
         "fulfillment_status": "配送狀態",
-        "total": "總計"
+        "total": "總計",
+        "view_order": "查看訂單"
       },
       "no_orders_message": "您尚未訂購任何商品。",
       "account_details_title": "帳戶詳細資料",

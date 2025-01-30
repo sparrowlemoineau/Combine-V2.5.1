@@ -1,4 +1,22 @@
 {
+  "video-extra-functions": {
+    "autoplay": {
+      "label": "Ota automaattinen toisto käyttöön",
+      "info": "Video on mykistetty eikä siinä ole ohjaimia."
+    },
+    "video_upload": {
+      "label": "Videotiedosto",
+      "info": "Shopifyn ylläpitämä. Korvaa videon URL-asetukset."
+    },
+    "poster": {
+      "info": "Käytetään julisteena tai varakuva."
+    }
+  },
+  "variant_metafields": {
+    "name": "Varianttimetakenttä",
+    "label": "Varianttimetakentän avain",
+    "info": "Tämä teema voi näyttää varianttimetakentän tuotesivulla. [Lue lisää](https://shopify-support.krownthemes.com/article/884-using-variant-metafields-in-product-pages)."
+  },
   "new_color_swatches": "Tämä teema tukee myös värimallien käyttöä, jotka on luotu kategorian metakentillä. [Lisätietoja](https://help.shopify.com/en/manual/custom-data/metafields/category-metafields/using-category-metafields).",
   "video_controls": "Näytä videon säätimet",
   "sticky_cart_actions": "Ota käyttöön kiinteät ostoskoritoiminnot",
@@ -31,7 +49,9 @@
   },
   "sticky_atc": {
     "label": "Pysyvä lisää koriin",
-    "enable_sticky_atc": "Ota pysyvä lisäys koriin käyttöön"
+    "enable_sticky_atc": "Ota pysyvä lisäys koriin käyttöön",
+    "sticky_atc_style_wide": "Wide",
+    "sticky_atc_style_floating": "Floating"
   },
   "performance": {
     "header": "SEO & suorituskyky",
@@ -918,7 +938,10 @@
           "blocks": {
             "payment": {
               "name": "Maksukuvakkeet",
-              "info": "Näytettävät kuvakkeet määräytyvät kauppasi [maksuasetusten](/admin/settings/payments) sekä asiakkaan alueen ja valuutan mukaan."
+              "info": "Näytettävät kuvakkeet määräytyvät kauppasi [maksuasetusten](/admin/settings/payments) sekä asiakkaan alueen ja valuutan mukaan.",
+              "custom_icons": "Custom icons",
+              "custom_icons_info": "Upload 114 x 72px .png images",
+              "only_show_custom_icons": "Only show the custom icons"
             },
             "text": {
               "name": "Teksti ja sosiaalisen median kuvakkeet"
@@ -939,7 +962,10 @@
             "name": "Aktivoi tili -sivu"
           },
           "login": {
-            "name": "Sisäänkirjautumissivu"
+            "name": "Sisäänkirjautumissivu",
+            "shop_login_button": {
+              "enable": "Ota käyttöön kirjautuminen Shopilla"
+            }
           },
           "account": {
             "name": "Tilisivu"
@@ -966,7 +992,8 @@
           "option__2": "3 saraketta",
           "option__3": "4 saraketta",
           "option__4": "5 saraketta",
-          "option__5": "6 saraketta"
+          "option__5": "6 saraketta",
+          "name_mobile": "Mobile layout"
         },
         "promotion-cards": {
           "name": "Kampanjakortit",
@@ -2567,6 +2594,9 @@
     "popup": {
       "name": "Ponnahdusikkuna",
       "settings": {
+        "enable_scroll_based_trigger": "Ota käyttöön vierityspohjainen laukaisin",
+        "enable_scroll_based_trigger_info": "Näytä ponnahdusikkuna vain, jos sivua vieritetään tiettyyn kohtaan.",
+        "scroll_position": "Vieritysasento",
         "title": {
           "label": "Otsikko"
         },
@@ -3005,7 +3035,8 @@
           },
           "gutter": {
             "label": "Sisämarginaali",
-            "content": "Pienennä yläreunusta"
+            "content": "Pienennä yläreunusta",
+            "content_bottom": "Decrease bottom margin"
           }
         },
         "video": {
@@ -3314,6 +3345,16 @@
             "products_list": {
               "name": "Tuotteet"
             }
+          },
+          "layout": {
+            "option_1": "One row",
+            "option_2": "Two rows"
+          },
+          "menu_style": {
+            "label": "Desktop menu style (one row)",
+            "option_1": "Classic (text)",
+            "option_2": "Minimal (drawer)",
+            "info": "On mobile devices or when the classic menu is too wide to fit the screen's size, the menu will automatically switch to the drawer style."
           }
         },
         "slideshow": {
@@ -3351,6 +3392,31 @@
       "label_1": "Kuva 1",
       "label_2": "Kuva 2",
       "label_3": "Kuva 3"
+    },
+    "cookies": {
+      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent. [Learn more](https://shopify-support.krownthemes.com/article/790-cookies-popup)."
+    }
+  },
+  "color-schemes": {
+    "name_plural": "Color schemes",
+    "name_singular": "Color scheme",
+    "default": "Default color scheme",
+    "default_info": "Used to set colors for account pages, 404 pages, and other pages or sections without color scheme settings.",
+    "drawers": "Modals/drawers",
+    "other": "Other colors"
+  },
+  "bundle-250": {
+    "modal_quick_buy": {
+      "label": "Valintojen näyttötyyppi",
+      "options": {
+        "option_1": "Rivissä (tuotegridissä)",
+        "option_2": "Modal (klikkauksella)"
+      },
+      "settings": {
+        "inline_label": "Rinnakkaisen näytön asetukset",
+        "modal_label": "Modal-näytön asetukset",
+        "modal_info": "Modaalivaihtoehtoja voidaan määrittää Pikahaku-tuotesivun mallissa. [Lue lisää](https://shopify-support.krownthemes.com/article/824-combine-product-page#Editing-the-quick-buy-modal-template-WsS0q)"
+      }
     }
   },
   "bundle-240": {
@@ -3376,7 +3442,8 @@
     "container_border": "Säiliön reuna",
     "gallery_border": "Gallerian reuna",
     "opacity": "Läpinäkyvyys",
-    "secondary_color": "Toissijainen tyylin väri"
+    "secondary_color": "Toissijainen tyylin väri",
+    "header_border_top_info": "For \"two rows\" layout only."
   },
   "footer-menu-items": {
     "open_links_in_new_window": "Avaa linkit uudessa ikkunassa",

@@ -313,16 +313,18 @@
         </a>
 
         {%- if shop.customer_accounts_enabled -%}
-          {%- if customer -%}
-            <a class="area--account icon-button icon-button--text-{{ section.settings.label_style }}" href="{{ routes.account_url }}">
-          {%- else -%}
-            <a class="area--account icon-button icon-button--text-{{ section.settings.label_style }}" href="{{ routes.account_login_url }}">
-          {%- endif -%}
-            <span class="button__icon" role="img" aria-hidden="true">{%- render 'theme-symbols', icon: 'account' -%}</span>
-            {%- if section.settings.label_style != 'none' -%}
-              <span class="icon-button__text {% if section.settings.label_style == 'inline' %} text-animation--underline-in-header {% endif %}">{{ 'general.breadcrumb.account.title' | t }}</span>
+          {% # theme-check-disable %}
+            {%- if customer -%}
+              <a class="area--account icon-button icon-button--text-{{ section.settings.label_style }}" href="{{ routes.account_url }}">
+            {%- else -%}
+              <a class="area--account icon-button icon-button--text-{{ section.settings.label_style }}" href="{{ routes.account_login_url }}">
             {%- endif -%}
-          </a>
+              <span class="button__icon" role="img" aria-hidden="true">{%- render 'theme-symbols', icon: 'account' -%}</span>
+              {%- if section.settings.label_style != 'none' -%}
+                <span class="icon-button__text {% if section.settings.label_style == 'inline' %} text-animation--underline-in-header {% endif %}">{{ 'general.breadcrumb.account.title' | t }}</span>
+              {%- endif -%}
+            </a>
+          {% # theme-check-enable %}
         {%- endif -%}
 
         <a 

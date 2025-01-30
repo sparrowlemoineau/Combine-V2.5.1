@@ -1,3 +1,13 @@
+{% comment %}
+  Renders an icon from our selected icon pack.
+
+  Accepts:
+  - icon: {String} the selected icon.
+
+  Usage:
+  {% render 'theme-symbols', icon: 'cart' %}
+{% endcomment %}
+ 
 {%- if icon == "chevron" -%}
   
   <svg fill="none" height="7" viewBox="0 0 12 7" width="12" xmlns="http://www.w3.org/2000/svg"><g fill="#000"><path d="m1.2334.554688 5.65685 5.656852-.7071.70711-5.656858-5.65686z"/><path d="m11.8247 1.26221-5.65685 5.65685-.7071-.70711 5.65685-5.65685z"/></g></svg>

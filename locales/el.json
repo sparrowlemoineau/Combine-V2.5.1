@@ -42,7 +42,8 @@
       "powered_by_shopify_html": "Το κατάστημα θα υποστηρίζεται από {{ shopify }}"
     },
     "prefixes": {
-      "by": "από"
+      "by": "από",
+      "or": "ή"
     },
     "account_link": {
       "logged_in": "Ο λογαριασμός μου",
@@ -109,6 +110,7 @@
       "form_error": "Σφάλμα",
       "go_to_top": "Μετάβαση στην κορυφή",
       "top": "Κορυφή",
+      "slide": "Εμφάνιση διαφάνειας {{ count }}",
       "time_left": "Χρόνος που απομένει",
       "show_more": "Εμφάνιση περισσότερων",
       "show_less": "Εμφάνιση λιγότερων",
@@ -175,6 +177,7 @@
       "save_amount_html": "Κερδίστε {{ amount }}",
       "save_up_to_amount_html": "Κερδίστε έως και {{ amount }}",
       "save_percent": "Έως και {{ percent }}",
+      "quick_view": "Γρήγορη προβολή",
       "choose_variant_first": "Επιλέξτε πρώτα μια μεταβλητή",
       "select_variant": "Επιλογή {{ variant }}",
       "color_variants_count": {
@@ -346,7 +349,8 @@
         "date": "Ημερομηνία",
         "payment_status": "Κατάσταση πληρωμής",
         "fulfillment_status": "Κατάσταση εκτέλεσης",
-        "total": "Σύνολο"
+        "total": "Σύνολο",
+        "view_order": "Προβολή παραγγελίας"
       },
       "no_orders_message": "Δεν έχετε κάνει καμία παραγγελία ακόμα.",
       "account_details_title": "Στοιχεία λογαριασμού",

@@ -1,9 +1,9 @@
-.css-slider.css-slider--overlay-navigation .css-slider-dot-navigation[style*=block], .css-slider:not(.css-slider--scrollbars-visible) .css-slider-holder {
+.css-slider.css-slider--overlay-navigation .css-slider-dot-navigation[style*=block], .touchevents .css-slider-holder, .css-slider:not(.css-slider--scrollbars-visible) .css-slider-holder {
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.css-slider.css-slider--overlay-navigation .css-slider-dot-navigation[style*=block]::-webkit-scrollbar, .css-slider:not(.css-slider--scrollbars-visible) .css-slider-holder::-webkit-scrollbar {
+.css-slider.css-slider--overlay-navigation .css-slider-dot-navigation[style*=block]::-webkit-scrollbar, .touchevents .css-slider-holder::-webkit-scrollbar, .css-slider:not(.css-slider--scrollbars-visible) .css-slider-holder::-webkit-scrollbar {
   width: 0 !important;
   height: 0 !important;
 }
@@ -384,19 +384,19 @@ html[dir=ltr] .css-slider--scrollbars-visible:after {
 .no-touchevents .css-slider--scrollbars-visible .css-slider-holder:hover::-webkit-scrollbar-track, .no-touchevents .css-slider--scrollbars-visible .css-slider-holder:hover::-webkit-scrollbar, .no-touchevents .css-slider--scrollbars-visible .css-slider-holder:hover::-webkit-scrollbar-thumb {
   visibility: visible;
 }
-.css-slider--scrollbars-visible .css-slider-holder::-webkit-scrollbar-track {
+.no-touchevents .css-slider--scrollbars-visible .css-slider-holder::-webkit-scrollbar-track {
   box-shadow: unset;
   background-color: var(--color-background-main);
   border: none;
   visibility: hidden;
 }
-.css-slider--scrollbars-visible .css-slider-holder::-webkit-scrollbar {
+.no-touchevents .css-slider--scrollbars-visible .css-slider-holder::-webkit-scrollbar {
   width: 0.3125rem;
   height: 0.3125rem;
   background-color: var(--color-background-main);
   visibility: hidden;
 }
-.css-slider--scrollbars-visible .css-slider-holder::-webkit-scrollbar-thumb {
+.no-touchevents .css-slider--scrollbars-visible .css-slider-holder::-webkit-scrollbar-thumb {
   background-color: var(--color-borders-main);
   border: none;
   border-radius: 0.625rem;

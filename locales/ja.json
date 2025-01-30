@@ -42,7 +42,8 @@
       "powered_by_shopify_html": "このショップは {{ shopify }} を使用しています"
     },
     "prefixes": {
-      "by": "によって"
+      "by": "によって",
+      "or": "または"
     },
     "account_link": {
       "logged_in": "マイアカウント",
@@ -109,6 +110,7 @@
       "rating_info": "Rating: {{ rating_value }} out of {{ rating_max }}",
       "top": "上",
       "go_to_top": "トップに移動",
+      "slide": "スライド{{ count }}を表示",
       "time_left": "残り時間",
       "show_more": "さらに表示",
       "show_less": "表示を減らす",
@@ -175,6 +177,7 @@
       "save_amount_html": "{{ amount }}を保存",
       "save_up_to_amount_html": "最大{{ amount }}まで保存",
       "save_percent": "最大{{ percent }}",
+      "quick_view": "クイックビュー",
       "choose_variant_first": "最初にバリエーションを選択",
       "select_variant": "{{ variant }}を選択",
       "color_variants_count": {
@@ -346,7 +349,8 @@
         "date": "日付",
         "payment_status": "支払状況",
         "fulfillment_status": "処理状況",
-        "total": "合計"
+        "total": "合計",
+        "view_order": "注文を見る"
       },
       "no_orders_message": "まだ何も注文していません。",
       "account_details_title": "アカウントの詳細",

@@ -42,7 +42,8 @@
       "powered_by_shopify_html": "Acest magazin va folosi platforma {{ shopify }}"
     },
     "prefixes": {
-      "by": "de"
+      "by": "de",
+      "or": "sau"
     },
     "account_link": {
       "logged_in": "Contul meu",
@@ -109,6 +110,7 @@
       "rating_info": "Evaluare: {{ rating_value }} din {{ rating_max }}",
       "top": "Sus",
       "go_to_top": "Mergeți sus",
+      "slide": "Afișează imaginea {{ count }}",
       "time_left": "Timp rămas",
       "show_more": "Afișează mai mult",
       "show_less": "Afișează mai puțin",
@@ -175,7 +177,8 @@
       "save_amount_html": "Economisiți {{ amount }}",
       "save_up_to_amount_html": "Economisiți până la {{ amount }}",
       "save_percent": "Până la {{ percent }}",
-      "choose_variant_first": "Alegeți mai întâi o variantă",
+      "quick_view": "Vizualizare rapidă",
+      "choose_variant_first": "Alegeți o variantă",
       "select_variant": "Selectați {{ variant }}",
       "color_variants_count": {
         "one": "{{ count }} culoare disponibilă",
@@ -346,7 +349,8 @@
         "date": "Dată",
         "payment_status": "Stare plată",
         "fulfillment_status": "Stare procesare",
-        "total": "Total"
+        "total": "Total",
+        "view_order": "Vezi comanda"
       },
       "no_orders_message": "Încă nu ai făcut nicio comandă.",
       "account_details_title": "Detalii cont",

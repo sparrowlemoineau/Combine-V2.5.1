@@ -1,3 +1,19 @@
+{% comment %}
+  Renders blog item
+
+  Accepts:
+  - article: {Object} article object.
+  - section_blocks: {array} section.blocks array (to access block settings).
+  - show_image: {Boolean} if true, show article featured image (fallbacks to SVG placeholder).
+  - image_aspect_ratio: {String} featured image aspect ratio (needs to be a valid width/height ratio).
+  - image_border_radius: {Integer} featured image custom border radius.
+  - layout: {String} grid classes (used to determine the image sizes attribute).
+  - index: {Integer} index of the article in the list (can be forloop.index).
+  
+  Usage:
+  {% render 'blog-item', article: article, section_blocks: section.blocks, show_image: true, image_aspect_ratio: '1', image_border_radius: 30, layout: 'grid-3', index: forloop.index %}
+{% endcomment %}
+ 
 {%- assign date_format = 'general.date_format.month_day_year' | t -%}
 
 <div class="blog-item spacing--large remove-empty-space"> 

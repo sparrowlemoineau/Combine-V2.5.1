@@ -42,7 +42,8 @@
       "powered_by_shopify_html": "חנות זו תופעל באמצעות {{ shopify }}"
     },
     "prefixes": {
-      "by": "באמצעות"
+      "by": "באמצעות",
+      "or": "אוֹ"
     },
     "account_link": {
       "logged_in": "החשבון שלי",
@@ -109,6 +110,7 @@
       "form_error": "שגיאה",
       "top": "חלק עליון",
       "go_to_top": "עבור למעלה",
+      "slide": "הצג שקופית {{ count }}",
       "time_left": "נותר זמן",
       "show_more": "הצג עוד",
       "show_less": "הצג פחות",
@@ -175,6 +177,7 @@
       "save_amount_html": "חסכו {{ amount }}",
       "save_up_to_amount_html": "לחסוך עד {{ amount }}",
       "save_percent": "עד {{ percent }}",
+      "quick_view": "תצוגה מהירה",
       "choose_variant_first": "בחרו תחילה משתנה",
       "select_variant": "בחירת {{ variant }}",
       "color_variants_count": {
@@ -346,7 +349,8 @@
         "date": "תאריך",
         "payment_status": "סטטוס תשלום",
         "fulfillment_status": "סטטוס מילוי",
-        "total": "סך הכל"
+        "total": "סך הכל",
+        "view_order": "צפייה בהזמנה"
       },
       "no_orders_message": "עדיין לא ביצעת הזמנות.",
       "account_details_title": "פרטי חשבון",

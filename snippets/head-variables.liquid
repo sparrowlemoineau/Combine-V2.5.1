@@ -1,9 +1,15 @@
+{% comment %}
+  This snippet sets the variables for the theme colors and fonts. It is used to generate the CSS variables that are used throughout the theme. 
+  The variables are set based on the theme settings and the selected fonts.
+{% endcomment %}
+
 {%- liquid
   assign headings_font_primary = settings.headings_font_primary
   assign body_font_primary = settings.body_font_primary
   assign body_font_secondary = settings.body_font_secondary
 -%}
 
+{% # theme-check-disable %}
 {%- unless headings_font_primary.system? -%}
   <link rel="preload" href="{{ headings_font_primary | font_url }}" as="font" type="font/woff2" crossorigin>
 {%- endunless -%}
@@ -15,6 +21,7 @@
 {%- unless body_font_secondary.system? or body_font_primary == body_font_secondary -%}
   <link rel="preload" href="{{ body_font_secondary | font_url }}" as="font" type="font/woff2" crossorigin>
 {%- endunless -%}
+{% # theme-check-enable %}
 
 <style type="text/css">
 

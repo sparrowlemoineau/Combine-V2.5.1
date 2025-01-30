@@ -42,7 +42,8 @@
       "powered_by_shopify_html": "Този магазин ще се поддържа от {{ shopify }}"
     },
     "prefixes": {
-      "by": "от"
+      "by": "от",
+      "or": "или"
     },
     "account_link": {
       "logged_in": "Моят профил",
@@ -109,6 +110,7 @@
       "form_error": "Грешка",
       "go_to_top": "Връщане в началото",
       "top": "На върха",
+      "slide": "Покажи слайд {{ count }}",
       "time_left": "Оставащо време",
       "show_more": "Показване на още",
       "show_less": "Показване на по - малко",
@@ -175,6 +177,7 @@
       "save_amount_html": "Спестете {{ amount }}",
       "save_up_to_amount_html": "Спестете до {{ amount }}",
       "save_percent": "До {{ percent }}",
+      "quick_view": "Бърз преглед",
       "choose_variant_first": "Първо изберете вариант",
       "select_variant": "Изберете {{ variant }}",
       "color_variants_count": {
@@ -346,7 +349,8 @@
         "date": "Дата",
         "payment_status": "Статус на плащането",
         "fulfillment_status": "Статус на поръчката",
-        "total": "Обща стойност"
+        "total": "Обща стойност",
+        "view_order": "Преглед на поръчката"
       },
       "no_orders_message": "Все още нямате поръчка.",
       "account_details_title": "Данни за профила",

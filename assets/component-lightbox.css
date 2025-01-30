@@ -139,18 +139,19 @@ html[dir=ltr] .basicLightboxCloseWithIcon {
   height: 18px;
 }
 .basicLightboxCloseWithIcon svg path {
-  fill: var(--main-text);
+  stroke: var(--color-text-main);
 }
 
 .page-popup {
   width: 80vw;
   max-width: 780px;
   margin: 50px auto;
-  background: var(--main-background);
+  background: var(--color-background-main);
   padding: 70px 50px;
   flex-direction: column;
   position: relative;
   overflow: auto;
+  border-radius: var(--border-radius-widgets);
   max-height: calc(100vh - 100px);
   overflow: scroll;
 }
@@ -170,7 +171,7 @@ html[dir=ltr] .basicLightboxCloseWithIcon {
   font-size: calc(0.4px * var(--base-headings-size) + 0px) !important;
 }
 .page-popup .basicLightboxClose {
-  color: var(--main-text);
+  color: var(--color-text-main);
   opacity: 1;
   top: 5px;
   transition: all 100ms linear;

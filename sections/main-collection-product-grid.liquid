@@ -24,11 +24,13 @@
             assign grid_class_desktop = 'grid-3 grid-portable-2 grid-palm-1 grid-offset-3 grid-offset-portable-2'
             assign pagination_offset_class = 'grid-offset-3 grid-offset-portable-2'
             assign sizes_class = 'grid-4'
+            assign heading_continer_desktop = 'grid-offset-4 grid-offset-lap-2'
           else
             assign parent_class_desktop = 'grid-3 grid-portable-3 grid-lap-2 grid-palm-1'
             assign grid_class_desktop = 'grid-2 grid-portable-2 grid-offset-2 grid-offset-portable-2'
             assign pagination_offset_class = 'grid-offset-2 grid-offset-portable-2'
             assign sizes_class = 'grid-3'
+            assign heading_continer_desktop = 'grid-offset-3 grid-offset-lap-2'
           endif
           
           if section.settings.layout_mobile == 'grid-palm-1'
@@ -44,7 +46,7 @@
           endif
         -%}
 
-        <div class="grid {{ parent_class_desktop }} {{ parent_class_mobile }} grid--layout">
+        <div class="grid {{ parent_class_desktop }} {{ parent_class_mobile }} grid--layout grid--align-items-start">
 
           {%- unless collection.products_count == 0 -%}
             <aside class="facets-sidebar element--is-sticky">
@@ -58,7 +60,7 @@
 
           <div id="CollectionProductGrid" class="grid grid--layout {{ grid_class_desktop }} {{ grid_class_mobile }}">
             {%- unless collection.products_count == 0 -%}
-              <div class="collection-heading-container grid grid--layout grid-1 grid-palm-1 {{ heading_continer_mobile }}">{%- render 'facets-header', results: collection -%}</div>
+              <div class="collection-heading-container grid grid--layout grid-1 grid-palm-1 {{ heading_continer_mobile }}  {{ heading_continer_desktop }}">{%- render 'facets-header', results: collection -%}</div>
             {%- endunless -%}
             <div id="main-collection-product-grid" data-id="{{ section.id }}" class="collection grid grid--layout {{ grid_class_desktop }} {{ grid_class_mobile }}">
 
@@ -90,7 +92,6 @@
           endif
         -%}
 
-        
         <div id="CollectionProductGrid">
           <div id="main-collection-product-grid" data-id="{{ section.id }}" class="collection grid grid--layout {{ grid_class_desktop }} {{ grid_class_mobile }}">
 
@@ -98,7 +99,7 @@
           
             {%- for product in collection.products -%}
               {%- liquid
-                  render 'product-item', product: product, section_blocks: section.blocks, index: forloop.index, layout: grid_class_desktop, mobile_layout: section.settings.layout_mobile, show_badges: settings.show_badges, section_id: section.id, product_collection: collection
+                  render 'product-item', product: product, section_blocks: section.blocks, index: forloop.index, layout: sizes_class, mobile_layout: section.settings.layout_mobile, section_id: section.id, product_collection: collection, force_preload: true
               -%}
 
             {%- else -%}
@@ -130,10 +131,12 @@
           </div>
         {%- endif -%}
 
-          </div>
-        </div>
-
       {%- if section.settings.filters_position == "sidebar" -%}
+            </div>
+          </div>    
+        </div>
+      {%- else -%}
+          </div>
         </div>
       {%- endif -%}
 
@@ -161,10 +164,12 @@
   <script src="{{ 'component-facets.js' | asset_url }}" defer></script>
 {%- endif -%}
 
+<div style="display:none" data-js-product-item-skeleton>{%- render 'product-item-skeleton', section_blocks: section.blocks, layout: grid_class_desktop, mobile_layout: section.settings.layout_mobile %}</div>
+
 {% schema %}
   {
     "name": "t:sections.main-collection-product-grid.name",
-    "class": "container--vertical-space container--remove-margin-before mount-quick-buy mount-css-slider no-inert",
+    "class": "container--vertical-space container--remove-margin-before mount-quick-buy mount-css-slider no-inert has-skeleton",
     "blocks": [
       {
         "type": "price",
@@ -262,6 +267,22 @@
         "limit": 1,
         "settings": [
           {
+            "type": "select",
+            "label": "t:bundle-250.modal_quick_buy.label",
+            "id": "type",
+            "options": [
+              {
+                "value": "inline",
+                "label": "t:bundle-250.modal_quick_buy.options.option_1"
+              },
+              {
+                "value": "modal",
+                "label": "t:bundle-250.modal_quick_buy.options.option_2"
+              }
+            ],
+            "default": "inline"
+          },
+          {
             "type": "checkbox",
             "id": "show_only_available",
             "label": "t:sections.bundle-extra-words.sections.product_grid.blocks.quick_buy.settings.show_only_available.label",
@@ -269,16 +290,20 @@
           },
           {
             "type": "checkbox",
+            "id": "show_price",
+            "label": "t:sections.bundle-extra-words.sections.product_grid.blocks.quick_buy.settings.show_price.label",
+            "default": true
+          },
+          {
+            "type": "header",
+            "content": "t:bundle-250.modal_quick_buy.settings.inline_label"
+          },
+          {
+            "type": "checkbox",
             "id": "variant_default",
             "label": "t:sections.bundle-extra-words.sections.product_grid.blocks.quick_buy.settings.variant_default.label",
             "info": "t:sections.bundle-extra-words.sections.product_grid.blocks.quick_buy.settings.variant_default.info",
             "default": false
-          },
-          {
-            "type": "checkbox",
-            "id": "show_price",
-            "label": "t:sections.bundle-extra-words.sections.product_grid.blocks.quick_buy.settings.show_price.label",
-            "default": true
           },
           { 
             "type": "select",
@@ -299,6 +324,11 @@
               }
             ],
             "default": "hide"
+          },
+          {
+            "type": "header",
+            "content": "t:bundle-250.modal_quick_buy.settings.modal_label",
+            "info": "t:bundle-250.modal_quick_buy.settings.modal_info"
           }
         ]
       },
@@ -322,7 +352,7 @@
         "id": "products_number",
         "label": "t:sections.main-collection-product-grid.settings.products_per_page.label",
         "min": 12,
-        "max": 64,
+        "max": 48,
         "step": 4,
         "default": 24
       },

@@ -1,6 +1,17 @@
+{% comment %}
+  Renders filtering options header (contains active filters and product count).
+
+  Accepts:
+  - results: {Object} collection or search object.
+  - offset: {Integer} offset of the current page.
+  - page_size: {Integer} number of products per page.
+
+  Usage:
+  {% render 'facets-header', results: results, offset: offset, page_size: page_size %}
+{% endcomment %}
+
 {%- liquid
   assign sort_by = results.sort_by | default: results.default_sort_by
-  assign total_active_values = 0
   if results.url
     assign results_url = results.url
   else 

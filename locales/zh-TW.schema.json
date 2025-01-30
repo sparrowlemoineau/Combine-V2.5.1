@@ -1,4 +1,22 @@
 {
+  "video-extra-functions": {
+    "autoplay": {
+      "label": "啟用自動播放",
+      "info": "影片將被靜音且無控制按鈕。"
+    },
+    "video_upload": {
+      "label": "影片文件",
+      "info": "由 Shopify 託管。取代影片 URL 設定。"
+    },
+    "poster": {
+      "info": "用作海報或後備圖片。"
+    }
+  },
+  "variant_metafields": {
+    "name": "變體元欄位",
+    "label": "變體元欄位鍵",
+    "info": "此佈景主題可以在產品頁面上顯示變體元欄位。 [了解更多](https://shopify-support.krownthemes.com/article/884-using-variant-metafields-in-product-pages)."
+  },
   "new_color_swatches": "此主題還支援使用類別後設欄位建立的顏色樣本。 [了解更多](https://help.shopify.com/en/manual/custom-data/metafields/category-metafields/using-category-metafields).",
   "video_controls": "顯示視頻控制",
   "sticky_cart_actions": "啟用粘性抽屜購物車操作",
@@ -31,7 +49,9 @@
   },
   "sticky_atc": {
     "label": "黏性加入購物車",
-    "enable_sticky_atc": "啟用黏性加入購物車"
+    "enable_sticky_atc": "啟用黏性加入購物車",
+    "sticky_atc_style_wide": "Wide",
+    "sticky_atc_style_floating": "Floating"
   },
   "performance": {
     "header": "SEO與效能",
@@ -300,14 +320,17 @@
         "footer_group": "頁尾群組",
         "header_group": "頁首群組",
         "overlay_group": "重疊群組",
-        "embellishments": "修飾線"
+        "embellishments": "修飾線",
+        "show_button": "Show button",
+        "optional": "Optional"
       },
       "text": {
         "icons_info": "若要視覺化並下載更多圖示，請造訪 [此連結](https://resources.krownthemes.com/icons/)。"
       },
       "borders": {
         "top_border": "上框線",
-        "bottom_border": "下框線"
+        "bottom_border": "下框線",
+        "show_border": "Show border"
       },
       "colors": {
         "heading_background": "標題背景",
@@ -334,13 +357,18 @@
                 "option_2": "底端",
                 "option_3": "左",
                 "option_4": "右"
-              }
-            }
-          }
+              },
+              "show_tooltip": "Show tooltip"
+            },
+            "mobile_info": "Only if a mobile image is set"
+          },
+          "image_on_mobile": "Mobile image",
+          "position_on_mobile": "Position on mobile"
         },
         "scrolling_images": {
           "label": "正在捲動影像",
-          "image_size": "影像大小"
+          "image_size": "影像大小",
+          "columns": "Columns"
         },
         "video": {
           "label": "影片",
@@ -527,6 +555,12 @@
             "border_color": "框線顏色"
           }
         }
+      },
+      "seo_late": {
+        "breadcrumbs": {
+          "label": "Improve product breadcrumb navigation",
+          "info": "Adds collection names to the breadcrumb navigation, by duplicating product url's. [Learn more](https://shopify-support.krownthemes.com/article/697-seo#breadcrumbs)"
+        }
       }
     },
     "local-extra-words": {
@@ -539,7 +573,8 @@
           "settings": {
             "borders": "框線",
             "hide_border": "隱藏框線",
-            "accent": "醒目"
+            "accent": "醒目",
+            "overlay": "Overlay"
           }
         },
         "typography": {
@@ -596,6 +631,14 @@
             "amount": {
               "label": "免運最少金額",
               "info": "請寫數字，不含字母或特殊字元。"
+            },
+            "info": "This feature only works with a single currency and shipping method. If you're using multiple shipping methods or currencies, it might show false values to the customer."
+          },
+          "settings": {
+            "media": {
+              "header": "Media aspect ratio",
+              "label": "Aspect ratio",
+              "info_cart": "Changes the aspect ratio for small product thumbnails used in the cart, search popup and some other areas that require small product thumbnails."
             }
           }
         },
@@ -644,10 +687,21 @@
               "name__3": "自訂徽章 3",
               "text": "文字",
               "tags": "標籤",
-              "color": "背景色彩"
+              "color": "背景色彩",
+              "text_color": "Text color"
             }
           },
-          "icons_list": "動態圖示清單"
+          "icons_list": "動態圖示清單",
+          "products-list": {
+            "name": "Products list"
+          }
+        },
+        "embellishments": {
+          "settings": {
+            "show_gotop": {
+              "label": "Show go to top button"
+            }
+          }
         }
       },
       "sections": {
@@ -1053,6 +1107,9 @@
           "blocks": {
             "shipping-calculator": {
               "name": "運送小算盤"
+            },
+            "related-products": {
+              "info": "The product recommendations are based on products that are commonly purchased together or products in related collections. If there are no recommendations, the block will not appear."
             }
           }
         },
@@ -1071,7 +1128,9 @@
           "name": "產品頁面",
           "settings": {
             "gallery_pagination": "圖庫滑桿分頁",
-            "show_border": "在圖庫周圍顯示框線"
+            "show_border": "在圖庫周圍顯示框線",
+            "gallery_border": "Gallery border",
+            "gallery_border_color": "Gallery border color"
           },
           "blocks": {
             "pickup_availability": {
@@ -1158,7 +1217,13 @@
           "blocks": {
             "payment": {
               "name": "付款圖示",
-              "info": "顯示的圖示取決於貴商店的 [付款設定](/管理員/設定/付款) 及顧客所在地區和貨幣。"
+              "info": "顯示的圖示取決於貴商店的 [付款設定](/管理員/設定/付款) 及顧客所在地區和貨幣。",
+              "custom_icons": "Custom icons",
+              "custom_icons_info": "Upload 114 x 72px .png images",
+              "only_show_custom_icons": "Only show the custom icons"
+            },
+            "text": {
+              "name": "Text & social icons"
             }
           }
         },
@@ -1176,7 +1241,10 @@
             "name": "啟動帳戶頁面"
           },
           "login": {
-            "name": "登入頁面"
+            "name": "登入頁面",
+            "shop_login_button": {
+              "enable": "啟用以 Shop 登入"
+            }
           },
           "account": {
             "name": "帳戶頁面"
@@ -1203,7 +1271,8 @@
           "option__2": "3 欄",
           "option__3": "4 欄",
           "option__4": "5 欄",
-          "option__5": "6 欄"
+          "option__5": "6 欄",
+          "name_mobile": "Mobile layout"
         },
         "promotion-cards": {
           "name": "促銷卡片",
@@ -1466,6 +1535,14 @@
             "countdown_hour": "結束時間",
             "countdown_timezone": "時區",
             "size": "橫幅高度"
+          }
+        },
+        "footer": {
+          "blocks": {
+            "menu": {
+              "name": "Menu",
+              "label": "Menu"
+            }
           }
         }
       }
@@ -2509,6 +2586,9 @@
     "popup": {
       "name": "快顯",
       "settings": {
+        "enable_scroll_based_trigger": "啟用基於滾動的觸發器",
+        "enable_scroll_based_trigger_info": "僅在頁面滾動到特定位置時顯示彈出窗口。",
+        "scroll_position": "滾動位置",
         "title": {
           "label": "標題"
         },
@@ -2763,6 +2843,14 @@
         }
       }
     },
+    "words_210": {
+      "text_columns": {
+        "name": "Text columns",
+        "block": {
+          "name": "Text"
+        }
+      }
+    },
     "bundle-extra-words-v110": {
       "settings_schema": {
         "labels": {
@@ -2811,7 +2899,8 @@
             "option_6": "四分之一",
             "option_7": "三分之一",
             "option_8": "二分之一",
-            "option_9": "三分之二"
+            "option_9": "三分之二",
+            "option_10": "Full"
           },
           "spacing": "文本间距"
         },
@@ -2883,6 +2972,10 @@
           "quick_buy": {
             "name": "快速购买弹出窗口",
             "info": "此主题可以在用户单击“添加到购物车”按钮时显示快速购买弹出窗口。"
+          },
+          "rating": {
+            "app": "Reviews app",
+            "default_option": "Default"
           }
         },
         "cart": {
@@ -2942,7 +3035,8 @@
           },
           "gutter": {
             "label": "栏距",
-            "content": "减少上边距"
+            "content": "减少上边距",
+            "content_bottom": "Decrease bottom margin"
           }
         },
         "video": {
@@ -3248,6 +3342,16 @@
             "products_list": {
               "name": "产品"
             }
+          },
+          "layout": {
+            "option_1": "One row",
+            "option_2": "Two rows"
+          },
+          "menu_style": {
+            "label": "Desktop menu style (one row)",
+            "option_1": "Classic (text)",
+            "option_2": "Minimal (drawer)",
+            "info": "On mobile devices or when the classic menu is too wide to fit the screen's size, the menu will automatically switch to the drawer style."
           }
         },
         "slideshow": {
@@ -3278,6 +3382,9 @@
               "info": "用户鼠标在选项卡上悬停时，暂停自动播放。"
             }
           }
+        },
+        "countdown": {
+          "name": "Countdown"
         }
       }
     },
@@ -3285,6 +3392,31 @@
       "label_1": "影像 1",
       "label_2": "影像 2",
       "label_3": "影像 3"
+    },
+    "cookies": {
+      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent. [Learn more](https://shopify-support.krownthemes.com/article/790-cookies-popup)."
+    }
+  },
+  "color-schemes": {
+    "name_plural": "Color schemes",
+    "name_singular": "Color scheme",
+    "default": "Default color scheme",
+    "default_info": "Used to set colors for account pages, 404 pages, and other pages or sections without color scheme settings.",
+    "drawers": "Modals/drawers",
+    "other": "Other colors"
+  },
+  "bundle-250": {
+    "modal_quick_buy": {
+      "label": "選項顯示類型",
+      "options": {
+        "option_1": "內聯（在產品網格中）",
+        "option_2": "模態（點擊時）"
+      },
+      "settings": {
+        "inline_label": "內聯顯示設置",
+        "modal_label": "模態顯示設置",
+        "modal_info": "模態選項可以在快速購買產品頁面模板中配置。 [了解更多](https://shopify-support.krownthemes.com/article/824-combine-product-page#Editing-the-quick-buy-modal-template-WsS0q)"
+      }
     }
   },
   "bundle-240": {
@@ -3310,7 +3442,8 @@
     "container_border": "容器邊框",
     "gallery_border": "畫廊邊框",
     "opacity": "不透明度",
-    "secondary_color": "次要樣式顏色"
+    "secondary_color": "次要樣式顏色",
+    "header_border_top_info": "For \"two rows\" layout only."
   },
   "footer-menu-items": {
     "open_links_in_new_window": "在新窗口中打开链接",

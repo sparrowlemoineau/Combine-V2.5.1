@@ -42,7 +42,8 @@
       "powered_by_shopify_html": "This shop will be powered by {{ shopify }}"
     },
     "prefixes": {
-      "by": "by"
+      "by": "by",
+      "or": "or"
     },
     "account_link": {
       "logged_in": "My Account",
@@ -109,6 +110,7 @@
       "form_error": "Error",
       "go_to_top": "Go to top",
       "top": "Top",
+      "slide": "Show slide {{ count }}",
       "time_left": "Time left",
       "show_more": "Show more",
       "show_less": "Show less",
@@ -175,7 +177,8 @@
       "save_amount_html": "Save {{ amount }}",
       "save_up_to_amount_html": "Save up to {{ amount }}",
       "save_percent": "Up to {{ percent }}",
-      "choose_variant_first": "Choose a variant first",
+      "quick_view": "Quick view",
+      "choose_variant_first": "Choose a variant",
       "select_variant": "Select {{ variant }}",
       "color_variants_count": {
         "one": "{{ count }} color available",
@@ -236,7 +239,7 @@
     "subtotal": "Subtotal",
     "discount": "Discount",
     "discounts": "Discounts",
-    "checkout": "Check Out",
+    "checkout": "Checkout",
     "update": "Update cart",
     "note": "Order instructions",
     "policies": {
@@ -346,7 +349,8 @@
         "date": "Date",
         "payment_status": "Payment Status",
         "fulfillment_status": "Fulfillment Status",
-        "total": "Total"
+        "total": "Total",
+        "view_order": "View order"
       },
       "no_orders_message": "You haven't placed any orders yet.",
       "account_details_title": "Account Details",

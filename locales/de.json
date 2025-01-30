@@ -42,7 +42,8 @@
       "powered_by_shopify_html": "Dieser Shop wird mit Hilfe von {{ shopify }} betrieben werden."
     },
     "prefixes": {
-      "by": "von"
+      "by": "von",
+      "or": "oder"
     },
     "account_link": {
       "logged_in": "Mein Konto",
@@ -109,6 +110,7 @@
       "rating_info": "Rating: {{ rating_value }} out of {{ rating_max }}",
       "top": "Obere",
       "go_to_top": "Nach oben gehen",
+      "slide": "Zeige Folie {{ count }}",
       "time_left": "Verbleibende Zeit",
       "show_more": "Mehr anzeigen",
       "show_less": "Weniger anzeigen",
@@ -175,7 +177,8 @@
       "save_amount_html": "Spare {{ amount }}",
       "save_up_to_amount_html": "Sparen Sie bis zu {{ amount }}",
       "save_percent": "Bis zu {{ percent }}",
-      "choose_variant_first": "Wähle zuerst eine Variante",
+      "quick_view": "Schnellansicht",
+      "choose_variant_first": "Wähle eine Variante",
       "select_variant": "Wählen {{ variant }}",
       "color_variants_count": {
         "one": "{{ count }} Farbe verfügbar",
@@ -258,8 +261,8 @@
     "added_items_count": {
       "one": "{{ count }} Produkt wurde Ihrem Warenkorb hinzugefügt",
       "other": "{{ count }} Produkte wurden Ihrem Warenkorb hinzugefügt",
-      "one_html": "<strong>1 product</strong><br/> wurde zu deinem Einkaufswagen hinzugefügt",
-      "other_html": "<strong>{{ count }} products</strong><br/> wurden zu deinem Einkaufswagen hinzugefügt"
+      "one_html": "<strong>1 Produkt</strong><br/> wurde zu deinem Einkaufswagen hinzugefügt",
+      "other_html": "<strong>{{ count }} Produkte</strong><br/> wurden zu deinem Einkaufswagen hinzugefügt"
     },
     "free_shipping_remaining_html": "Ihnen fehlen noch {{ remaining_amount }} für den kostenlosen Versand.",
     "free_shipping_eligible": "Sie haben Anspruch auf kostenlosen Versand!",
@@ -346,7 +349,8 @@
         "date": "Datum",
         "payment_status": "Zahlungsstatus",
         "fulfillment_status": "Lieferstatus",
-        "total": "Gesamt"
+        "total": "Gesamt",
+        "view_order": "Bestellung ansehen"
       },
       "no_orders_message": "Sie haben noch keine Bestellungen aufgegeben.",
       "account_details_title": "Kontodetails",

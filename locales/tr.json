@@ -42,7 +42,8 @@
       "powered_by_shopify_html": "Bu mağaza {{ shopify }} tarafından desteklenecektir"
     },
     "prefixes": {
-      "by": "ile"
+      "by": "ile",
+      "or": "veya"
     },
     "account_link": {
       "logged_in": "Hesabım",
@@ -109,6 +110,7 @@
       "rating_info": "Puan: {{ rating_value }} üzerinden {{ rating_max }}",
       "top": "Top",
       "go_to_top": "En üste git",
+      "slide": "Slayt {{ count }} göster",
       "time_left": "Kalan süre",
       "show_more": "Daha fazlasını göster",
       "show_less": "Daha azını göster",
@@ -175,7 +177,8 @@
       "save_amount_html": "{{ amount }} kaydet",
       "save_up_to_amount_html": "{{ amount }}'e kadar tasarruf edin",
       "save_percent": "{{ percent }}'ye kadar",
-      "choose_variant_first": "Önce bir varyant seç",
+      "quick_view": "Hızlı görünüm",
+      "choose_variant_first": "Bir varyant seç",
       "select_variant": "{{ variant }} ögesini seç",
       "color_variants_count": {
         "one": "{{ count }} renk mevcut",
@@ -346,7 +349,8 @@
         "date": "Tarih",
         "payment_status": "Ödeme Durumu",
         "fulfillment_status": "Tamamlanma Durumu",
-        "total": "Toplam"
+        "total": "Toplam",
+        "view_order": "Siparişi görüntüle"
       },
       "no_orders_message": "Henüz herhangi bir sipariş vermedin.",
       "account_details_title": "Hesap Detayları",
@@ -459,8 +463,8 @@
     "shop_link": "Alışverişe başlayın",
     "print": "Yazdır",
     "recipient": {
+      "email_label": "Alıcı e-posta adresi",
       "checkbox": "Bunu hediye olarak göndermek istiyorum",
-      "email_label_optional": "Alıcı e-postası (isteğe bağlı)",
       "name_label": "Alıcı adı (isteğe bağlı)",
       "message_label": "Mesaj (isteğe bağlı)",
       "max_characters": "Maksimum {{ max_chars }} karakter"

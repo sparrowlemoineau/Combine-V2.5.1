@@ -1,3 +1,18 @@
+{% comment %}
+  Renders the product media (used in product page galleries).
+  
+  Accepts:
+  - media: {Object} the media object (product.media).
+  - aspect_ratio: {String} image aspect ratio (needs to be a valid width/height ratio).
+  - fit: {Boolean} whether the image should be cropped to fit the container.
+  - enable_zoom: {Boolean} enable image zoom.
+  - loop: {Boolean} enables video loop.
+  - index: {Integer} index of the media in the list (can be forloop.index).
+  
+  Usage:
+  {% render 'product-media', media: media, aspect_ratio: '1', fit: true, enable_zoom: true, loop: true, index: forloop.index %}
+{% endcomment %}
+
 <div 
   id="FeaturedMedia-{{ section.id }}-{{ media.id }}" 
   class="product-gallery-item element--border-radius {% if section.settings.show_border %} element--has-border--body element--has-border--thin {% endif %} element--border-radius"

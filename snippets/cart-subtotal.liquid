@@ -1,3 +1,13 @@
+{% comment %}
+  Renders cart subtotal, checkout buttons, notes and shipping notice (page version).
+
+	Accepts: 
+	- type: {String} 'page' or 'sidebar'.
+
+  Usage:
+  {% render 'cart-subtotal', type: 'page' %}
+{% endcomment %}
+
 <div id="AjaxCartSubtotal">
 
   {%- liquid
@@ -60,8 +70,10 @@
 		{%- if settings.cart_notes_enable and type == 'page' -%}
 			<div class="cart__instructions">
 				<div class="form-field">
-					<label for="cartSpecialInstructions">{{ 'cart.note' | t }}</label>
-					<textarea name="note" id="cartSpecialInstructions" form="cart">{{ cart.note }}</textarea>
+					<cart-note>
+						<label for="CartPage-Note">{{ 'cart.note' | t }}</label>
+						<textarea id="CartPage-Note" name="note">{{ cart.note }}</textarea>
+					</cart-note> 
 				</div>
 			</div>
 		{%- endif -%}

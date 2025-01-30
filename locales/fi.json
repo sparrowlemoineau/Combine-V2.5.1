@@ -42,7 +42,8 @@
       "powered_by_shopify_html": "Tämän kaupan palvelun tarjoaa {{ shopify }}"
     },
     "prefixes": {
-      "by": "tarjoaa"
+      "by": "tarjoaa",
+      "or": "tai"
     },
     "account_link": {
       "logged_in": "Oma tilini",
@@ -109,6 +110,7 @@
       "form_error": "Virhe",
       "go_to_top": "Siirry ylös",
       "top": "Ylhäällä",
+      "slide": "Näytä kalvo {{ count }}",
       "time_left": "Aikaa jäljellä",
       "show_more": "Näytä enemmän",
       "show_less": "Näytä vähemmän",
@@ -175,7 +177,8 @@
       "save_amount_html": "Säästä {{ amount }}",
       "save_up_to_amount_html": "Säästä jopa {{ amount }}",
       "save_percent": "Jopa {{ percent }}",
-      "choose_variant_first": "Valitse ensin variantti",
+      "quick_view": "Pikanäkymä",
+      "choose_variant_first": "Valitse variantti",
       "select_variant": "Valitse {{ variant }}",
       "color_variants_count": {
         "one": "{{ count }} väri käytettävissä",
@@ -346,7 +349,8 @@
         "date": "Päivämäärä",
         "payment_status": "Maksun tila",
         "fulfillment_status": "Toimituksen tila",
-        "total": "Yhteensä"
+        "total": "Yhteensä",
+        "view_order": "Näytä tilaus"
       },
       "no_orders_message": "Et ole vielä tehnyt tilauksia.",
       "account_details_title": "Käyttäjätilin tiedot",

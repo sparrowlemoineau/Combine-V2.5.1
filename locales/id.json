@@ -42,7 +42,8 @@
       "powered_by_shopify_html": "Toko ini akan didukung oleh {{ shopify }}"
     },
     "prefixes": {
-      "by": "oleh"
+      "by": "oleh",
+      "or": "atau"
     },
     "account_link": {
       "logged_in": "Akun saya",
@@ -109,6 +110,7 @@
       "form_error": "Kesalahan",
       "go_to_top": "Pergi ke atas",
       "top": "Atas",
+      "slide": "Tampilkan slide {{ count }}",
       "time_left": "Waktu tersisa",
       "show_more": "Tampilkan lebih banyak",
       "show_less": "Tampilkan lebih sedikit",
@@ -175,7 +177,8 @@
       "save_amount_html": "Hemat {{ amount }}",
       "save_up_to_amount_html": "Hemat hingga {{ amount }}",
       "save_percent": "Hingga {{ percent }}",
-      "choose_variant_first": "Pilih varian terlebih dahulu",
+      "quick_view": "Lihat sekilas",
+      "choose_variant_first": "Pilih varian",
       "select_variant": "Pilih {{ variant }}",
       "color_variants_count": {
         "one": "{{ count }} warna tersedia",
@@ -236,7 +239,7 @@
     "subtotal": "Subtotal",
     "discount": "Diskon",
     "discounts": "Diskon",
-    "checkout": "Check Out",
+    "checkout": "Checkout",
     "update": "Perbarui keranjang",
     "note": "Instruksi pesanan",
     "policies": {
@@ -346,7 +349,8 @@
         "date": "Tanggal",
         "payment_status": "Status Pembayaran",
         "fulfillment_status": "Status Pemenuhan",
-        "total": "Total"
+        "total": "Total",
+        "view_order": "Lihat pesanan"
       },
       "no_orders_message": "Anda belum membuat pesanan.",
       "account_details_title": "Detail Akun",

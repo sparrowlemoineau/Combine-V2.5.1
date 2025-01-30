@@ -181,3 +181,25 @@ if ( ! window.refreshCart ) {
 	}
 
 }
+
+if ( ! customElements.get('cart-note') ) {
+  customElements.define(
+    'cart-note',
+    class CartNote extends HTMLElement {
+      constructor() {
+        super();
+        this.addEventListener(
+          'input',
+          debounce(event => {
+            const body = JSON.stringify({ note: event.target.value });
+            fetch(`${KROWN.settings.routes.cart_update_url}`, { 
+							method: 'POST',
+							headers: { 'Content-Type': 'application/json', 'Accept': 'application/javascript' },
+							body 
+						});
+		  		}, 150)
+				);
+      }
+    }
+  );
+}

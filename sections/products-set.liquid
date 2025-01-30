@@ -62,7 +62,7 @@
       {%- liquid 
         if section.settings.products != blank
           for product in section.settings.products
-            render 'product-item', product: product, section_blocks: section.blocks, index: forloop.index, layout: 'set', sizes: sizes, show_badges: settings.show_badges, add_quick_buy: true, defer_add: true, unavailable_variants: 'hide', default_to_first_variant: false, section_id: section.id
+            render 'product-item', product: product, section_blocks: section.blocks, index: forloop.index, layout: 'set', sizes: sizes, add_quick_buy: true, defer_add: true, unavailable_variants: 'hide', default_to_first_variant: false, section_id: section.id
           endfor
         else
           for i in (1..3)
@@ -109,10 +109,13 @@
 
 </div>
 
+{%- assign sizes_skeleton =  sizes | remove: 'sizes=' | remove: '"' -%}
+<div style="display:none" data-js-product-item-skeleton>{%- render 'product-item-skeleton',  section_blocks: section.blocks, layout: 'set', sizes: sizes_skeleton, mobile_layout: section.settings.layout_mobile, add_quick_buy: true, unavailable_variants: 'hide', default_to_first_variant: false, defer_add: true -%}</div>
+
 {% schema %} 
 {
   "name": "t:sections.bundle-extra-words.sections.products_set.name",
-  "class": "mount-quick-buy mount-product-bundler",
+  "class": "mount-quick-buy mount-product-bundler has-skeleton",
   "settings": [
     {
       "type": "header",

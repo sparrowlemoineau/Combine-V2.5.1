@@ -42,7 +42,8 @@
       "powered_by_shopify_html": "Denne butikken vil bli drevet av {{ shopify }}"
     },
     "prefixes": {
-      "by": "av"
+      "by": "av",
+      "or": "eller"
     },
     "account_link": {
       "logged_in": "Min konto",
@@ -109,6 +110,7 @@
       "rating_info": "Rating: {{ rating_value }} out of {{ rating_max }}",
       "top": "Topp",
       "go_to_top": "Gå til toppen",
+      "slide": "Vis lysbilde {{ count }}",
       "time_left": "Tid igjen",
       "show_more": "Vis mer",
       "show_less": "Vis mindre",
@@ -175,7 +177,8 @@
       "save_amount_html": "Lagre {{ amount }}",
       "save_up_to_amount_html": "Spar opptil {{ amount }}",
       "save_percent": "Opptil {{ percent }}",
-      "choose_variant_first": "Velg en variant først",
+      "quick_view": "Hurtigvisning",
+      "choose_variant_first": "Velg en variant",
       "select_variant": "Velg {{ variant }}",
       "color_variants_count": {
         "one": "{{ count }} farge er tilgjengelig",
@@ -346,7 +349,8 @@
         "date": "Dato",
         "payment_status": "Betalingsstatus",
         "fulfillment_status": "Fullførelsesstatus",
-        "total": "Total"
+        "total": "Total",
+        "view_order": "Vis bestilling"
       },
       "no_orders_message": "Du har ikke lagt inn noen bestillinger enda.",
       "account_details_title": "Kontodetaljer",

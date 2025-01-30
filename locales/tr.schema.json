@@ -1,4 +1,22 @@
 {
+  "video-extra-functions": {
+    "autoplay": {
+      "label": "Otomatik oynatmayı etkinleştir",
+      "info": "Video sessiz ve kontroller olmadan oynatılacaktır."
+    },
+    "video_upload": {
+      "label": "Video dosyası",
+      "info": "Shopify tarafından barındırılıyor. Video URL ayarlarını değiştirir."
+    },
+    "poster": {
+      "info": "Poster veya yedek görüntü olarak kullanılır."
+    }
+  },
+  "variant_metafields": {
+    "name": "Varyant metafield",
+    "label": "Varyant metafield anahtarı",
+    "info": "Bu tema, ürün sayfasında bir varyant metafield gösterebilir. [Daha fazla bilgi edinin](https://shopify-support.krownthemes.com/article/884-using-variant-metafields-in-product-pages)."
+  },
   "new_color_swatches": "Bu tema ayrıca kategori meta alanlarıyla oluşturulan renk örneklerini destekler. [Daha fazla bilgi edinin](https://help.shopify.com/en/manual/custom-data/metafields/category-metafields/using-category-metafields).",
   "video_controls": "Video kontrollerini göster",
   "sticky_cart_actions": "Sabit çekmece sepeti işlemlerini etkinleştir",
@@ -31,7 +49,9 @@
   },
   "sticky_atc": {
     "label": "Yapışkan sepete ekle",
-    "enable_sticky_atc": "Yapışkan sepete ekle'yi etkinleştir"
+    "enable_sticky_atc": "Yapışkan sepete ekle'yi etkinleştir",
+    "sticky_atc_style_wide": "Wide",
+    "sticky_atc_style_floating": "Floating"
   },
   "performance": {
     "header": "SEO & performans",
@@ -300,14 +320,17 @@
         "footer_group": "Alt bilgi grubu",
         "header_group": "Üst bilgi grubu",
         "overlay_group": "Katman grubu",
-        "embellishments": "Süslemeler"
+        "embellishments": "Süslemeler",
+        "show_button": "Show button",
+        "optional": "Optional"
       },
       "text": {
         "icons_info": "Daha fazla simgeyi görselleştirmek ve indirmek için lütfen [bu bağlantıyı](https://resources.krownthemes.com/icons/) ziyaret edin."
       },
       "borders": {
         "top_border": "Üst kenarlık",
-        "bottom_border": "Alt kenarlık"
+        "bottom_border": "Alt kenarlık",
+        "show_border": "Show border"
       },
       "colors": {
         "heading_background": "Başlık arka planı",
@@ -334,13 +357,18 @@
                 "option_2": "Alt",
                 "option_3": "Sol ",
                 "option_4": "Sağ"
-              }
-            }
-          }
+              },
+              "show_tooltip": "Show tooltip"
+            },
+            "mobile_info": "Only if a mobile image is set"
+          },
+          "image_on_mobile": "Mobile image",
+          "position_on_mobile": "Position on mobile"
         },
         "scrolling_images": {
           "label": "Görüntüleri kaydırma",
-          "image_size": "Görüntü boyutu"
+          "image_size": "Görüntü boyutu",
+          "columns": "Columns"
         },
         "video": {
           "label": "Video",
@@ -527,6 +555,12 @@
             "border_color": "Kenarlık rengi"
           }
         }
+      },
+      "seo_late": {
+        "breadcrumbs": {
+          "label": "Improve product breadcrumb navigation",
+          "info": "Adds collection names to the breadcrumb navigation, by duplicating product url's. [Learn more](https://shopify-support.krownthemes.com/article/697-seo#breadcrumbs)"
+        }
       }
     },
     "local-extra-words": {
@@ -539,7 +573,8 @@
           "settings": {
             "borders": "Kenarlık",
             "hide_border": "Kenarlığı gizle",
-            "accent": "Vurgu"
+            "accent": "Vurgu",
+            "overlay": "Overlay"
           }
         },
         "typography": {
@@ -596,6 +631,14 @@
             "amount": {
               "label": "Ücretsiz kargo için en düşük tutar",
               "info": "Bir sayı yazın, harf veya özel karakter kullanmayın."
+            },
+            "info": "This feature only works with a single currency and shipping method. If you're using multiple shipping methods or currencies, it might show false values to the customer."
+          },
+          "settings": {
+            "media": {
+              "header": "Media aspect ratio",
+              "label": "Aspect ratio",
+              "info_cart": "Changes the aspect ratio for small product thumbnails used in the cart, search popup and some other areas that require small product thumbnails."
             }
           }
         },
@@ -644,10 +687,21 @@
               "name__3": "Özel rozet 3",
               "text": "Metin",
               "tags": "Etiket",
-              "color": "Arka plan rengi"
+              "color": "Arka plan rengi",
+              "text_color": "Text color"
             }
           },
-          "icons_list": "Dinamik simge listesi"
+          "icons_list": "Dinamik simge listesi",
+          "products-list": {
+            "name": "Products list"
+          }
+        },
+        "embellishments": {
+          "settings": {
+            "show_gotop": {
+              "label": "Show go to top button"
+            }
+          }
         }
       },
       "sections": {
@@ -1053,6 +1107,9 @@
           "blocks": {
             "shipping-calculator": {
               "name": "Kargo hesaplayıcı"
+            },
+            "related-products": {
+              "info": "The product recommendations are based on products that are commonly purchased together or products in related collections. If there are no recommendations, the block will not appear."
             }
           }
         },
@@ -1071,7 +1128,9 @@
           "name": "Ürün sayfası",
           "settings": {
             "gallery_pagination": "Galeri kaydırıcı sayfalandırması",
-            "show_border": "Galeri etrafında kenarlığı göster"
+            "show_border": "Galeri etrafında kenarlığı göster",
+            "gallery_border": "Gallery border",
+            "gallery_border_color": "Gallery border color"
           },
           "blocks": {
             "pickup_availability": {
@@ -1158,7 +1217,13 @@
           "blocks": {
             "payment": {
               "name": "Ödeme simgeleri",
-              "info": "Gösterilen simgeler, mağazanızın [ödeme ayarlarına](/admin/settings/payments) ve müşterinin bulunduğu bölge ve para birimine göre belirlenir."
+              "info": "Gösterilen simgeler, mağazanızın [ödeme ayarlarına](/admin/settings/payments) ve müşterinin bulunduğu bölge ve para birimine göre belirlenir.",
+              "custom_icons": "Custom icons",
+              "custom_icons_info": "Upload 114 x 72px .png images",
+              "only_show_custom_icons": "Only show the custom icons"
+            },
+            "text": {
+              "name": "Text & social icons"
             }
           }
         },
@@ -1176,7 +1241,10 @@
             "name": "Hesap sayfasını etkinleştir"
           },
           "login": {
-            "name": "Giriş sayfası"
+            "name": "Giriş sayfası",
+            "shop_login_button": {
+              "enable": "Shop ile giriş yapmayı etkinleştirin"
+            }
           },
           "account": {
             "name": "Hesap sayfası"
@@ -1203,7 +1271,8 @@
           "option__2": "3 sütun",
           "option__3": "4 sütun",
           "option__4": "5 sütun",
-          "option__5": "6 sütun"
+          "option__5": "6 sütun",
+          "name_mobile": "Mobile layout"
         },
         "promotion-cards": {
           "name": "Promosyon kartları",
@@ -2517,6 +2586,9 @@
     "popup": {
       "name": "Açılır pencere",
       "settings": {
+        "enable_scroll_based_trigger": "Kaydırma tabanlı tetikleyiciyi etkinleştir",
+        "enable_scroll_based_trigger_info": "Sayfa belirli bir konuma kaydırıldığında yalnızca popup göster.",
+        "scroll_position": "Kaydırma pozisyonu",
         "title": {
           "label": "Başlık"
         },
@@ -2771,6 +2843,14 @@
         }
       }
     },
+    "words_210": {
+      "text_columns": {
+        "name": "Text columns",
+        "block": {
+          "name": "Text"
+        }
+      }
+    },
     "bundle-extra-words-v110": {
       "settings_schema": {
         "labels": {
@@ -2819,7 +2899,8 @@
             "option_6": "Dörtte biri",
             "option_7": "Üçte biri",
             "option_8": "Yarısı",
-            "option_9": "Üçte ikisi"
+            "option_9": "Üçte ikisi",
+            "option_10": "Full"
           },
           "spacing": "Metin aralığı"
         },
@@ -2891,6 +2972,10 @@
           "quick_buy": {
             "name": "Hızlı satın alma açılır penceresi",
             "info": "Bu tema, bir kullanıcı Sepete ekle düğmesini tıkladığında hızlı bir satın alma açılır penceresi gösterebilir."
+          },
+          "rating": {
+            "app": "Reviews app",
+            "default_option": "Default"
           }
         },
         "cart": {
@@ -2950,7 +3035,8 @@
           },
           "gutter": {
             "label": "Cilt payı",
-            "content": "Üst kenar boşluğunu azalt"
+            "content": "Üst kenar boşluğunu azalt",
+            "content_bottom": "Decrease bottom margin"
           }
         },
         "video": {
@@ -3256,6 +3342,16 @@
             "products_list": {
               "name": "Ürünler"
             }
+          },
+          "layout": {
+            "option_1": "One row",
+            "option_2": "Two rows"
+          },
+          "menu_style": {
+            "label": "Desktop menu style (one row)",
+            "option_1": "Classic (text)",
+            "option_2": "Minimal (drawer)",
+            "info": "On mobile devices or when the classic menu is too wide to fit the screen's size, the menu will automatically switch to the drawer style."
           }
         },
         "slideshow": {
@@ -3286,6 +3382,9 @@
               "info": "Kullanıcı fareyi sekmenin üzerine getirdiğinde otomatik oynatma duraklar."
             }
           }
+        },
+        "countdown": {
+          "name": "Countdown"
         }
       }
     },
@@ -3293,6 +3392,31 @@
       "label_1": "Görsel 1",
       "label_2": "Görsel 2",
       "label_3": "Görsel 3"
+    },
+    "cookies": {
+      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent. [Learn more](https://shopify-support.krownthemes.com/article/790-cookies-popup)."
+    }
+  },
+  "color-schemes": {
+    "name_plural": "Color schemes",
+    "name_singular": "Color scheme",
+    "default": "Default color scheme",
+    "default_info": "Used to set colors for account pages, 404 pages, and other pages or sections without color scheme settings.",
+    "drawers": "Modals/drawers",
+    "other": "Other colors"
+  },
+  "bundle-250": {
+    "modal_quick_buy": {
+      "label": "Seçenek görüntüleme türü",
+      "options": {
+        "option_1": "Satır içi (ürün ızgarasında)",
+        "option_2": "Modal (tıklamayla)"
+      },
+      "settings": {
+        "inline_label": "Satır içi görüntüleme ayarları",
+        "modal_label": "Modal görüntüleme ayarları",
+        "modal_info": "Modal seçenekleri, Hızlı Satın Alma ürün sayfası şablonunda yapılandırılabilir. [Daha fazla bilgi edinin](https://shopify-support.krownthemes.com/article/824-combine-product-page#Editing-the-quick-buy-modal-template-WsS0q)"
+      }
     }
   },
   "bundle-240": {
@@ -3318,7 +3442,8 @@
     "container_border": "Konteyner sınırı",
     "gallery_border": "Galeri sınırı",
     "opacity": "Opaklık",
-    "secondary_color": "İkincil stil rengi"
+    "secondary_color": "İkincil stil rengi",
+    "header_border_top_info": "For \"two rows\" layout only."
   },
   "footer-menu-items": {
     "open_links_in_new_window": "Yeni pencerede bağlantıları aç",

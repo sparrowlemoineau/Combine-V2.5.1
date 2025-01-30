@@ -1,3 +1,15 @@
+{% comment %}
+	Renders the classic site navigation.
+
+	Accepts:
+	- linklist: {String} the linklist object.
+	- type: {String} the navigation type (can be "classic" or "sidebar").
+	- shopify_attributes: {Object} block.shopify_attributes object.
+	
+	Usage:
+	{% render 'site-nav', linklist: 'main-menu', type: 'classic', shopify_attributes: block.shopify_attributes %}
+{% endcomment %}
+
 {%- liquid
 	assign links_class = "text-animation--underline-in-header" 
 	if type == 'sidebar'

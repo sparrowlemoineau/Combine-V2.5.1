@@ -1,3 +1,19 @@
+{% comment %}
+  Renders a product item cross sell (individual product).
+  
+  Accepts:
+  - product: {Object} the product object.
+  - heading: {String} the heading text.
+  - id: {String} unique identifier.
+  - style: {String} inline CSS style declaration (ex: margin-bottom: 5px;).
+  - class: {String} additional class.
+  - heading_position: {String} heading position (inside or widget).
+  - widget_style: {String} widget style (outline or solid).
+  
+  Usage:
+  {% render 'product-cross-sell', product: product, heading: 'You may also like', id: 'product-cross-sell', style: 'margin-bottom: 20px;', class: 'product-cross-sell', heading_position: 'widget', widget_style: 'outline' %}
+{% endcomment %}
+
 <div class="{{ class }}" style="{{ style }}">
 
   {%- if heading_position == 'outside' -%}
@@ -35,8 +51,8 @@
           -%}
         
           <div class="product-item-compact__price" id="product-price-{{ id }}" data-js-product-price>
-            <span data-js-product-price-original>
-              {%- unless product == blank -%}
+            {%- unless product == blank -%}
+              <span data-js-product-price-original>
                 {%- liquid
                   if product.price_varies
                     assign produce_price = product.price_min | money | append: iso_code
@@ -86,19 +102,34 @@
 
           {%- if product.available -%}
             <div class="product-item-compact__form product-item-compact__form--horizontal">
+              {% # theme-check-disable %}
               {%- liquid
                 if heading_position == 'inside'
                   assign defer_ajax_cart = false
                 else
                   assign defer_ajax_cart = true
                 endif
-                render 'quick-buy', product: product, defer_ajax_cart: defer_ajax_cart, variants_style: 'select', button_style: 'solid', show_color_swatches: false, change_variant_images: false, default_to_first_variant: false, add_to_cart_price: false, show_variant_quantities: "no", unavailable_variants: 'hide'.settings.unavailable_variants, id: id
+                render 'quick-buy', product: product, defer_ajax_cart: defer_ajax_cart, variants_style: 'select', button_style: 'solid', show_color_swatches: false, change_variant_images: false, default_to_first_variant: false, add_to_cart_price: false, show_variant_quantities: "no", unavailable_variants: 'hide', id: id
               -%}
+              {% # theme-check-enable %}
             </div>
           {%- endif -%}
           
         </div>
       </div>
+
+      <script type="text/javascript">
+        if ( document.getElementById('product-price-quick-buy-{{ id }}') ) {
+          new MutationObserver(()=>{
+            document.getElementById('product-price-{{ id }}').innerHTML = document.getElementById('product-price-quick-buy-{{ id }}').innerHTML;
+            document.getElementById('product-price-{{ id }}').querySelector('.product-price').childNodes.forEach(elm => {
+              elm.classList = '';
+            });
+          }).observe(document.getElementById('product-price-quick-buy-{{ id }}'), {
+            attributes: false, childList: true, subtree: false
+          });
+        }
+      </script>
 
     </div>
   </div>

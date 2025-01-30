@@ -42,7 +42,8 @@
       "powered_by_shopify_html": "Cửa hàng này sẽ được cung cấp bởi {{ shopify }}"
     },
     "prefixes": {
-      "by": "bởi"
+      "by": "bởi",
+      "or": "hoặc"
     },
     "account_link": {
       "logged_in": "Tài khoản Của tôi",
@@ -109,6 +110,7 @@
       "form_error": "Lỗi",
       "go_to_top": "Lên đầu trang",
       "top": "Trên cùng",
+      "slide": "Hiển thị trang chiếu {{ count }}",
       "time_left": "Thời gian còn lại",
       "show_more": "Hiển thị thêm",
       "show_less": "Hiển thị ít hơn",
@@ -175,6 +177,7 @@
       "save_amount_html": "Tiết kiệm {{ amount }}",
       "save_up_to_amount_html": "Tiết kiệm tới {{ amount }}",
       "save_percent": "Lên đến {{ percent }}",
+      "quick_view": "Xem nhanh",
       "choose_variant_first": "Trước hết, hãy chọn một biến thể ",
       "select_variant": "Chọn {{ variant }}",
       "color_variants_count": {
@@ -346,7 +349,8 @@
         "date": "Ngày",
         "payment_status": "Tình trạng thanh toán",
         "fulfillment_status": "Tình trạng hoàn thành",
-        "total": "Tổng"
+        "total": "Tổng",
+        "view_order": "Xem đơn hàng"
       },
       "no_orders_message": "Bạn chưa đặt đơn hàng nào.",
       "account_details_title": "Chi tiết Tài khoản",

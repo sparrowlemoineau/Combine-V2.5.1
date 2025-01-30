@@ -42,7 +42,8 @@
       "powered_by_shopify_html": "Den här butiken kommer att drivas av {{ shopify }}"
     },
     "prefixes": {
-      "by": "av"
+      "by": "av",
+      "or": "eller"
     },
     "account_link": {
       "logged_in": "Mitt konto",
@@ -109,6 +110,7 @@
       "rating_info": "Betyg: {{ rating_value }} av {{ rating_max }}",
       "top": "Top",
       "go_to_top": "Gå till toppen",
+      "slide": "Visa bild {{ count }}",
       "time_left": "Tid kvar",
       "show_more": "Visa mer",
       "show_less": "Visa mindre",
@@ -175,7 +177,8 @@
       "save_amount_html": "Spara {{ amount }}",
       "save_up_to_amount_html": "Spara upp till {{ amount }}",
       "save_percent": "Upp till {{ percent }}",
-      "choose_variant_first": "Välj en variant först",
+      "quick_view": "Snabbvy",
+      "choose_variant_first": "Välj en variant",
       "select_variant": "Välj {{ variant }}",
       "color_variants_count": {
         "one": "{{ count }} färg valbar",
@@ -346,7 +349,8 @@
         "date": "Datum",
         "payment_status": "Status för betalning",
         "fulfillment_status": "Status för genomförande",
-        "total": "Totalt"
+        "total": "Totalt",
+        "view_order": "Visa beställning"
       },
       "no_orders_message": "Du har ännu inte beställt något.",
       "account_details_title": "Kontodetaljer",

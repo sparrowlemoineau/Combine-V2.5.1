@@ -1,6 +1,19 @@
+{% comment %}
+  Renders filtering options for collection or search pages (drawer version).
+
+  Accepts:
+  - results: {Object} collection or search object.
+  - enable_filtering: {Boolean} enable filtering.
+  - enable_sorting: {Boolean} enable sorting.
+  - image_filter_layout: {String} layout for image filters (onecolumn or twocolumns).
+  - location: {String} type of location (desktop or mobile).
+
+  Usage:
+  {% render 'facets-vertical', results: results, enable_filtering: true, enable_sorting: true, image_filter_layout: 'twocolumns', location: 'mobile' %}
+{% endcomment %}
+
 {{ 'component-facets-vertical.css' | asset_url | stylesheet_tag }}
-{{ 'component-range-slider.css' | asset_url | stylesheet_tag }}
-{{ 'component-swatch.css' | asset_url | stylesheet_tag }}
+{{ 'component-facets-elements.css' | asset_url | stylesheet_tag }}
 
 <facet-filters-form class="facets {% if location == 'desktop' %} element--hide-on-small  {% else %} sidebar-large-padding {% endif %}" data-location="{{ location }}">
 
@@ -126,7 +139,7 @@
                 </span>
 
                 <div>
-                  {%- render 'filter-price-range', filter: filter -%}
+                  {%- render 'filter-price-range', filter: filter, location: 'mobile' -%}
                 </div>
               </div>
 

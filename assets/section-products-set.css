@@ -187,7 +187,7 @@ html[dir=ltr] .products-set .product-form svg {
   background: var(--color-third-background-main);
   border-radius: var(--border-radius-widgets);
 }
-.products-set--style-primary .product-item__image > css-slider, .products-set--style-primary .product-item__image > css-slider .css-slider-holder,
+.products-set--style-primary .product-item__image > css-slider, .products-set--style-primary .product-item__image > css-slider .css-slider-holder, .products-set--style-primary .product-item__image > css-slider .grid > figure,
 .products-set--style-primary .product-item__image > figure,
 .products-set--style-primary .product-item__image img {
   border-radius: clamp(var(--border-radius-widgets), var(--border-radius-product-card), var(--border-radius-widgets)) clamp(var(--border-radius-widgets), var(--border-radius-product-card), var(--border-radius-widgets)) 0 0;

@@ -1,3 +1,15 @@
+{% comment %}
+  Renders a product icon with a label.
+  
+  Accepts:
+  - icon: {Object} the image object.
+  - label: {String} label text.
+  - style: {String} additional style class.
+  
+  Usage:
+  {% render 'product-icon-label', icon: product.icon, label: product.title %}
+{% endcomment %}
+
 {%- liquid
   if icon == blank
     assign icon_name = label | handle | append: '.png'

@@ -46,7 +46,10 @@
         
         <div class="announcement-bar__content">
           {%- if section.blocks.size > 1 -%}
-            <span class="announcement-bar__content-nav announcement-bar__content-nav--left announcement-bar__content-nav--disabled">{%- render 'theme-symbols', icon: 'chevron' -%}</span>
+            <button class="announcement-bar__content-nav announcement-bar__content-nav--left announcement-bar__content-nav--disabled">
+              <span class="visually-hidden">{{ 'general.accessibility_labels.previous' | t }}</span>
+              <span class="aria-hidden" style="display:flex">{%- render 'theme-symbols', icon: 'chevron' -%}</span>
+            </button>
           {%- endif -%}
 
           <div class="announcement-bar__slider" data-js-slider>
@@ -62,7 +65,10 @@
           </div>
 
           {%- if section.blocks.size > 1 -%}
-            <span class="announcement-bar__content-nav announcement-bar__content-nav--right">{%- render 'theme-symbols', icon: 'chevron' -%}</span>
+            <button class="announcement-bar__content-nav announcement-bar__content-nav--right">
+              <span class="visually-hidden">{{ 'general.accessibility_labels.next' | t }}</span>
+              <span class="aria-hidden" style="display:flex">{%- render 'theme-symbols', icon: 'chevron' -%}</span>
+            </button>
           {%- endif -%}
 
         </div>

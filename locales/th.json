@@ -42,7 +42,8 @@
       "powered_by_shopify_html": "ร้านค้านี้จะถูกขับเคลื่อนโดย {{ shopify }}"
     },
     "prefixes": {
-      "by": "โดย"
+      "by": "โดย",
+      "or": "หรือ"
     },
     "account_link": {
       "logged_in": "บัญชีของฉัน",
@@ -109,6 +110,7 @@
       "rating_info": "คะแนน: {{ rating_value }} จาก {{ rating_max }}",
       "top": "สูงสุด",
       "go_to_top": "ไปที่ด้านบน",
+      "slide": "แสดงสไลด์ {{ count }}",
       "time_left": "เวลาที่เหลือ",
       "show_more": "แสดงมากขึ้น",
       "show_less": "แสดงน้อยลง",
@@ -175,6 +177,7 @@
       "save_amount_html": "ประหยัด {{ amount }}",
       "save_up_to_amount_html": "ประหยัดสูงสุดถึง {{ amount }}",
       "save_percent": "มากถึง {{ percent }}",
+      "quick_view": "มุมมองด่วน",
       "choose_variant_first": "ให้เลือกแบบแปรก่อน",
       "select_variant": "เลือก {{ variant }}",
       "color_variants_count": {
@@ -346,7 +349,8 @@
         "date": "วันที่",
         "payment_status": "สถานะการชำระเงิน",
         "fulfillment_status": "สถานะการจัดการคำสั่งซื้อ",
-        "total": "ทั้งหมด"
+        "total": "ทั้งหมด",
+        "view_order": "ดูคำสั่งซื้อ"
       },
       "no_orders_message": "คุณยังไม่ได้สั่งซื้อเลย",
       "account_details_title": "รายละเอียดบัญชี",

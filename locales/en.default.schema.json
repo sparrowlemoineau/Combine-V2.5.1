@@ -1,4 +1,22 @@
 {
+  "video-extra-functions": {
+    "autoplay": {
+      "label": "Enable video autoplay",
+      "info": "The video will be muted and without controls."
+    },
+    "video_upload": {
+      "label": "Video file",
+      "info": "Hosted by Shopify. Replaces video URL settings."
+    },
+    "poster": {
+      "info": "Used as a poster or a fallback image."
+    }
+  },
+  "variant_metafields": {
+    "name": "Variant metafield",
+    "label": "Variant metafield key",
+    "info": "This theme can show a variant metafield on the product page. [Learn more](https://shopify-support.krownthemes.com/article/884-using-variant-metafields-in-product-pages)."
+  },
   "new_color_swatches": "This theme also offers support for color swatches created with category metafields. [Learn more](https://help.shopify.com/en/manual/custom-data/metafields/category-metafields/using-category-metafields).",
   "video_controls": "Show video controls",
   "sticky_cart_actions": "Enable sticky drawer cart actions",
@@ -952,7 +970,10 @@
             "name": "Activate account page"
           },
           "login": {
-            "name": "Login page"
+            "name": "Login page",
+            "shop_login_button": {
+              "enable": "Enable Sign in with Shop"
+            }
           },
           "account": {
             "name": "Account page"
@@ -2581,6 +2602,9 @@
     "popup": {
       "name": "Popup",
       "settings": {
+        "enable_scroll_based_trigger": "Enable scroll based trigger",
+        "enable_scroll_based_trigger_info": "Only show the popup if the page is scrolled at a particular position.",
+        "scroll_position": "Scroll position",
         "title": {
           "label": "Heading"
         },
@@ -3320,7 +3344,7 @@
               },
               "custom_enable": {
                 "label": "Enable on custom pages",
-                "info": "Write any page handles, separated by commas."
+                "info": "Write custom page handles, separated by commas."
               },
               "logo": {
                 "info": "Upload same size as the original logo."
@@ -3379,6 +3403,20 @@
       "label_1": "Image 1",
       "label_2": "Image 2",
       "label_3": "Image 3"
+    }
+  },
+  "bundle-250": {
+    "modal_quick_buy": {
+      "label": "Options display type",
+      "options": {
+        "option_1": "Inline (in the product grid)",
+        "option_2": "Modal (on click)"
+      },
+      "settings": {
+        "inline_label": "Inline display settings",
+        "modal_label": "Modal display settings",
+        "modal_info": "Modal options can be configured in the Quick Buy product page template. [Learn more](https://shopify-support.krownthemes.com/article/824-combine-product-page#Editing-the-quick-buy-modal-template-WsS0q)"
+      }
     }
   },
   "bundle-240": {

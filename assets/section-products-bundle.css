@@ -168,6 +168,9 @@ html[dir=ltr] .bundler-product__remove {
   opacity: 0.62;
   pointer-events: none;
 }
+.product-item--bundled .product-variant__item--radio input {
+  pointer-events: none !important;
+}
 
 button[data-js-add-bundle-to-cart].working {
   pointer-events: none;

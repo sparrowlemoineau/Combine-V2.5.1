@@ -1,5 +1,9 @@
 {{ 'section-account.css' | asset_url | stylesheet_tag }}
 
+{%- if section.settings.enable_shop_login_button == false -%}
+  {%- assign hide_shop_login_button = true -%}
+{%- endif -%}
+
 {%- render 'breadcrumb', container: 'compact', vertical_space: 'vertical-space-xsmall', style: 'breadcrumb-main--margin' -%}
 
 <div class="container--compact container--vertical-space-small">
@@ -37,8 +41,8 @@
 					<div class="form-actions flex-buttons">
 
 						{%- render 'button', style: 'solid', label: 'customers.login_page.form_login_button', label_is_translation: true, is_submit: true, type: 'button' -%}
-
-						<div style="text-align: right;" class="gutter-top--small">
+						
+						<div class="text-align--right">
 							{% if form.password_needed %}
 								<span style="display: block;" class="text-size--small">
 									<a href="#recover" onclick="showRecoverPasswordForm();return false;">
@@ -53,6 +57,12 @@
 						</div>
 
 					</div>
+
+					<div name="sign-in-with-shop-provider" style="{% if hide_shop_login_button %}display:none;{% endif %}--buttons-radius:var(--border-radius-buttons);padding-top:.75rem">
+						<span style="display:block" class="gutter-bottom--small">{{ 'general.prefixes.or' | t }}</span>
+						{{ shop | login_button: hide_button: hide_shop_login_button }}
+					</div>
+
 				</div>
 			{%- endform -%}
 
@@ -134,6 +144,14 @@
 {% schema %}
   {
     "name": "t:sections.local-extra-words.sections.customers.login.name",
-    "class": "section--remove-bottom-margin-after"
+    "class": "section--remove-bottom-margin-after",
+		"settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_shop_login_button",
+        "label": "t:sections.local-extra-words.sections.customers.login.shop_login_button.enable",
+        "default": false
+      }
+    ]
   }
 {% endschema %}

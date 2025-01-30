@@ -1,4 +1,16 @@
-{% liquid
+{% comment %}
+  Renders product rating
+
+  Accepts:
+  - product: {Object} product object.
+  - vendor: {String} vendor name (from our selected vendors list).
+  - hide_no_reviews_on_mobile: {Boolean} if true, hides the "no reviews" text on mobile devices.
+
+  Usage:
+  {% render 'product-rating', product: product, vendor: 'stamped', hide_no_reviews_on_mobile: true %}
+{% endcomment %}
+
+{%- liquid
 
   assign star_size = 20
 

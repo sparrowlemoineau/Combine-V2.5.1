@@ -42,7 +42,8 @@
       "powered_by_shopify_html": "Ezt az áruházat a(z) {{ shopify }} fogja üzemeltetni"
     },
     "prefixes": {
-      "by": "által"
+      "by": "által",
+      "or": "vagy"
     },
     "account_link": {
       "logged_in": "Fiókom",
@@ -109,6 +110,7 @@
       "form_error": "Hiba",
       "go_to_top": "Ugrás az elejére",
       "top": "Eleje",
+      "slide": "Mutasd a(z) {{ count }}. diát",
       "time_left": "Hátralevő idő",
       "show_more": "Továbbiak mutatása",
       "show_less": "Kevesebb mutatása",
@@ -175,7 +177,8 @@
       "save_amount_html": "{{ amount }} megtakarítás",
       "save_up_to_amount_html": "Akár {{ amount }} is megtakarítható",
       "save_percent": "Akár {{ percent }}",
-      "choose_variant_first": "Előbb válasszon egy változatot",
+      "quick_view": "Gyorsnézet",
+      "choose_variant_first": "Válasszon egy változatot",
       "select_variant": "{{ variant }} kiválasztása",
       "color_variants_count": {
         "one": "{{ count }} színben kapható",
@@ -346,7 +349,8 @@
         "date": "Dátum",
         "payment_status": "Fizetés helyzete",
         "fulfillment_status": "Teljesítés helyzetet",
-        "total": "Összeg"
+        "total": "Összeg",
+        "view_order": "Rendelés megtekintése"
       },
       "no_orders_message": "Még nem adott le rendelést.",
       "account_details_title": "Fiók részletei",

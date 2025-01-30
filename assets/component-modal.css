@@ -68,8 +68,15 @@ modal-box.active .modal-content {
   visibility: visible;
   transform: translateY(0);
 }
-.modal--product .modal-content {
-  padding: calc(var(--gutter-large) * 0.75);
+@media screen and (min-width: 768px) {
+  .modal--product .modal-content {
+    padding: calc(var(--gutter-large) * 0.75);
+  }
+}
+@media screen and (max-width: 767px) {
+  .modal--product .modal-content {
+    padding: var(--gutter-container);
+  }
 }
 
 .modal-heading {

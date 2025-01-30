@@ -27,7 +27,7 @@
             endif
 
           for product in products limit: limit
-            render 'product-item', product: product, section_blocks: section.blocks, index: forloop.index, layout: 'grid-4', mobile_layout: section.settings.layout_mobile, show_badges: settings.show_badges, add_quick_buy: true, unavailable_variants: 'hide', default_to_first_variant: false, section_id: section.id
+            render 'product-item', product: product, section_blocks: section.blocks, index: forloop.index, layout: 'grid-4', mobile_layout: section.settings.layout_mobile, add_quick_buy: true, unavailable_variants: 'hide', default_to_first_variant: false, section_id: section.id
           endfor
           
           else
@@ -106,10 +106,12 @@
 
 </div>
 
+<div style="display:none" data-js-product-item-skeleton>{%- render 'product-item-skeleton',  section_blocks: section.blocks, layout: 'grid-4', mobile_layout: section.settings.layout_mobile, add_quick_buy: true, unavailable_variants: 'hide', default_to_first_variant: false -%}</div>
+
 {% schema %}
   {
     "name": "t:sections.bundle-extra-words.sections.products_bundle.name",
-    "class": "mount-quick-buy mount-product-bundler",
+    "class": "mount-quick-buy mount-product-bundler has-skeleton",
     "settings": [
       {
         "type": "header",

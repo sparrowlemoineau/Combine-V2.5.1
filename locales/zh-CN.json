@@ -42,7 +42,8 @@
       "powered_by_shopify_html": "此商店将由 {{ shopify }} 提供支持"
     },
     "prefixes": {
-      "by": "作者："
+      "by": "作者：",
+      "or": "或"
     },
     "account_link": {
       "logged_in": "我的账户",
@@ -109,6 +110,7 @@
       "rating_info": "评分：{{ rating_value }}，共 {{ rating_max }} 条",
       "top": "向上",
       "go_to_top": "转到顶部",
+      "slide": "显示幻灯片 {{ count }}",
       "time_left": "剩余时间",
       "show_more": "显示更多",
       "show_less": "显示更少",
@@ -173,8 +175,9 @@
       "preorder_product": "预购",
       "no_products_text": "此产品系列中目前没有任何产品。",
       "save_amount_html": "节省 {{ amount }}",
-      "save_up_to_amount_html": "节省高达 {{ amount }} 美元",
+      "save_up_to_amount_html": "节省高达 {{ amount }}",
       "save_percent": "高达 {{ percent }}",
+      "quick_view": "快速查看",
       "choose_variant_first": "先选择一个变体",
       "select_variant": "选择 {{ variant }}",
       "color_variants_count": {
@@ -346,7 +349,8 @@
         "date": "日期",
         "payment_status": "付款状态",
         "fulfillment_status": "订单履行状态",
-        "total": "总计"
+        "total": "总计",
+        "view_order": "查看订单"
       },
       "no_orders_message": "您尚未订立任何订单。",
       "account_details_title": "账户详情",

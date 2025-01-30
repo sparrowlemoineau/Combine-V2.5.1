@@ -42,7 +42,8 @@
       "powered_by_shopify_html": "Ta trgovina bo uporabljala tehnologijo {{ shopify }}"
     },
     "prefixes": {
-      "by": "osebe"
+      "by": "osebe",
+      "or": "ali"
     },
     "account_link": {
       "logged_in": "Moj račun",
@@ -109,6 +110,7 @@
       "form_error": "Napaka",
       "go_to_top": "Pojdi na vrh",
       "top": "Na vrh",
+      "slide": "Prikaži diapozitiv {{ count }}",
       "time_left": "Preostali čas",
       "show_more": "Pokaži več",
       "show_less": "Pokaži manj",
@@ -175,7 +177,8 @@
       "save_amount_html": "Prihranite {{ amount }}",
       "save_up_to_amount_html": "Prihranite do {{ amount }}",
       "save_percent": "Do {{ percent }}",
-      "choose_variant_first": "Najprej izberite različico",
+      "quick_view": "Hiter ogled",
+      "choose_variant_first": "Izberite različico",
       "select_variant": "Izberite {{ variant }}",
       "color_variants_count": {
         "one": "Na voljo je {{ count }} barva",
@@ -346,7 +349,8 @@
         "date": "Datum",
         "payment_status": "Stanje plačila",
         "fulfillment_status": "Stanje izpolnitve",
-        "total": "Skupni znesek"
+        "total": "Skupni znesek",
+        "view_order": "Ogled naročila"
       },
       "no_orders_message": "Oddali niste še nobenega naročila.",
       "account_details_title": "Podrobnosti računa",

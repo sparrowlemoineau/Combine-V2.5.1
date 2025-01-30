@@ -1,3 +1,13 @@
+{% comment %}
+  Renders gift cart wrapping checkbox.
+
+  Accepts:
+  - class: {String} additional class.
+
+  Usage:
+  {% render 'cart-gift-wrapping', class: 'cart-wrapping--page' %}
+{% endcomment %}
+
 {%- unless settings.gift_wrap_product == blank -%}
           
   <div id="cart-wrapping" class="cart-wrapping {{ class }}">

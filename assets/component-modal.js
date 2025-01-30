@@ -173,7 +173,17 @@ if ( typeof ModalBox !== 'function' ) {
 
 		}
 
-		show(){
+		show(customContent=false){
+			
+			if (customContent && document.querySelector(customContent)) {
+        const content = document.querySelector(customContent).innerHTML;
+				const modalCommon = document.getElementById('modal-common');
+        modalCommon.innerHTML = content;
+				if ( this.o.enableClose == true ) {
+					modalCommon.querySelectorAll('[data-js-close]').forEach(elm=>elm.addEventListener('click',()=>{this.hide(this.o.showOnce)}));
+				}
+			}
+
 			this.setAttribute('style', '');
 			setTimeout(()=>{
 				this.classList.add('active');
@@ -191,6 +201,7 @@ if ( typeof ModalBox !== 'function' ) {
 					this.querySelector('[data-js-first-focus]').focus();
 				}
 			}, 250);
+
 		}
 
 		hide(remember=false){

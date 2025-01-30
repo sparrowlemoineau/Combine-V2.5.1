@@ -9,7 +9,7 @@ if ( typeof ProductsSet !== 'function' ) {
       this.initSet();
       this.checkSet();
 
-      this.querySelector('[data-js-add-set-to-cart]' ).addEventListener('click', e=>{
+      this.querySelector('[data-js-add-set-to-cart]').addEventListener('click', e=>{
 
         let items = [];
         Object.keys(this.set).map(key=>{
@@ -41,36 +41,59 @@ if ( typeof ProductsSet !== 'function' ) {
 
     }
 
+    initProducts(){
+
+      this.querySelectorAll('product-variants').forEach((elm, i)=>{
+
+        if ( ! elm.hasAttribute('data-init') ) {
+          const setid = elm.closest('.product-item').dataset.setIndex = i;
+          if ( ! elm.hasAttribute('data-has-variants') && ! elm.hasAttribute('data-unavailable') ) {
+            this.set[setid] = elm.parentNode.querySelector('input[name="id"]').value;
+          } else {
+            this.set[setid] = null;
+            if ( elm.dataset.variants == '1' ) {
+              if ( elm.querySelector('input[type="radio"]:checked, option:not([data-disabled]):checked') !== null ) {
+                this.set[setid] = elm.parentNode.querySelector('input[name="id"]').value;
+                elm.closest('[data-js-product-item]').classList.add('selected');
+                elm.closest('[data-js-product-item]').querySelector('.add-to-cart').classList.remove('disabled');
+                this.checkSet();
+              }
+            }
+            elm.addEventListener('VARIANT_CHANGE', e=>{
+              let variant = e.target.currentVariant;
+              if ( variant && variant.available ) {
+                this.set[setid] = elm.parentNode.querySelector('input[name="id"]').value;
+                elm.closest('[data-js-product-item]').classList.add('selected');
+              } else {
+                this.set[setid] = null;
+              }
+              this.checkSet();
+            })
+          }
+
+          elm.setAttribute('data-init', '');
+
+          elm.closest('.product-item').addEventListener('reload', e=>{
+            this.initProducts();
+            this.checkSet();
+          });
+
+        }
+
+      });
+
+    }
+
     initSet(){
 
       this.set = {};
-
-      this.querySelectorAll('product-variants').forEach(elm=>{
-        if ( ! elm.hasAttribute('data-has-variants') && ! elm.hasAttribute('data-unavailable') ) {
-          this.set[elm.dataset.id] = elm.parentNode.querySelector('input[name="id"]').value;
-        } else {
-          this.set[elm.dataset.id] = null;
-          elm.addEventListener('VARIANT_CHANGE', e=>{
-            let variant = e.target.currentVariant;
-            if ( variant ) {
-              this.set[elm.dataset.id] = elm.parentNode.querySelector('input[name="id"]').value;
-              elm.closest('[data-js-product-item]').classList.add('selected');
-             /// elm.closest('toggle-tab').querySelector('[data-js-product-variant-title]').textContent = variant.title;
-            } else {
-              this.set[elm.dataset.id] = null;
-              ///elm.closest('toggle-tab').querySelector('[data-js-product-variant-title]').textContent = '';
-            }
-            this.checkSet();
-          })
-        }
-      });
+      this.initProducts();
 
     }
 
     checkSet() {
       
       let setFull = true;
-
       Object.keys(this.set).map(key=>{
         if ( this.set[key] === null ) {
           setFull = false;
@@ -90,12 +113,17 @@ if ( typeof ProductsSet !== 'function' ) {
 
     returnToDefaultSate(){
       this.querySelectorAll('product-variants').forEach(elm=>{
+        elm.variantRequired = true;
+        elm.noVariantSelectedYet = true;
         elm.querySelectorAll('input').forEach(input=>{
-          input.checked = false;
+          if ( ! input.hasAttribute('data-product-url') ) {
+            input.checked = false;
+          }
         })
         elm.querySelectorAll('select').forEach(select=>{
           select.selectedIndex = 0;
         })
+        elm.removeAttribute('data-init');
         if ( ! ( ! elm.hasAttribute('data-has-variants') && ! elm.hasAttribute('data-unavailable') ) ) {
           elm.currentVariant = undefined;
           elm.parentNode.querySelector('[data-js-product-add-to-cart]').classList.add('disabled');
@@ -104,9 +132,13 @@ if ( typeof ProductsSet !== 'function' ) {
       this.querySelectorAll('[data-js-product-item]').forEach(elm=>{
         elm.classList.remove('selected');
       });
+      this.querySelectorAll('.product-variant__item-text-label').forEach(elm=>{
+        elm.textContent = elm.dataset.defaultText;
+      });
       this.initSet();
       this.checkSet();
       this.querySelector('[data-js-add-set-to-cart-text]').textContent = KROWN.settings.locales.sets_choose_products;
+      this.classList.add('products-set--empty');
     }
 
   }

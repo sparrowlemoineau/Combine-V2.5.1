@@ -1,3 +1,7 @@
+{% comment %}
+	This snippet preloads assets based on the current template.
+{% endcomment %}
+
 {%- liquid
 
   echo 'theme.css' | asset_url | preload_tag: as: 'style'

@@ -42,7 +42,8 @@
       "powered_by_shopify_html": "Denne butik vil blive drevet af {{ shopify }}"
     },
     "prefixes": {
-      "by": "af"
+      "by": "af",
+      "or": "eller"
     },
     "account_link": {
       "logged_in": "Min konto",
@@ -109,6 +110,7 @@
       "form_error": "Fejl",
       "go_to_top": "Gå til toppen",
       "top": "Top",
+      "slide": "Vis slide {{ count }}",
       "time_left": "Tid tilbage",
       "show_more": "Vis mere",
       "show_less": "Vis mindre",
@@ -175,7 +177,8 @@
       "save_amount_html": "Spar {{ amount }}",
       "save_up_to_amount_html": "Spar op til {{ amount }}",
       "save_percent": "Op til {{ percent }}",
-      "choose_variant_first": "Vælg først en variant",
+      "quick_view": "Hurtigvisning",
+      "choose_variant_first": "Vælg en variant",
       "select_variant": "Vælg {{ variant }}",
       "color_variants_count": {
         "one": "{{ count }} farve tilgængelig",
@@ -258,8 +261,8 @@
     "added_items_count": {
       "one": "{{ count }} produkt blev tilføjet til din indkøbskurv",
       "other": "{{ count }} produkter blev tilføjet til din indkøbskurv",
-      "one_html": "<strong>1 product</strong><br/> blev tilføjet til din indkøbskurv",
-      "other_html": "<strong>{{ count }} products</strong><br/> blev tilføjet til din indkøbskurv"
+      "one_html": "<strong>1 produkt</strong><br/> blev tilføjet til din indkøbskurv",
+      "other_html": "<strong>{{ count }} produkter</strong><br/> blev tilføjet til din indkøbskurv"
     },
     "free_shipping_remaining_html": "Du er {{ remaining_amount }} væk fra gratis forsendelse.",
     "free_shipping_eligible": "Du er berettiget til gratis forsendelse!",
@@ -346,7 +349,8 @@
         "date": "Dato",
         "payment_status": "Betalingsstatus",
         "fulfillment_status": "Udførelsesstatus",
-        "total": "Total"
+        "total": "Total",
+        "view_order": "Se ordre"
       },
       "no_orders_message": "Du har ikke afgivet nogen ordre endnu.",
       "account_details_title": "Kontodetaljer",

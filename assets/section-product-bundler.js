@@ -16,29 +16,11 @@ if ( typeof ProductBundler !== 'function' ) {
 
     }
 
-    init(){
+    initBundler() {
 
-      this.bundleProducts = [...this.querySelectorAll('[data-js-bundler-product]')];
-      this._bundleTemplate = this.querySelector('[data-js-bundler-product]').cloneNode(true);
       this._bundleMin = parseInt(this.dataset.minimum);
-
-      this.querySelectorAll('[data-js-product-add-to-cart]').forEach(elm=>{
-        elm.addEventListener('click', e=>{
-          e.preventDefault();
-          const product = e.target.closest('[data-js-product-item]');
-          product.querySelector('.button__text').innerHTML = KROWN.settings.locales.products_added_to_bundle_label;
-          const id = product.querySelector('.product-form').querySelector('input[name="id"]').value;
-          const variant = product.querySelector('product-variants').getVariantData().find(variant=>{
-            return variant["id"] == id;
-          })
-          this.addToBundle(variant, product);
-          this.classList.add('opened');
-          if ( window.innerWidth < 768 ) {
-            (this.querySelector('.bundler-product--empty') || this.querySelector('.bundler-product:last-child'))?.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
-          }
-        });
-      });
-
+      this._bundleTemplate = this.querySelector('[data-js-bundler-product]').cloneNode(true);
+      
       this.querySelectorAll('[data-js-bundler-product-remove]').forEach(elm=>{
         elm.addEventListener('click', e=>{
           this.clearSlot(e.target.closest('[data-js-bundler-product]'));
@@ -49,8 +31,8 @@ if ( typeof ProductBundler !== 'function' ) {
         if ( window.innerWidth < 768 ) {
           this.classList.toggle('opened');
         }
-      });
-
+      }); 
+      
       this.querySelector('[data-js-add-bundle-to-cart]').addEventListener('click', e=>{
 
         if ( ! this.findEmptySlot() ) {
@@ -96,6 +78,37 @@ if ( typeof ProductBundler !== 'function' ) {
 
     }
 
+    initProducts() {
+
+      this.bundleProducts = [...this.querySelectorAll('[data-js-bundler-product]')];
+
+      this.querySelectorAll('[data-js-product-add-to-cart]').forEach(elm=>{
+        if ( ! elm.hasAttribute('data-init') ) {
+
+          elm.addEventListener('click', e=>{
+            e.preventDefault();
+            const product = e.target.closest('[data-js-product-item]');
+            product.querySelector('.button__text').innerHTML = KROWN.settings.locales.products_added_to_bundle_label;
+            const variant = product.querySelector('product-variants').currentVariant;
+            this.addToBundle(variant, product);
+            this.classList.add('opened');
+          });
+          elm.setAttribute('data-init', '');
+
+          elm.closest('.product-item').addEventListener('reload', e=>{
+            this.initProducts();
+          });
+
+        }
+      });
+
+    }
+
+    init() {
+      this.initBundler();
+      this.initProducts();
+    }
+
     findEmptySlot() {
       return this.bundleProducts.find(elm=>{
         return elm.classList.contains('bundler-product--empty')
@@ -103,12 +116,15 @@ if ( typeof ProductBundler !== 'function' ) {
     }
     
     clearSlot(slot) {
+      slot.product.querySelector('[data-js-product-add-to-cart-text]').textContent = KROWN.settings.locales.products_add_to_bundle_button;
       if ( this.bundleProducts.length > this._bundleMin ) {
-        this.bundleProducts.splice(this.bundleProducts.indexOf(slot), 1)
+        this.bundleProducts.splice(this.bundleProducts.indexOf(slot), 1);
+        slot.product.classList.remove('product-item--bundled');
         slot.remove();
       } else {
         slot.product.classList.remove('product-item--bundled');
         slot.dataset.id = "";
+        slot.dataset.variant = null;
         slot.product = null;
         slot.classList.add('bundler-product--empty');
         slot.querySelector('[data-js-bundler-product-text]').innerHTML = '';
@@ -174,6 +190,7 @@ if ( typeof ProductBundler !== 'function' ) {
         }
         slot.product = product;
         slot.dataset.id = product.querySelector('input[name="id"]').value;
+        slot.dataset.variant = product.querySelector('product-variants').currentVariant;
 
       } else {
         // when bundle is full, show message

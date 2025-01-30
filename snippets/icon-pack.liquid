@@ -1,3 +1,13 @@
+{% comment %}
+  Renders an icon from our selected icon pack.
+
+  Accepts:
+  - icon: {String} the selected icon.
+
+  Usage:
+  {% render 'icon-pack', icon: 'appointment' %}
+{% endcomment %}
+
 {%- if icon == "appointment" -%}
   <svg height="64" viewBox="0 0 64 64" width="64" xmlns="http://www.w3.org/2000/svg"><g style="fill:none;stroke-linecap:round;stroke-miterlimit:10;;stroke-linejoin:round"><circle cx="32" cy="32" r="30"/><path d="m32 2v6m0 48v6m-30-30h6m48 0h6"/><path d="m48 20-16 16-11-9"/></g></svg>
 {%- elsif icon == "archive-box" -%}

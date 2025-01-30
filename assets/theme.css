@@ -1,6 +1,3 @@
-/*
- *  1.1. Reset
-*/
 input, :before, :after, * {
   box-sizing: border-box;
 }
@@ -17,6 +14,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 input[type=number] {
   -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 input[type=search]::-webkit-search-cancel-button,
@@ -1769,6 +1767,10 @@ html[dir=ltr] .align-content--horizontal-right {
   align-items: start;
 }
 
+.grid--align-items-start {
+  align-items: start;
+}
+
 .grid-offset-1 {
   grid-column-start: span 1;
 }
@@ -1985,7 +1987,6 @@ html[dir=ltr] .align-content--horizontal-right {
   --full-height: 100vh;
   --button-padding: 0.875rem 0.9375rem;
   --input-padding: 0.75rem;
-  --button-product: 3.75rem;
   --header-vertical-space: 30px;
   --container-vertical-space: var(--container-vertical-space-base);
   --grid-gap: var(--grid-gap-original-base);
@@ -2028,7 +2029,6 @@ html[dir=ltr] .align-content--horizontal-right {
   :root {
     --button-padding: 0.6875rem 0.5625rem;
     --input-padding: 0.5rem;
-    --button-product: 3.125rem;
     --gutter-container: 20px;
     --gutter-breadcrumbs: -10px;
     --header-vertical-space: 20px;
@@ -2151,29 +2151,6 @@ html[dir=ltr] .align-content--horizontal-right {
     opacity: 0.25;
   }
 }
-/*
-USAGE
-======
-Simple
-.button + [style] and/or [size]
-
-With icon
-.button + [style] and/or [size] > (.button__icon + .button__text)
-
-OPTIONS
-=======
-Style
-	- .button--outline
-	- .button--solid
-
-Size
-	- .button-fullwidth
-
-Icon symbols
-	- arrow-right
-	- arrow-right-long (used with button--fullwidth)
-
-*/
 .button {
   text-align: center;
   padding: var(--button-padding);
@@ -2375,6 +2352,13 @@ html[dir=ltr] .button--loader .button__preloader-element {
   box-shadow: 0 0 0 3px var(--color-secondary-background-main);
 }
 
+.button--small {
+  padding: 0.5rem 0.1875rem 0.5625rem;
+}
+.button--small .button__text {
+  font-size: calc(14px / 16 * var(--base-body-primary-size) + 0px);
+}
+
 a.button__icon {
   padding-top: 1px;
 }
@@ -2517,6 +2501,17 @@ a.button__icon {
   height: 1.4375rem;
 }
 
+.pill--discount {
+  margin-top: 0.3125rem;
+  display: flex !important;
+  pointer-events: none;
+  color: var(--color-text-main);
+}
+.pill--discount svg * {
+  fill: transparent !important;
+  stroke: var(--color-secondary-text-main);
+}
+
 .main-go-top {
   position: fixed;
   bottom: var(--gutter-regular);
@@ -2569,6 +2564,18 @@ a.button__icon {
 @media screen and (max-width: 767px) {
   .button--icon .button__text {
     white-space: normal;
+  }
+}
+shopify-accelerated-checkout,
+shopify-accelerated-checkout-cart {
+  --shopify-accelerated-checkout-button-border-radius: var(--border-radius-buttons);
+  --shopify-accelerated-checkout-skeleton-background-color: var(--color-text-main);
+  --shopify-accelerated-checkout-button-block-size: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  shopify-accelerated-checkout-cart {
+    --shopify-accelerated-checkout-button-block-size: 43px;
   }
 }
 .card {
@@ -2658,6 +2665,9 @@ a.button__icon {
   pointer-events: none;
   transition: opacity 175ms linear;
 }
+.card__image--with-overlay-z-index:after {
+  z-index: 9;
+}
 .card__image--with-overlay.lazy-image--revealed:after, .card__image--with-overlay-forced:after {
   opacity: 0.36;
 }
@@ -2720,6 +2730,7 @@ select {
   resize: none;
   padding: var(--input-padding);
   vertical-align: middle;
+  appearance: none;
   -webkit-appearance: none;
   outline: none !important;
   transition: all 100ms linear;

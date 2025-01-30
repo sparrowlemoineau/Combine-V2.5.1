@@ -42,7 +42,8 @@
       "powered_by_shopify_html": "Ten sklep będzie obsługiwany przez {{ shopify }}"
     },
     "prefixes": {
-      "by": "od:"
+      "by": "od:",
+      "or": "lub"
     },
     "account_link": {
       "logged_in": "Moje konto",
@@ -109,6 +110,7 @@
       "rating_info": "Ocena: {{ rating_value }} z {{ rating_max }}",
       "top": "Top",
       "go_to_top": "Idź na górę",
+      "slide": "Pokaż slajd {{ count }}",
       "time_left": "Pozostał czas",
       "show_more": "Pokaż więcej",
       "show_less": "Pokaż mniej",
@@ -175,7 +177,8 @@
       "save_amount_html": "Zaoszczędź {{ amount }}",
       "save_up_to_amount_html": "Zaoszczędzić do {{ amount }}",
       "save_percent": "Do {{ percent }}",
-      "choose_variant_first": "Najpierw wybierz wariant",
+      "quick_view": "Szybki podgląd",
+      "choose_variant_first": "Wybierz wariant",
       "select_variant": "Wybierz {{ variant }}",
       "color_variants_count": {
         "one": "{{ count }} dostępny kolor",
@@ -346,7 +349,8 @@
         "date": "Data",
         "payment_status": "Status płatności",
         "fulfillment_status": "Status realizacji",
-        "total": "Suma"
+        "total": "Suma",
+        "view_order": "Zobacz zamówienie"
       },
       "no_orders_message": "Nie złożono jeszcze żadnego zamówienia.",
       "account_details_title": "Szczegóły konta",
