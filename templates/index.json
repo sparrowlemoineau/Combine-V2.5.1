@@ -29,16 +29,16 @@
         "3cd23f4b-1b25-4b72-8a40-ab007525cf7c": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/serum_ingredient1_d0973ffd-84cb-4453-9c6e-6b948f53b1a0.jpg",
+            "image": "shopify://shop_images/serum_ingredient1_082f162d-22c5-4c27-9df3-be3ddb7b789d.jpg",
             "link": "",
             "offset_width": 10,
             "offset_x": 55,
             "offset_y": 115,
             "hide_on_desk": false,
             "hide_on_mobile": false,
-            "offset_width_mobile": 20,
+            "offset_width_mobile": 35,
             "offset_x_mobile": 65,
-            "offset_y_mobile": 90,
+            "offset_y_mobile": 95,
             "scroll_speed": 4
           }
         },
