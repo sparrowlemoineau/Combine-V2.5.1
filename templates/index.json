@@ -182,10 +182,6 @@
     "featured_product_F7c4rm": {
       "type": "featured-product",
       "blocks": {
-        "vendor_Jhmep7": {
-          "type": "vendor",
-          "settings": {}
-        },
         "title_zwyW9J": {
           "type": "title",
           "settings": {
@@ -195,6 +191,14 @@
         "price_QmfNdn": {
           "type": "price",
           "settings": {}
+        },
+        "inventory_bkQPLF": {
+          "type": "inventory",
+          "settings": {
+            "show_quantities": "always",
+            "low_inventory_threshold": 3,
+            "show_progress_bar": false
+          }
         },
         "variant_picker_Hhx6Tr": {
           "type": "variant_picker",
@@ -206,6 +210,12 @@
             "style": "outline",
             "show_quantities": "no",
             "unavailable_variants": "show"
+          }
+        },
+        "custom_liquid_gR8Rwq": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<style>\n  .product__inventory {\n    padding-top: 10px; /* Adjust as needed */\n    padding-bottom: 10px; /* Adjust as needed */\n  }\n</style>\n\n<p class=\"product__inventory no-js-hidden\" id=\"Inventory-template--22213608309023__main\" role=\"status\"><svg width=\"15\" height=\"15\" aria-hidden=\"true\">\n    <circle cx=\"7.5\" cy=\"7.5\" r=\"7.5\" fill=\"rgba(255, 0, 0, 0.3)\"></circle>\n    <circle cx=\"7.5\" cy=\"7.5\" r=\"5\" stroke=\"rgb(255, 255, 255)\" stroke-width=\"1\" fill=\"rgb(255, 0, 0)\"></circle>\n</svg>2 pièces restantes</p>"
           }
         },
         "buy_buttons_Vxr6C9": {
@@ -222,10 +232,11 @@
         }
       },
       "block_order": [
-        "vendor_Jhmep7",
         "title_zwyW9J",
         "price_QmfNdn",
+        "inventory_bkQPLF",
         "variant_picker_Hhx6Tr",
+        "custom_liquid_gR8Rwq",
         "buy_buttons_Vxr6C9"
       ],
       "settings": {
