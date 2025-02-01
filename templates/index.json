@@ -157,7 +157,7 @@
         "title_size": "heading-size--xlarge",
         "spacing": 36,
         "button_style": "solid",
-        "blend_mode": "exclusion",
+        "blend_mode": "behind",
         "color_background_main": "#f7f4f2",
         "color_text_main": "#000000",
         "border_radius": 18,
