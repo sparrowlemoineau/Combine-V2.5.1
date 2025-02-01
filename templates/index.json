@@ -243,7 +243,7 @@
         "gallery_padding": 0,
         "gallery_background": "rgba(0,0,0,0)",
         "gallery_border": "rgba(0,0,0,0)",
-        "border_radius": 0,
+        "border_radius": 10,
         "show_thumbnails": true,
         "enable_zoom": true,
         "enable_video_looping": false,
