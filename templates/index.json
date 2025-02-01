@@ -192,14 +192,6 @@
           "type": "price",
           "settings": {}
         },
-        "inventory_bkQPLF": {
-          "type": "inventory",
-          "settings": {
-            "show_quantities": "always",
-            "low_inventory_threshold": 3,
-            "show_progress_bar": false
-          }
-        },
         "variant_picker_Hhx6Tr": {
           "type": "variant_picker",
           "settings": {
@@ -234,7 +226,6 @@
       "block_order": [
         "title_zwyW9J",
         "price_QmfNdn",
-        "inventory_bkQPLF",
         "variant_picker_Hhx6Tr",
         "custom_liquid_gR8Rwq",
         "buy_buttons_Vxr6C9"
