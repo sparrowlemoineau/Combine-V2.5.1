@@ -166,6 +166,79 @@
         "seo_h_tag": "h3"
       }
     },
+    "featured_product_F7c4rm": {
+      "type": "featured-product",
+      "blocks": {
+        "vendor_Jhmep7": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title_zwyW9J": {
+          "type": "title",
+          "settings": {
+            "seo_h_tag": "h3"
+          }
+        },
+        "price_QmfNdn": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_Hhx6Tr": {
+          "type": "variant_picker",
+          "settings": {
+            "heading": "Choose variants",
+            "variants_style": "radio",
+            "variant_labels": true,
+            "color_swatches": true,
+            "style": "outline",
+            "show_quantities": "no",
+            "unavailable_variants": "show"
+          }
+        },
+        "buy_buttons_Vxr6C9": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_preorder": false,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false,
+            "show_price": true,
+            "style": "outline",
+            "color_text_buttons": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "vendor_Jhmep7",
+        "title_zwyW9J",
+        "price_QmfNdn",
+        "variant_picker_Hhx6Tr",
+        "buy_buttons_Vxr6C9"
+      ],
+      "settings": {
+        "heading": "Notre Best Seller",
+        "subheading": "",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "product": "",
+        "gallery_layout": "one-col scroll",
+        "gallery_desktop_width": "two-thirds",
+        "gallery_mobile_width": 90,
+        "gallery_mobile_margin": true,
+        "gallery_aspect_ratio": "1",
+        "gallery_fit": false,
+        "gallery_padding": 0,
+        "gallery_background": "rgba(0,0,0,0)",
+        "gallery_border": "rgba(0,0,0,0)",
+        "border_radius": 0,
+        "show_thumbnails": false,
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "default_to_first_variant": true,
+        "gutter_decrease": false,
+        "seo_h_tag": "h2"
+      }
+    },
     "1664890690ce59ddd2": {
       "type": "promotion-cards",
       "blocks": {
@@ -1045,6 +1118,7 @@
   },
   "order": [
     "1662457455386507d1",
+    "featured_product_F7c4rm",
     "1664890690ce59ddd2",
     "1664349396209e8e9d",
     "16624574747e3c27ed",
