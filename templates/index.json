@@ -150,7 +150,7 @@
       ],
       "settings": {
         "caption": "Transformez vos cheveux en 30 jours",
-        "title": "<p>7 huiles, 1 effet bombe : La recette pro pour des cheveux longs et forts</p>",
+        "title": "<p>Chute de cheveux ? Voici le secret des crinières épaisses en 30 jours</p>",
         "button_label": "Je booste mes cheveux",
         "button_link": "",
         "alignment": "horizontal-center align-content--vertical-middle",
@@ -159,7 +159,7 @@
         "button_style": "solid",
         "blend_mode": "exclusion",
         "color_background_main": "#f7f4f2",
-        "color_text_main": "#000000",
+        "color_text_main": "#ffffff",
         "border_radius": 18,
         "add_top_margin": false,
         "remove_inner_padding": false,
