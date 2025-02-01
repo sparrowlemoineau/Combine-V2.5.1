@@ -59,7 +59,7 @@
         "alignment": "center",
         "label_style": "tooltip",
         "sticky_header": true,
-        "show_header_border_bottom": true,
+        "show_header_border_bottom": false,
         "show_header_border_top": false,
         "hide_search": false,
         "hide_cart": false,
