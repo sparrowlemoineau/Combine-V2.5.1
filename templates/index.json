@@ -300,12 +300,12 @@
         "text_FPYaVk": {
           "type": "text",
           "settings": {
-            "title": "Returns details",
-            "subtitle": "Question subtitle",
+            "title": "Formulations",
+            "subtitle": "",
             "icon": "no-icon",
             "button_label": "",
             "button_link": "",
-            "body": "<p>Show customers how much time they have for testing your products</p><p>Link to your <a href='#'>returns policy</a>.</p>",
+            "body": "<p>sans silicones, sulfates, hormones, médicaments, parabènes, phtalates.</p>",
             "hide_block_if": false
           }
         }
