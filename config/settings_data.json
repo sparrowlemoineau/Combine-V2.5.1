@@ -158,9 +158,9 @@
     }
   },
   "current": {
-    "headings_font_primary": "dm_sans_n5",
-    "body_font_primary": "dm_sans_n4",
-    "body_font_secondary": "dm_sans_n5",
+    "headings_font_primary": "space_mono_n4",
+    "body_font_primary": "helvetica_n4",
+    "body_font_secondary": "space_mono_n4",
     "color_background_header": "#ffffff",
     "color_background_main_secondary": "#f2efec",
     "color_background_footer": "#1b1a1a",
@@ -184,6 +184,67 @@
     "color_accent_main": "#f25a38",
     "color_background_cards": "#FFFFFF",
     "color_accent_cards": "#f25a38",
-    "color_accent_footer": "#f25a38"
+    "color_accent_footer": "#f25a38",
+    "sections": {
+      "popups": {
+        "type": "popups",
+        "blocks": {
+          "popups-0": {
+            "type": "cookies",
+            "settings": {
+              "popup_bgcolor": "#111111",
+              "popup_txtcolor": "#ffffff",
+              "popup_box_shadow": false
+            }
+          },
+          "popups-1": {
+            "type": "newsletter",
+            "settings": {
+              "enable": false,
+              "visibility": "all",
+              "title": "Newsletter",
+              "content": "<p>Subscribe and receive exclusive information and offers!</p>",
+              "show_after": 5,
+              "show_repeat": "week",
+              "popup_bgcolor": "#111111",
+              "popup_txtcolor": "#ffffff",
+              "popup_box_shadow": false
+            }
+          }
+        },
+        "block_order": [
+          "popups-0",
+          "popups-1"
+        ],
+        "settings": {
+          "popup_border_radius": 10,
+          "alignment": "right"
+        }
+      },
+      "popup-age-verification": {
+        "type": "popup-age-verification",
+        "settings": {
+          "enable": false,
+          "heading": "Age verification",
+          "content": "<p>By clicking enter, I certify that I am over the age of 18</p>",
+          "button_label": "Enter",
+          "popup_bgcolor": "#111111",
+          "popup_txtcolor": "#ffffff"
+        }
+      },
+      "exit-intent-popup": {
+        "type": "exit-intent-popup",
+        "settings": {
+          "enable": false,
+          "title": "Before you leave",
+          "text": "<p>Be the first to know about new collections and exclusive offers.</p>",
+          "cta_label": "",
+          "cta_url": "",
+          "cta_target": false,
+          "show_repeat": "week"
+        }
+      }
+    },
+    "content_for_index": []
   }
 }
