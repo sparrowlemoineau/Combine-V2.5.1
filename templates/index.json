@@ -166,6 +166,70 @@
         "seo_h_tag": "h3"
       }
     },
+    "content_toggles_DXXTk3": {
+      "type": "content-toggles",
+      "blocks": {
+        "text_CnbAkb": {
+          "type": "text",
+          "settings": {
+            "title": "Shipping details",
+            "subtitle": "Question subtitle",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Write some useful information about your shipping details</p><p>Link to your <a href='#'>shipping policy</a>.</p>",
+            "hide_block_if": false
+          }
+        },
+        "text_8Lf4NR": {
+          "type": "text",
+          "settings": {
+            "title": "Delivery details",
+            "subtitle": "Question subtitle",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Let your customers know if you offer free delivery for certain types of orders</p><p>Link to your <a href='#'>offers page</a>.</p>",
+            "hide_block_if": false
+          }
+        },
+        "text_FPYaVk": {
+          "type": "text",
+          "settings": {
+            "title": "Returns details",
+            "subtitle": "Question subtitle",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Show customers how much time they have for testing your products</p><p>Link to your <a href='#'>returns policy</a>.</p>",
+            "hide_block_if": false
+          }
+        }
+      },
+      "block_order": [
+        "text_CnbAkb",
+        "text_8Lf4NR",
+        "text_FPYaVk"
+      ],
+      "settings": {
+        "heading": "FAQ",
+        "subheading": "Share your <strong>best</strong> answers",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "cta_label": "",
+        "cta_url": "",
+        "form_enable": false,
+        "form_title": "Contact form",
+        "style": "outline",
+        "open_first": false,
+        "section_background_color": "rgba(0,0,0,0)",
+        "section_background_gradient": "",
+        "section_heading_color": "rgba(0,0,0,0)",
+        "gutter_decrease": false,
+        "remove_bottom_margin": false,
+        "seo_h_tag": "h2"
+      }
+    },
     "image_kbM6XB": {
       "type": "image",
       "settings": {
@@ -1135,6 +1199,7 @@
     "1662457455386507d1",
     "image_kbM6XB",
     "featured_product_F7c4rm",
+    "content_toggles_DXXTk3",
     "1664890690ce59ddd2",
     "1664349396209e8e9d",
     "16624574747e3c27ed",
