@@ -166,6 +166,19 @@
         "seo_h_tag": "h3"
       }
     },
+    "image_kbM6XB": {
+      "type": "image",
+      "settings": {
+        "image": "shopify://shop_images/benefserum_prod_i.png",
+        "mobile_image": "shopify://shop_images/benefserum_prod_i.png",
+        "image_border_radius": 20,
+        "link": "",
+        "open_in_new_window": false,
+        "image_size": "large",
+        "remove_top_margin": false,
+        "remove_bottom_margin": false
+      }
+    },
     "featured_product_F7c4rm": {
       "type": "featured-product",
       "blocks": {
@@ -225,13 +238,13 @@
         "gallery_desktop_width": "two-thirds",
         "gallery_mobile_width": 90,
         "gallery_mobile_margin": true,
-        "gallery_aspect_ratio": "1",
+        "gallery_aspect_ratio": "0.666667",
         "gallery_fit": false,
         "gallery_padding": 0,
         "gallery_background": "rgba(0,0,0,0)",
         "gallery_border": "rgba(0,0,0,0)",
         "border_radius": 0,
-        "show_thumbnails": false,
+        "show_thumbnails": true,
         "enable_zoom": true,
         "enable_video_looping": false,
         "default_to_first_variant": true,
@@ -1118,6 +1131,7 @@
   },
   "order": [
     "1662457455386507d1",
+    "image_kbM6XB",
     "featured_product_F7c4rm",
     "1664890690ce59ddd2",
     "1664349396209e8e9d",
