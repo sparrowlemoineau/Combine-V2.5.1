@@ -55,7 +55,7 @@
         "logo_mobile_src": "shopify://shop_images/logo_tada_serum.png",
         "logo_mobile_height": 40,
         "style": "two-rows",
-        "menu_type": "classic",
+        "menu_type": "minimal",
         "alignment": "center",
         "label_style": "tooltip",
         "sticky_header": true,
