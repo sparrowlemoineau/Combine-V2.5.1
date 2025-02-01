@@ -94,12 +94,12 @@
           "type": "video",
           "settings": {
             "video": "shopify://files/videos/serum tada.mp4",
-            "offset_width": 25,
+            "offset_width": 10,
             "offset_x": 15,
             "offset_y": 0,
             "hide_on_desk": false,
             "hide_on_mobile": false,
-            "offset_width_mobile": 50,
+            "offset_width_mobile": 35,
             "offset_x_mobile": 15,
             "offset_y_mobile": 0,
             "scroll_speed": 0
@@ -149,7 +149,7 @@
         "image_PKxhJf"
       ],
       "settings": {
-        "caption": "Transformez vos cheveux en 30 jours",
+        "caption": "#1 Recommandé par les dermatologues",
         "title": "<p>Chute de cheveux ? Voici le secret des crinières épaisses en 30 jours</p>",
         "button_label": "Je booste mes cheveux",
         "button_link": "",
