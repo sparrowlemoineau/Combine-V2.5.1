@@ -166,30 +166,134 @@
         "seo_h_tag": "h3"
       }
     },
+    "image_kbM6XB": {
+      "type": "image",
+      "settings": {
+        "image": "shopify://shop_images/benefserum_prod_i.png",
+        "mobile_image": "shopify://shop_images/benefserum_prod_i.png",
+        "image_border_radius": 20,
+        "link": "",
+        "open_in_new_window": false,
+        "image_size": "large",
+        "remove_top_margin": false,
+        "remove_bottom_margin": false
+      }
+    },
+    "featured_product_F7c4rm": {
+      "type": "featured-product",
+      "blocks": {
+        "title_zwyW9J": {
+          "type": "title",
+          "settings": {
+            "seo_h_tag": "h3"
+          }
+        },
+        "price_QmfNdn": {
+          "type": "price",
+          "settings": {}
+        },
+        "description_DkmqJj": {
+          "type": "description",
+          "settings": {
+            "product_description_truncated": "120"
+          }
+        },
+        "divider_R3myTQ": {
+          "type": "divider",
+          "settings": {
+            "height": 1,
+            "color": "rgba(0,0,0,1)",
+            "style": "solid"
+          }
+        },
+        "variant_picker_Hhx6Tr": {
+          "type": "variant_picker",
+          "settings": {
+            "heading": "Choose variants",
+            "variants_style": "radio",
+            "variant_labels": true,
+            "color_swatches": true,
+            "style": "outline",
+            "show_quantities": "no",
+            "unavailable_variants": "show"
+          }
+        },
+        "custom_liquid_gR8Rwq": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<style>\n  .product__inventory {\n    padding-top: 10px; /* Adjust as needed */\n    padding-bottom: 10px; /* Adjust as needed */\n  }\n</style>\n\n<p class=\"product__inventory no-js-hidden\" id=\"Inventory-template--22213608309023__main\" role=\"status\"><svg width=\"15\" height=\"15\" aria-hidden=\"true\">\n    <circle cx=\"7.5\" cy=\"7.5\" r=\"7.5\" fill=\"rgba(255, 0, 0, 0.3)\"></circle>\n    <circle cx=\"7.5\" cy=\"7.5\" r=\"5\" stroke=\"rgb(255, 255, 255)\" stroke-width=\"1\" fill=\"rgb(255, 0, 0)\"></circle>\n</svg>2 pièces restantes</p>"
+          }
+        },
+        "buy_buttons_Vxr6C9": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_preorder": false,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false,
+            "show_price": true,
+            "style": "outline",
+            "color_text_buttons": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "title_zwyW9J",
+        "price_QmfNdn",
+        "description_DkmqJj",
+        "divider_R3myTQ",
+        "variant_picker_Hhx6Tr",
+        "custom_liquid_gR8Rwq",
+        "buy_buttons_Vxr6C9"
+      ],
+      "settings": {
+        "heading": "Notre Best Seller",
+        "subheading": "",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "product": "tadaa®-huile-de-croissance-naturelle-des-cheveux",
+        "gallery_layout": "one-col scroll",
+        "gallery_desktop_width": "two-thirds",
+        "gallery_mobile_width": 90,
+        "gallery_mobile_margin": true,
+        "gallery_aspect_ratio": "0.666667",
+        "gallery_fit": false,
+        "gallery_padding": 0,
+        "gallery_background": "rgba(0,0,0,0)",
+        "gallery_border": "rgba(0,0,0,0)",
+        "border_radius": 10,
+        "show_thumbnails": true,
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "default_to_first_variant": true,
+        "gutter_decrease": false,
+        "seo_h_tag": "h2"
+      }
+    },
     "content_toggles_DXXTk3": {
       "type": "content-toggles",
       "blocks": {
         "text_CnbAkb": {
           "type": "text",
           "settings": {
-            "title": "Shipping details",
-            "subtitle": "Question subtitle",
+            "title": "Utilisation recommandée",
+            "subtitle": "Tips",
             "icon": "no-icon",
             "button_label": "",
             "button_link": "",
-            "body": "<p>Write some useful information about your shipping details</p><p>Link to your <a href='#'>shipping policy</a>.</p>",
+            "body": "<p>Appliquez un compte-gouttes complet de sérum directement sur votre cuir chevelu, en sectionnant les cheveux mouillés ou secs avec le bout du compte-gouttes au fur et à mesure. Utilisez suffisamment de sérum pour couvrir les zones préoccupantes. Massez avec les doigts. Ne rincez pas. Utilisez une fois par jour.</p>",
             "hide_block_if": false
           }
         },
         "text_8Lf4NR": {
           "type": "text",
           "settings": {
-            "title": "Delivery details",
-            "subtitle": "Question subtitle",
+            "title": "Bénéfices",
+            "subtitle": "",
             "icon": "no-icon",
             "button_label": "",
             "button_link": "",
-            "body": "<p>Let your customers know if you offer free delivery for certain types of orders</p><p>Link to your <a href='#'>offers page</a>.</p>",
+            "body": "<p> Soutiennent l'épaisseur et la force visibles des cheveux2,3</p><p>Réduisent visiblement la casse des cheveux2</p><p>Rétablissent les nutriments directement au niveau du cuir chevelu4-6</p>",
             "hide_block_if": false
           }
         },
@@ -230,298 +334,70 @@
         "seo_h_tag": "h2"
       }
     },
-    "image_kbM6XB": {
-      "type": "image",
-      "settings": {
-        "image": "shopify://shop_images/benefserum_prod_i.png",
-        "mobile_image": "shopify://shop_images/benefserum_prod_i.png",
-        "image_border_radius": 20,
-        "link": "",
-        "open_in_new_window": false,
-        "image_size": "large",
-        "remove_top_margin": false,
-        "remove_bottom_margin": false
-      }
-    },
-    "featured_product_F7c4rm": {
-      "type": "featured-product",
+    "slideshow_QUtVNM": {
+      "type": "slideshow",
       "blocks": {
-        "title_zwyW9J": {
-          "type": "title",
+        "image_WJQBbW": {
+          "type": "image",
           "settings": {
-            "seo_h_tag": "h3"
-          }
-        },
-        "price_QmfNdn": {
-          "type": "price",
-          "settings": {}
-        },
-        "variant_picker_Hhx6Tr": {
-          "type": "variant_picker",
-          "settings": {
-            "heading": "Choose variants",
-            "variants_style": "radio",
-            "variant_labels": true,
-            "color_swatches": true,
-            "style": "outline",
-            "show_quantities": "no",
-            "unavailable_variants": "show"
-          }
-        },
-        "custom_liquid_gR8Rwq": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<style>\n  .product__inventory {\n    padding-top: 10px; /* Adjust as needed */\n    padding-bottom: 10px; /* Adjust as needed */\n  }\n</style>\n\n<p class=\"product__inventory no-js-hidden\" id=\"Inventory-template--22213608309023__main\" role=\"status\"><svg width=\"15\" height=\"15\" aria-hidden=\"true\">\n    <circle cx=\"7.5\" cy=\"7.5\" r=\"7.5\" fill=\"rgba(255, 0, 0, 0.3)\"></circle>\n    <circle cx=\"7.5\" cy=\"7.5\" r=\"5\" stroke=\"rgb(255, 255, 255)\" stroke-width=\"1\" fill=\"rgb(255, 0, 0)\"></circle>\n</svg>2 pièces restantes</p>"
-          }
-        },
-        "buy_buttons_Vxr6C9": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_quantity_selector": true,
-            "show_preorder": false,
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": false,
-            "show_price": true,
-            "style": "outline",
-            "color_text_buttons": "rgba(0,0,0,0)"
-          }
-        }
-      },
-      "block_order": [
-        "title_zwyW9J",
-        "price_QmfNdn",
-        "variant_picker_Hhx6Tr",
-        "custom_liquid_gR8Rwq",
-        "buy_buttons_Vxr6C9"
-      ],
-      "settings": {
-        "heading": "Notre Best Seller",
-        "subheading": "",
-        "section_heading_size": "text-size--regular",
-        "section_heading_layout": "section-heading--left section-heading--one-row",
-        "product": "tadaa®-huile-de-croissance-naturelle-des-cheveux",
-        "gallery_layout": "one-col scroll",
-        "gallery_desktop_width": "two-thirds",
-        "gallery_mobile_width": 90,
-        "gallery_mobile_margin": true,
-        "gallery_aspect_ratio": "0.666667",
-        "gallery_fit": false,
-        "gallery_padding": 0,
-        "gallery_background": "rgba(0,0,0,0)",
-        "gallery_border": "rgba(0,0,0,0)",
-        "border_radius": 10,
-        "show_thumbnails": true,
-        "enable_zoom": true,
-        "enable_video_looping": false,
-        "default_to_first_variant": true,
-        "gutter_decrease": false,
-        "seo_h_tag": "h2"
-      }
-    },
-    "1664890690ce59ddd2": {
-      "type": "promotion-cards",
-      "blocks": {
-        "1664890690c0b1684f-0": {
-          "type": "card",
-          "settings": {
-            "caption": "Introduction",
-            "title": "The best promotion",
-            "subtitle": "",
-            "button_label": "",
-            "button_link": "",
+            "caption": "Introducing",
+            "title": "Your best promotion yet",
+            "link": "",
+            "button_label": "Show more",
             "open_in_new_window": false,
-            "color_background_main": "#ede8e5",
-            "color_text_main": "#000000",
-            "color_borders_main": "rgba(0,0,0,0)",
-            "color_hide_borders": true,
-            "seo_h_tag": "h3"
-          }
-        },
-        "1664890690c0b1684f-1": {
-          "type": "card",
-          "settings": {
-            "caption": "Discount",
-            "title": "The best deals",
-            "subtitle": "",
-            "button_label": "",
-            "button_link": "",
-            "open_in_new_window": false,
-            "color_background_main": "#ede8e5",
+            "color_background_main": "rgba(0,0,0,0)",
             "color_text_main": "rgba(0,0,0,0)",
-            "color_borders_main": "rgba(0,0,0,0)",
-            "color_hide_borders": true,
-            "seo_h_tag": "h3"
+            "seo_h_tag": "h2"
           }
         },
-        "1664890690c0b1684f-2": {
-          "type": "card",
+        "image_8mxXew": {
+          "type": "image",
           "settings": {
-            "caption": "Sale",
-            "title": "The flash collection",
-            "subtitle": "",
-            "button_label": "",
-            "button_link": "",
+            "caption": "Introducing",
+            "title": "Your best promotion yet",
+            "link": "",
+            "button_label": "Show more",
             "open_in_new_window": false,
-            "color_background_main": "#ede8e5",
+            "color_background_main": "rgba(0,0,0,0)",
             "color_text_main": "rgba(0,0,0,0)",
-            "color_borders_main": "rgba(0,0,0,0)",
-            "color_hide_borders": true,
-            "seo_h_tag": "h3"
+            "seo_h_tag": "h2"
+          }
+        },
+        "image_b3jfTa": {
+          "type": "image",
+          "settings": {
+            "caption": "Introducing",
+            "title": "Your best promotion yet",
+            "link": "",
+            "button_label": "Show more",
+            "open_in_new_window": false,
+            "color_background_main": "rgba(0,0,0,0)",
+            "color_text_main": "rgba(0,0,0,0)",
+            "seo_h_tag": "h2"
           }
         }
       },
       "block_order": [
-        "1664890690c0b1684f-0",
-        "1664890690c0b1684f-1",
-        "1664890690c0b1684f-2"
+        "image_WJQBbW",
+        "image_8mxXew",
+        "image_b3jfTa"
       ],
       "settings": {
-        "heading": "Promotion cards",
-        "subheading": "Share your <strong>best</strong> offers",
-        "section_heading_size": "text-size--large",
-        "section_heading_layout": "section-heading--left section-heading--two-rows",
-        "cta_label": "",
-        "cta_url": "",
-        "layout": "grid-3 grid-lap-1",
-        "image_aspect_ratio": "0.83333",
-        "text_alignment": "text-align--left",
-        "caption_size": "regular",
-        "title_size": "100%",
-        "subtitle_size": "regular",
-        "spacing": 22,
-        "button_style": "outline",
-        "border_radius": 20,
-        "section_background_color": "rgba(0,0,0,0)",
-        "section_background_gradient": "",
-        "section_heading_color": "rgba(0,0,0,0)",
-        "gutter_decrease": false,
-        "remove_bottom_margin": false,
-        "seo_h_tag": "h2"
-      }
-    },
-    "1664349396209e8e9d": {
-      "type": "collection-list",
-      "blocks": {
-        "16643493964f1b2d77-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "95ee35d2-e228-4c6d-9d34-fc485f6ad890": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "16643493964f1b2d77-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "80a7ed9b-b5a3-4415-a7df-6f5fbbda9c74": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "c79004ec-b617-483c-94ff-2e5f93a7b992": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "6ad44048-b4d2-4375-b2bf-2f0ee68073fb": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "402de11e-2d08-4794-bc71-4fa496ecc264": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "16643493964f1b2d77-0",
-        "95ee35d2-e228-4c6d-9d34-fc485f6ad890",
-        "16643493964f1b2d77-1",
-        "80a7ed9b-b5a3-4415-a7df-6f5fbbda9c74",
-        "c79004ec-b617-483c-94ff-2e5f93a7b992",
-        "6ad44048-b4d2-4375-b2bf-2f0ee68073fb",
-        "402de11e-2d08-4794-bc71-4fa496ecc264"
-      ],
-      "settings": {
-        "heading": "Collections list",
-        "subheading": "Share your <strong>best</strong> offers",
-        "section_heading_size": "text-size--large",
-        "section_heading_layout": "section-heading--left section-heading--one-row",
-        "show_view_all": false,
-        "style": "slider",
-        "layout": "grid-6 grid-portable-4 grid-lap-3 grid-palm-2",
-        "image_aspect_ratio": "0.83333",
-        "image_border_radius": 0,
-        "section_background_color": "rgba(0,0,0,0)",
-        "section_background_gradient": "",
-        "section_heading_color": "rgba(0,0,0,0)",
-        "gutter_decrease": false,
-        "remove_bottom_margin": false,
-        "seo_h_tag": "h2"
-      }
-    },
-    "16624574747e3c27ed": {
-      "type": "featured-collection",
-      "blocks": {
-        "166245747472ac4f44-0": {
-          "type": "price",
-          "settings": {}
-        },
-        "166245747472ac4f44-1": {
-          "type": "title",
-          "settings": {}
-        },
-        "0afd2c9a-1791-493a-b735-5227fad1b0bd": {
-          "type": "rating",
-          "settings": {}
-        },
-        "dc22df2a-d6cb-4072-83c2-34f86732db6b": {
-          "type": "icons",
-          "settings": {}
-        },
-        "66b08189-b941-4f66-8a0c-b3f48e68738d": {
-          "type": "product_link",
-          "disabled": true,
-          "settings": {
-            "button_label": "View product"
-          }
-        }
-      },
-      "block_order": [
-        "166245747472ac4f44-0",
-        "166245747472ac4f44-1",
-        "0afd2c9a-1791-493a-b735-5227fad1b0bd",
-        "dc22df2a-d6cb-4072-83c2-34f86732db6b",
-        "66b08189-b941-4f66-8a0c-b3f48e68738d"
-      ],
-      "settings": {
-        "heading": "Featured collection",
-        "subheading": "Share your <strong>best</strong> offers",
-        "section_heading_size": "text-size--large",
-        "section_heading_layout": "section-heading--left section-heading--two-rows",
-        "show_view_all": true,
-        "layout": "grid-4 grid-portable-3 grid-lap-2 grid-tiny-1",
-        "layout_mobile": "grid-palm-2",
-        "products_number": 8,
-        "collection": "bestsellers",
-        "section_background_color": "rgba(0,0,0,0)",
-        "section_background_gradient": "",
-        "section_heading_color": "rgba(0,0,0,0)",
-        "gutter_decrease": false,
-        "remove_bottom_margin": false,
-        "seo_h_tag": "h2"
+        "desktop_height": "80vh",
+        "mobile_height": "60vh",
+        "is_auto_height": false,
+        "autorotate_enable": false,
+        "autorotate_interval": 5,
+        "is_fullwidth": true,
+        "alignment": "horizontal-left align-content--vertical-bottom",
+        "caption_size": "text-size--large",
+        "title_size": "heading-size--regular",
+        "spacing": 18,
+        "width": "100%",
+        "text_blend_mode": "normal",
+        "button_style": "solid",
+        "border_radius": 0,
+        "remove_margin": false
       }
     },
     "1662457498c47086cb": {
@@ -1200,9 +1076,7 @@
     "image_kbM6XB",
     "featured_product_F7c4rm",
     "content_toggles_DXXTk3",
-    "1664890690ce59ddd2",
-    "1664349396209e8e9d",
-    "16624574747e3c27ed",
+    "slideshow_QUtVNM",
     "1662457498c47086cb",
     "1664202278aa8756e8",
     "16644469534f06cf0c",
