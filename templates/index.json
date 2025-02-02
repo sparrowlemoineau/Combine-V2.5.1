@@ -550,27 +550,27 @@
         "166443277289597ba1-1": {
           "type": "testimonial",
           "settings": {
-            "author_name": "Author",
-            "author_title": "Customer",
-            "quote": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
+            "author_name": "Nathalie, 57 an",
+            "author_title": "Cliente vérifiée",
+            "quote": "<p>Après des années à cacher mes tempes clairsemées, cette huile a réveillé mes racines endormies.<strong>Baby hairs visibles en 15 jours</strong>! Même mon mari a remarqué :<em>\"On dirait tes cheveux de 30 ans !\"</em>Cerise sur le gâteau :<strong>pas de chimie agressive</strong>.</p>",
             "image": "shopify://shop_images/Rectangle_105_1_1.jpg"
           }
         },
         "166443277289597ba1-0": {
           "type": "testimonial",
           "settings": {
-            "author_name": "Author",
-            "author_title": "Customer",
-            "quote": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
+            "author_name": "Amélie, 32 ans",
+            "author_title": "Cliente vérifiée",
+            "quote": "<p>Cheveux fins + boulot de dingue = zéro patience pour les routines longues. Cette huile s’applique en 2 min chrono le soir. En 3 semaines : moins de cheveux dans la brosse, plus de volume. Mon secret ?<strong>Le ricin et le romarin qui bossent pendant que je dors.</strong></p>",
             "image": "shopify://shop_images/review4.jpg"
           }
         },
         "7132688c-ac84-440d-aab1-88b359d1d273": {
           "type": "testimonial",
           "settings": {
-            "author_name": "Author",
-            "author_title": "Customer",
-            "quote": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
+            "author_name": "Aïssatou",
+            "author_title": "Cliente vérifiée",
+            "quote": "<p>Plus besoin de mélanger 5 huiles maison ! Le combo <strong>avocat + coco + ricin </strong>hydrate mes boucles sans les alourdir. <strong>Résultat : </strong>des twists qui tiennent 2 semaines, zéro casse au démêlage. Enfin une formule adaptée aux<strong>c heveux afro paresseux </strong>comme les miens !</p>",
             "image": "shopify://shop_images/bonnet_soie06.png"
           }
         }
