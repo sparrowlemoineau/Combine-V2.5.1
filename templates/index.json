@@ -284,7 +284,7 @@
           "type": "text",
           "settings": {
             "title": "Utilisation recommandée",
-            "subtitle": "Tips",
+            "subtitle": "",
             "icon": "no-icon",
             "button_label": "",
             "button_link": "",
@@ -323,7 +323,7 @@
         "text_FPYaVk"
       ],
       "settings": {
-        "heading": "FAQ",
+        "heading": "Bon à savoir",
         "subheading": "",
         "section_heading_size": "text-size--regular",
         "section_heading_layout": "section-heading--left section-heading--one-row",
