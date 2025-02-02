@@ -258,20 +258,21 @@
         },
         "price_QmfNdn": {
           "type": "price",
+          "disabled": true,
           "settings": {}
+        },
+        "divider_CYGbpw": {
+          "type": "divider",
+          "settings": {
+            "height": 1,
+            "color": "rgba(0,0,0,1)",
+            "style": "solid"
+          }
         },
         "description_DkmqJj": {
           "type": "description",
           "settings": {
             "product_description_truncated": "120"
-          }
-        },
-        "divider_R3myTQ": {
-          "type": "divider",
-          "settings": {
-            "height": 1,
-            "color": "#000000",
-            "style": "solid"
           }
         },
         "variant_picker_Hhx6Tr": {
@@ -309,8 +310,8 @@
         "custom_liquid_TTmqzJ",
         "title_zwyW9J",
         "price_QmfNdn",
+        "divider_CYGbpw",
         "description_DkmqJj",
-        "divider_R3myTQ",
         "variant_picker_Hhx6Tr",
         "custom_liquid_gR8Rwq",
         "buy_buttons_Vxr6C9"
