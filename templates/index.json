@@ -347,10 +347,12 @@
         "image_WJQBbW": {
           "type": "image",
           "settings": {
-            "caption": "Introducing",
-            "title": "Your best promotion yet",
+            "image": "shopify://shop_images/laura.png",
+            "mobile_image": "shopify://shop_images/laura.png",
+            "caption": "",
+            "title": "",
             "link": "",
-            "button_label": "Show more",
+            "button_label": "",
             "open_in_new_window": false,
             "color_background_main": "rgba(0,0,0,0)",
             "color_text_main": "rgba(0,0,0,0)",
@@ -360,23 +362,12 @@
         "image_8mxXew": {
           "type": "image",
           "settings": {
-            "caption": "Introducing",
-            "title": "Your best promotion yet",
+            "image": "shopify://shop_images/marie.png",
+            "mobile_image": "shopify://shop_images/marie.png",
+            "caption": "",
+            "title": "",
             "link": "",
-            "button_label": "Show more",
-            "open_in_new_window": false,
-            "color_background_main": "rgba(0,0,0,0)",
-            "color_text_main": "rgba(0,0,0,0)",
-            "seo_h_tag": "h2"
-          }
-        },
-        "image_b3jfTa": {
-          "type": "image",
-          "settings": {
-            "caption": "Introducing",
-            "title": "Your best promotion yet",
-            "link": "",
-            "button_label": "Show more",
+            "button_label": "",
             "open_in_new_window": false,
             "color_background_main": "rgba(0,0,0,0)",
             "color_text_main": "rgba(0,0,0,0)",
@@ -386,8 +377,7 @@
       },
       "block_order": [
         "image_WJQBbW",
-        "image_8mxXew",
-        "image_b3jfTa"
+        "image_8mxXew"
       ],
       "settings": {
         "desktop_height": "80vh",
