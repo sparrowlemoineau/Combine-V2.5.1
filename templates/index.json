@@ -166,6 +166,68 @@
         "seo_h_tag": "h3"
       }
     },
+    "text_columns_icons_fUBQiz": {
+      "type": "text-columns-icons",
+      "blocks": {
+        "image_Gi7yYp": {
+          "type": "image",
+          "settings": {
+            "icon": "delivery",
+            "image": "shopify://shop_images/Logo_galeries_lafayette.jpg",
+            "crop": false,
+            "title": "",
+            "caption": "",
+            "link": "",
+            "open_in_new_window": false,
+            "color_background_main": "rgba(0,0,0,0)",
+            "color_icons_main": "rgba(0,0,0,0)",
+            "color_text_main": "rgba(0,0,0,0)",
+            "color_borders_main": "rgba(0,0,0,0)",
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_BpXLCd": {
+          "type": "image",
+          "settings": {
+            "icon": "time-limit",
+            "image": "shopify://shop_images/Sephora-Logo.png",
+            "crop": false,
+            "title": "",
+            "caption": "",
+            "link": "",
+            "open_in_new_window": false,
+            "color_background_main": "rgba(0,0,0,0)",
+            "color_icons_main": "rgba(0,0,0,0)",
+            "color_text_main": "rgba(0,0,0,0)",
+            "color_borders_main": "rgba(0,0,0,0)",
+            "seo_h_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "image_Gi7yYp",
+        "image_BpXLCd"
+      ],
+      "settings": {
+        "heading": "Bientot disponible chez",
+        "subheading": "",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--center section-heading--two-rows",
+        "cta_label": "",
+        "cta_url": "",
+        "style": "slider",
+        "layout": "grid-6 grid-portable-4 grid-lap-3 grid-palm-2",
+        "border_radius": 0,
+        "hide_borders": true,
+        "opacity_on_hover": false,
+        "section_background_color": "rgba(0,0,0,0)",
+        "section_background_gradient": "",
+        "section_heading_color": "rgba(0,0,0,0)",
+        "gutter_decrease": false,
+        "remove_bottom_margin": false,
+        "seo_h_tag": "h2"
+      }
+    },
     "image_kbM6XB": {
       "type": "image",
       "settings": {
@@ -1070,6 +1132,7 @@
   },
   "order": [
     "1662457455386507d1",
+    "text_columns_icons_fUBQiz",
     "image_kbM6XB",
     "featured_product_F7c4rm",
     "content_toggles_DXXTk3",

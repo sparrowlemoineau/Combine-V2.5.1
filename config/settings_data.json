@@ -189,16 +189,9 @@
       "popups": {
         "type": "popups",
         "blocks": {
-          "popups-0": {
-            "type": "cookies",
-            "settings": {
-              "popup_bgcolor": "#111111",
-              "popup_txtcolor": "#ffffff",
-              "popup_box_shadow": false
-            }
-          },
           "popups-1": {
             "type": "newsletter",
+            "disabled": true,
             "settings": {
               "enable": false,
               "visibility": "all",
@@ -213,7 +206,6 @@
           }
         },
         "block_order": [
-          "popups-0",
           "popups-1"
         ],
         "settings": {
