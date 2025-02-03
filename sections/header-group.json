@@ -11,29 +11,29 @@
   "type": "header",
   "name": "t:sections.refactor_words.labels.header_group",
   "sections": {
-    "announcement": {
-      "type": "announcement-bar",
+    "marquee_bDLXH4": {
+      "type": "marquee",
       "blocks": {
-        "content": {
-          "type": "content",
+        "text_k8rKVU": {
+          "type": "text",
           "settings": {
-            "text": "-10% sur votre première commande",
-            "link": "",
-            "target": false
+            "marquee_text": "Introduce product <strong>promotions</strong>. Write about your brand. Flash deals!"
           }
         }
       },
       "block_order": [
-        "content"
+        "text_k8rKVU"
       ],
       "settings": {
-        "visibility": "all",
-        "show_locale_selector": true,
-        "show_country_selector": true,
-        "show_social_icons": true,
-        "bar_bgcolor": "#111111",
-        "bar_txtcolor": "#ffffff",
-        "border_color": "rgba(0,0,0,0)"
+        "scroll_direction": "ltr",
+        "speed": 100,
+        "pause_on_hover": true,
+        "horizontal_space": "regular-x-2",
+        "text_size": "text-size--xlarge",
+        "color_background_main": "#A36754",
+        "color_text_main": "rgba(0,0,0,0)",
+        "remove_top_margin": true,
+        "remove_bottom_margin": false
       }
     },
     "header": {
@@ -80,7 +80,7 @@
     }
   },
   "order": [
-    "announcement",
+    "marquee_bDLXH4",
     "header"
   ]
 }
