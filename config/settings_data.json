@@ -175,6 +175,7 @@
     "variants_style": "select",
     "color_swatches_labels": "color,colour,couleur,cor,colore,culoare,farbe,색,色,カラー,färg,farve,szín,barva",
     "cart_mini_shadow": false,
+    "cart_action": "no-overlay",
     "cart_additional_buttons": true,
     "cart_drawer_actions": "show-checkout",
     "cart_image_ratio": "0.666667",
