@@ -502,8 +502,8 @@
       ],
       "settings": {
         "desktop_height": "80vh",
-        "mobile_height": "100vh",
-        "is_auto_height": false,
+        "mobile_height": "40vh",
+        "is_auto_height": true,
         "autorotate_enable": false,
         "autorotate_interval": 5,
         "is_fullwidth": true,
