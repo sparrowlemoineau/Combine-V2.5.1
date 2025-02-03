@@ -17,7 +17,7 @@
         "text_k8rKVU": {
           "type": "text",
           "settings": {
-            "marquee_text": "Introduce product <strong>promotions</strong>. Write about your brand. Flash deals!"
+            "marquee_text": "<strong>SOLDES D'HIVER DERNIERE DEMARQUE -50%</strong>"
           }
         }
       },
@@ -29,9 +29,9 @@
         "speed": 100,
         "pause_on_hover": true,
         "horizontal_space": "regular-x-2",
-        "text_size": "text-size--xlarge",
+        "text_size": "text-size--small",
         "color_background_main": "#A36754",
-        "color_text_main": "rgba(0,0,0,0)",
+        "color_text_main": "#ffffff",
         "remove_top_margin": true,
         "remove_bottom_margin": false
       }
