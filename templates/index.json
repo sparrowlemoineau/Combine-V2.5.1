@@ -689,6 +689,7 @@
     },
     "16643494714910a616": {
       "type": "newsletter",
+      "disabled": true,
       "settings": {
         "title": "Subscribe to our newsletter",
         "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements or welcome customers to your store.</p>",
