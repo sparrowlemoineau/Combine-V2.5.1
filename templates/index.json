@@ -466,40 +466,30 @@
         "6bbf7a01-d3d2-4ead-90f4-4698d468453a": {
           "type": "text",
           "settings": {
-            "text": "<p>Our brand</p>",
+            "text": "<p>TADA</p>",
             "text_size": "regular"
           }
         },
         "166245749775e9bb81-0": {
           "type": "title",
           "settings": {
-            "title": "Your brand's tagline",
-            "title_size": "heading-size--regular",
+            "title": "L’ART DE CÉLÉBRER VOS CHEVEUX, NATURELLEMENT 🌿",
+            "title_size": "heading-size--small",
             "seo_h_tag": "h2"
           }
         },
         "166245749775e9bb81-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements or welcome customers to your store.</p>",
+            "text": "<p>Chez<strong>TADA</strong>, nous croyons que la beauté capillaire commence par le respect :<br/>✅<strong>Respect de votre santé</strong>: Des ingrédients 100% d’origine végétale, sans compromis sur la qualité.<br/>✅<strong>Respect de la planète</strong>: Emballages recyclables, sourcing éthique, zéro test animal.<br/>✅<strong>Respect de votre temps</strong>: Des routines express qui s’adaptent à votre vie, pas l’inverse.</p>",
             "text_size": "large"
-          }
-        },
-        "166245749775e9bb81-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Show more",
-            "link": "",
-            "open_in_new_window": false,
-            "button_style": "outline"
           }
         }
       },
       "block_order": [
         "6bbf7a01-d3d2-4ead-90f4-4698d468453a",
         "166245749775e9bb81-0",
-        "166245749775e9bb81-1",
-        "166245749775e9bb81-2"
+        "166245749775e9bb81-1"
       ],
       "settings": {
         "video_controls": false,
