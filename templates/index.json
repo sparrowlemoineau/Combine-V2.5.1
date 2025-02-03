@@ -481,7 +481,7 @@
         "166245749775e9bb81-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Chez<strong>TADA</strong>, nous croyons que la beauté capillaire commence par le respect :<br/>✅<strong>Respect de votre santé</strong>: Des ingrédients 100% d’origine végétale, sans compromis sur la qualité.<br/>✅<strong>Respect de la planète</strong>: Emballages recyclables, sourcing éthique, zéro test animal.<br/>✅<strong>Respect de votre temps</strong>: Des routines express qui s’adaptent à votre vie, pas l’inverse.</p>",
+            "text": "<p>Chez <strong>TADA</strong>, nous croyons que la beauté capillaire commence par le respect :</p><p><br/>✅ <strong>Respect de votre santé</strong>: Des ingrédients 100% d’origine végétale, sans compromis sur la qualité.</p><p><br/>✅ <strong>Respect de la planète</strong>: Emballages recyclables, sourcing éthique, zéro test animal.</p><p><br/>✅ <strong>Respect de votre temps</strong>: Des routines express qui s’adaptent à votre vie, pas l’inverse.</p>",
             "text_size": "large"
           }
         }
