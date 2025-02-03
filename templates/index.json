@@ -325,13 +325,13 @@
         "gallery_layout": "one-col scroll",
         "gallery_desktop_width": "two-thirds",
         "gallery_mobile_width": 90,
-        "gallery_mobile_margin": true,
+        "gallery_mobile_margin": false,
         "gallery_aspect_ratio": "0.666667",
         "gallery_fit": false,
         "gallery_padding": 0,
         "gallery_background": "rgba(0,0,0,0)",
         "gallery_border": "rgba(0,0,0,0)",
-        "border_radius": 10,
+        "border_radius": 0,
         "show_thumbnails": true,
         "enable_zoom": true,
         "enable_video_looping": false,
@@ -492,6 +492,7 @@
         "166245749775e9bb81-1"
       ],
       "settings": {
+        "image": "shopify://shop_images/image_brand.png",
         "video_controls": false,
         "image_position": "right",
         "height": "large",
