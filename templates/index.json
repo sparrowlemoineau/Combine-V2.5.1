@@ -305,6 +305,15 @@
             "product": "{{section.settings.product}}"
           }
         },
+        "image_pWmGE6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/derma_offert.png",
+            "mobile_image": "shopify://shop_images/derma_offert.png",
+            "link": "",
+            "open_in_new_window": false
+          }
+        },
         "buy_buttons_Vxr6C9": {
           "type": "buy_buttons",
           "settings": {
@@ -328,6 +337,7 @@
         "custom_liquid_gR8Rwq",
         "essential_countdown_app_block_jzLWpH",
         "kaching_bundles_app_block_tJLCF7",
+        "image_pWmGE6",
         "buy_buttons_Vxr6C9"
       ],
       "settings": {
