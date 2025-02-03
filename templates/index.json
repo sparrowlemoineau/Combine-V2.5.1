@@ -293,6 +293,12 @@
             "custom_liquid": "<style>\n  .product__inventory {\n    padding-top: 10px; /* Adjust as needed */\n    padding-bottom: 10px; /* Adjust as needed */\n  }\n</style>\n\n<p class=\"product__inventory no-js-hidden\" id=\"Inventory-template--22213608309023__main\" role=\"status\"><svg width=\"15\" height=\"15\" aria-hidden=\"true\">\n    <circle cx=\"7.5\" cy=\"7.5\" r=\"7.5\" fill=\"rgba(255, 0, 0, 0.3)\"></circle>\n    <circle cx=\"7.5\" cy=\"7.5\" r=\"5\" stroke=\"rgb(255, 255, 255)\" stroke-width=\"1\" fill=\"rgb(255, 0, 0)\"></circle>\n</svg>2 pièces restantes</p>"
           }
         },
+        "essential_countdown_app_block_jzLWpH": {
+          "type": "shopify://apps/essential-countdown/blocks/app-block/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
+          "settings": {
+            "id": ""
+          }
+        },
         "buy_buttons_Vxr6C9": {
           "type": "buy_buttons",
           "settings": {
@@ -314,6 +320,7 @@
         "description_DkmqJj",
         "variant_picker_Hhx6Tr",
         "custom_liquid_gR8Rwq",
+        "essential_countdown_app_block_jzLWpH",
         "buy_buttons_Vxr6C9"
       ],
       "settings": {
