@@ -182,6 +182,7 @@
     "cart_image_ratio": "0.666667",
     "cart_image_fit": false,
     "cart_upsell_product": "",
+    "cart_recommendations": false,
     "cart_free_shipping": true,
     "cart_free_shipping_amount": "30",
     "show_breadcrumb": false,
