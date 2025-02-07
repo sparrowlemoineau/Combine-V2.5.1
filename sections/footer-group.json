@@ -1,20 +1,31 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "footer",
   "name": "t:sections.refactor_words.labels.footer_group",
   "sections": {
     "footer": {
       "type": "footer",
-      "settings": {},
       "blocks": {
         "menu": {
           "type": "menu",
           "settings": {
             "title": "QUICK LINKS",
-            "menu": "footer"
+            "menu": "footer",
+            "menu_target": false,
+            "menu_style": true
           }
-        },  
-        "newsletter": { 
+        },
+        "newsletter": {
           "type": "newsletter",
+          "disabled": true,
           "settings": {
             "title": "NEWSLETTER"
           }
@@ -23,7 +34,13 @@
       "block_order": [
         "menu",
         "newsletter"
-      ]
+      ],
+      "settings": {
+        "layout": "grid-4 grid-portable-2 grid-lap-1",
+        "show_locale_selector": false,
+        "show_country_selector": false,
+        "seo_h_tag": "h2"
+      }
     }
   },
   "order": [
