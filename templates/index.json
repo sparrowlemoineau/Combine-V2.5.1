@@ -9,161 +9,17 @@
  */
 {
   "sections": {
-    "1662457455386507d1": {
-      "type": "slider",
-      "blocks": {
-        "82174a03-4a06-44b2-828a-c31c20320900": {
-          "type": "icon",
-          "settings": {
-            "icon": "shopify://shop_images/100-Organic-PNG.png",
-            "icon_size": 128,
-            "offset_x": 65,
-            "offset_y": 145,
-            "hide_on_desk": false,
-            "hide_on_mobile": false,
-            "offset_x_mobile": 70,
-            "offset_y_mobile": 0,
-            "scroll_speed": -5
-          }
-        },
-        "3cd23f4b-1b25-4b72-8a40-ab007525cf7c": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/serum_ingredient1_082f162d-22c5-4c27-9df3-be3ddb7b789d.jpg",
-            "link": "",
-            "offset_width": 10,
-            "offset_x": 55,
-            "offset_y": 115,
-            "hide_on_desk": false,
-            "hide_on_mobile": false,
-            "offset_width_mobile": 35,
-            "offset_x_mobile": 65,
-            "offset_y_mobile": 95,
-            "scroll_speed": 4
-          }
-        },
-        "1662457455b8401316-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/serum_ingredient1.jpg",
-            "link": "",
-            "offset_width": 15,
-            "offset_x": 20,
-            "offset_y": 175,
-            "hide_on_desk": false,
-            "hide_on_mobile": false,
-            "offset_width_mobile": 20,
-            "offset_x_mobile": 5,
-            "offset_y_mobile": 60,
-            "scroll_speed": 10
-          }
-        },
-        "1662457455b8401316-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/serum_ingredient1_1_55ea3a75-d48d-4d1b-bea9-92ff16210637.jpg",
-            "link": "",
-            "offset_width": 15,
-            "offset_x": 75,
-            "offset_y": 130,
-            "hide_on_desk": false,
-            "hide_on_mobile": false,
-            "offset_width_mobile": 35,
-            "offset_x_mobile": 20,
-            "offset_y_mobile": 105,
-            "scroll_speed": 10
-          }
-        },
-        "1662457455b8401316-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/serum_ingredient1_3cf856e5-3947-4b80-8d5d-403f88134049.jpg",
-            "link": "",
-            "offset_width": 20,
-            "offset_x": 5,
-            "offset_y": 85,
-            "hide_on_desk": false,
-            "hide_on_mobile": false,
-            "offset_width_mobile": 25,
-            "offset_x_mobile": 80,
-            "offset_y_mobile": 25,
-            "scroll_speed": 7
-          }
-        },
-        "video_TRqFL3": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/serum tada.mp4",
-            "offset_width": 10,
-            "offset_x": 15,
-            "offset_y": 0,
-            "hide_on_desk": false,
-            "hide_on_mobile": false,
-            "offset_width_mobile": 35,
-            "offset_x_mobile": 15,
-            "offset_y_mobile": 0,
-            "scroll_speed": 0
-          }
-        },
-        "1662457455b8401316-3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/serum_ingredient1_2cc1ebb6-44f9-4ecf-af8f-bbd68db7a53b.jpg",
-            "link": "",
-            "offset_width": 30,
-            "offset_x": 65,
-            "offset_y": 40,
-            "hide_on_desk": false,
-            "hide_on_mobile": false,
-            "offset_width_mobile": 30,
-            "offset_x_mobile": 75,
-            "offset_y_mobile": 55,
-            "scroll_speed": 2
-          }
-        },
-        "image_PKxhJf": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/serum_ingredient1_1.jpg",
-            "link": "",
-            "offset_width": 25,
-            "offset_x": 30,
-            "offset_y": 40,
-            "hide_on_desk": false,
-            "hide_on_mobile": false,
-            "offset_width_mobile": 25,
-            "offset_x_mobile": -5,
-            "offset_y_mobile": 20,
-            "scroll_speed": 0
-          }
-        }
-      },
-      "block_order": [
-        "82174a03-4a06-44b2-828a-c31c20320900",
-        "3cd23f4b-1b25-4b72-8a40-ab007525cf7c",
-        "1662457455b8401316-0",
-        "1662457455b8401316-1",
-        "1662457455b8401316-2",
-        "video_TRqFL3",
-        "1662457455b8401316-3",
-        "image_PKxhJf"
-      ],
+    "image_FKfD9d": {
+      "type": "image",
       "settings": {
-        "caption": "#1 Recommandé par les dermatologues",
-        "title": "<p>La santé des cheveux est la santé du corps entier.</p>",
-        "button_label": "Je booste mes cheveux",
-        "button_link": "shopify://products/tadaa®-huile-de-croissance-naturelle-des-cheveux",
-        "alignment": "horizontal-center align-content--vertical-middle",
-        "title_size": "heading-size--regular",
-        "spacing": 24,
-        "button_style": "solid",
-        "blend_mode": "exclusion",
-        "color_background_main": "#f7f4f2",
-        "color_text_main": "#ffffff",
-        "border_radius": 18,
-        "add_top_margin": false,
-        "remove_inner_padding": false,
-        "seo_h_tag": "h3"
+        "image": "shopify://shop_images/Plan_de_travail_1.png",
+        "mobile_image": "shopify://shop_images/Plan_de_travail_1.png",
+        "image_border_radius": 0,
+        "link": "",
+        "open_in_new_window": false,
+        "image_size": "fullwidth",
+        "remove_top_margin": false,
+        "remove_bottom_margin": false
       }
     },
     "text_columns_icons_fUBQiz": {
@@ -788,7 +644,7 @@
     }
   },
   "order": [
-    "1662457455386507d1",
+    "image_FKfD9d",
     "text_columns_icons_fUBQiz",
     "image_kbM6XB",
     "featured_product_F7c4rm",
