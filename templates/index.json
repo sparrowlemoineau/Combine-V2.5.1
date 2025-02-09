@@ -12,8 +12,8 @@
     "image_FKfD9d": {
       "type": "image",
       "settings": {
-        "image": "shopify://shop_images/Plan_de_travail_1.png",
-        "mobile_image": "shopify://shop_images/Plan_de_travail_1.png",
+        "image": "shopify://shop_images/hero.png",
+        "mobile_image": "shopify://shop_images/hero_62b0dbf2-083b-41ba-a60a-16849afd0167.png",
         "image_border_radius": 0,
         "link": "",
         "open_in_new_window": false,
