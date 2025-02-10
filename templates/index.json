@@ -297,118 +297,45 @@
         "seo_h_tag": "h2"
       }
     },
-    "info_tabs_mYUH6b": {
-      "type": "info-tabs",
+    "before_after_XQXzwp": {
+      "type": "before-after",
       "blocks": {
-        "tab_fMMfhG": {
-          "type": "tab",
+        "image_iYKXNX": {
+          "type": "image",
           "settings": {
-            "title": "",
-            "caption": "<ul><li><strong>Utilisez un shampoing doux</strong> pour ne pas agresser le cuir chevelu.</li><li><strong>Température idéale</strong> : Eau tiède (pas brûlante !) → préserve la fibre capillaire.</li><li><em>Astuce TADA</em> : Massez 1 min en insistant sur les racines pour éliminer résidus et pollution.</li></ul>",
-            "image": "shopify://shop_images/etape_1.png",
-            "icon": "star"
+            "image": "shopify://shop_images/Cellulite_reduction_testminial_3.png",
+            "image_mobile": "shopify://shop_images/Cellulite_reduction_testminial_3.png",
+            "label": "Before"
           }
         },
-        "tab_9jM99N": {
-          "type": "tab",
+        "image_QhmJMH": {
+          "type": "image",
           "settings": {
-            "title": "",
-            "caption": "<ul><li><strong>Quantité</strong> : 3-5 gouttes (selon épaisseur des cheveux).</li><li><strong>Zones cibles</strong> : Cuir chevelu + longueurs (surtout pointes si sèches).</li><li><strong>Technique pro</strong> : Massez 2-3 min avec le bout des doigts (pas les ongles !) → active la microcirculation.</li><li><em>Le bon timing</em> : Appliquez sur cheveux légèrement humides pour une meilleure pénétration</li></ul>",
-            "image": "shopify://shop_images/etape_2.png",
-            "icon": "star"
-          }
-        },
-        "tab_Q9GjBq": {
-          "type": "tab",
-          "settings": {
-            "title": "",
-            "caption": "<ul><li><strong>Option 1 (naturel)</strong> : Essorez délicatement avec une serviette en microfibre → laissez sécher à l’air libre.</li><li><strong>Option 2 (rapide)</strong> : Utilisez un sèche-cheveux à basse température (avec diffuseur si bouclés).</li><li><em>Interdit</em> : Frotter avec une serviette classique → casse les cuticules !</li></ul>",
-            "image": "shopify://shop_images/etape_3.png",
-            "icon": "star"
+            "image": "shopify://shop_images/Cellulite_reduction_testminial_3.png",
+            "image_mobile": "shopify://shop_images/Cellulite_reduction_testminial_3.png",
+            "label": "After"
           }
         }
       },
       "block_order": [
-        "tab_fMMfhG",
-        "tab_9jM99N",
-        "tab_Q9GjBq"
+        "image_iYKXNX",
+        "image_QhmJMH"
       ],
       "settings": {
-        "heading": "3 ÉTAPES POUR UNE ROUTINE CAPILLAIRE OPTIMALE",
+        "heading": "Le Avant après de nos clientes",
         "subheading": "",
-        "section_heading_size": "text-size--regular",
+        "section_heading_size": "text-size--large",
         "section_heading_layout": "section-heading--center section-heading--two-rows",
         "cta_label": "",
         "cta_url": "",
-        "desktop_layout": "third",
-        "image_position": "left",
-        "image_aspect_ratio": "0.666667",
+        "layout": "horizontal",
+        "invert_layout": false,
+        "desktop_height": "before-after--desktop-medium",
+        "mobile_height": "before-after--mobile-medium",
+        "color_style": "dark",
         "border_radius": 0,
-        "style": "list",
-        "autoplay_active": false,
-        "autoplay": 5,
-        "section_background_color": "rgba(0,0,0,0)",
-        "section_background_gradient": "",
-        "section_heading_color": "rgba(0,0,0,0)",
         "gutter_decrease": false,
-        "remove_bottom_margin": false,
         "seo_h_tag": "h2"
-      }
-    },
-    "slideshow_QUtVNM": {
-      "type": "slideshow",
-      "blocks": {
-        "image_WJQBbW": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/laura.png",
-            "mobile_image": "shopify://shop_images/laura.png",
-            "caption": "",
-            "title": "",
-            "link": "",
-            "button_label": "",
-            "open_in_new_window": false,
-            "color_background_main": "rgba(0,0,0,0)",
-            "color_text_main": "rgba(0,0,0,0)",
-            "seo_h_tag": "h2"
-          }
-        },
-        "image_8mxXew": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/marie.png",
-            "mobile_image": "shopify://shop_images/marie.png",
-            "caption": "",
-            "title": "",
-            "link": "",
-            "button_label": "",
-            "open_in_new_window": false,
-            "color_background_main": "rgba(0,0,0,0)",
-            "color_text_main": "rgba(0,0,0,0)",
-            "seo_h_tag": "h2"
-          }
-        }
-      },
-      "block_order": [
-        "image_WJQBbW",
-        "image_8mxXew"
-      ],
-      "settings": {
-        "desktop_height": "80vh",
-        "mobile_height": "40vh",
-        "is_auto_height": true,
-        "autorotate_enable": false,
-        "autorotate_interval": 5,
-        "is_fullwidth": true,
-        "alignment": "horizontal-left align-content--vertical-bottom",
-        "caption_size": "text-size--large",
-        "title_size": "heading-size--regular",
-        "spacing": 18,
-        "width": "100%",
-        "text_blend_mode": "normal",
-        "button_style": "solid",
-        "border_radius": 0,
-        "remove_margin": false
       }
     },
     "1662457498c47086cb": {
@@ -662,8 +589,7 @@
     "image_kbM6XB",
     "featured_product_F7c4rm",
     "content_toggles_DXXTk3",
-    "info_tabs_mYUH6b",
-    "slideshow_QUtVNM",
+    "before_after_XQXzwp",
     "1662457498c47086cb",
     "bad1f478-44f7-460a-82d8-392d8886d0fd",
     "16644327731b38e13b",
