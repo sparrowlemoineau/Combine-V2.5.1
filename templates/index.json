@@ -290,17 +290,10 @@
     "1662457498c47086cb": {
       "type": "rich-text",
       "blocks": {
-        "6bbf7a01-d3d2-4ead-90f4-4698d468453a": {
-          "type": "text",
-          "settings": {
-            "text": "<p>TADA</p>",
-            "text_size": "regular"
-          }
-        },
         "166245749775e9bb81-0": {
           "type": "title",
           "settings": {
-            "title": "L’ART DE CÉLÉBRER VOS CHEVEUX, NATURELLEMENT 🌿",
+            "title": "Dites Adieu à la Cellulite & Retrouvez une Peau Lisse en Quelques Semaines !",
             "title_size": "heading-size--small",
             "seo_h_tag": "h2"
           }
@@ -308,18 +301,17 @@
         "166245749775e9bb81-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Chez <strong>TADA</strong>, nous croyons que la beauté capillaire commence par le respect :</p><p><br/>✅ <strong>Respect de votre santé</strong>: Des ingrédients 100% d’origine végétale, sans compromis sur la qualité.</p><p><br/>✅ <strong>Respect de la planète</strong>: Emballages recyclables, sourcing éthique, zéro test animal.</p><p><br/>✅ <strong>Respect de votre temps</strong>: Des routines express qui s’adaptent à votre vie, pas l’inverse.</p>",
+            "text": "<p>Notre <strong>TADA</strong> est la solution que des milliers de femmes ont adoptée pour <strong>réduire visiblement la cellulite</strong> et raffermir leur peau <strong>naturellement</strong>.</p><ul><li><strong>Technologie de massage avancée</strong> – Cible les graisses sous-cutanées pour un effet lissant immédiat.</li><li><br/><strong>Drainage lymphatique et amélioration de la circulation</strong> – Dites adieu à la rétention d’eau et aux jambes lourdes.</li><li><br/> <strong>Peau visiblement plus ferme et tonique</strong> – Résultats rapides et durables en seulement <strong>5 minutes par jour</strong>.</li></ul>",
             "text_size": "large"
           }
         }
       },
       "block_order": [
-        "6bbf7a01-d3d2-4ead-90f4-4698d468453a",
         "166245749775e9bb81-0",
         "166245749775e9bb81-1"
       ],
       "settings": {
-        "image": "shopify://shop_images/image_brand.png",
+        "video": "shopify://files/videos/e3f3ca1c9c0c4e3fb9fc33c53abdfac3.HD-1080p-4.8Mbps-40756284.mp4",
         "video_controls": false,
         "image_position": "right",
         "height": "large",
@@ -327,38 +319,13 @@
         "is_fullwidth": true,
         "text_alignment": "horizontal-left",
         "spacing": 24,
-        "color_background_main": "#a67664",
+        "color_background_main": "#bf525e",
         "color_text_main": "#ffffff",
         "color_borders_main": "rgba(0,0,0,0)",
         "border_radius": 0,
         "color_hide_borders": true,
         "gutter_decrease": false,
         "remove_margin": false,
-        "remove_bottom_margin": false
-      }
-    },
-    "bad1f478-44f7-460a-82d8-392d8886d0fd": {
-      "type": "marquee",
-      "blocks": {
-        "template--16437919940841__bad1f478-44f7-460a-82d8-392d8886d0fd-166556498520357a4b-0": {
-          "type": "text",
-          "settings": {
-            "marquee_text": "-10% sur votre premiere commande"
-          }
-        }
-      },
-      "block_order": [
-        "template--16437919940841__bad1f478-44f7-460a-82d8-392d8886d0fd-166556498520357a4b-0"
-      ],
-      "settings": {
-        "scroll_direction": "left",
-        "speed": 100,
-        "pause_on_hover": true,
-        "horizontal_space": "regular-x-2",
-        "text_size": "text-size--xlarge",
-        "color_background_main": "#fcf95a",
-        "color_text_main": "#1b1a1a",
-        "remove_top_margin": true,
         "remove_bottom_margin": false
       }
     },
@@ -444,7 +411,6 @@
     "featured_product_F7c4rm",
     "content_toggles_DXXTk3",
     "1662457498c47086cb",
-    "bad1f478-44f7-460a-82d8-392d8886d0fd",
     "16644327731b38e13b",
     "16643494714910a616"
   ]
