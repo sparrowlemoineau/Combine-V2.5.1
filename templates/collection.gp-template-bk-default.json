@@ -1,0 +1,44 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "order": [
+    "banner",
+    "product-grid"
+  ],
+  "sections": {
+    "banner": {
+      "settings": {},
+      "type": "main-collection-banner"
+    },
+    "product-grid": {
+      "block_order": [
+        "price",
+        "title",
+        "quick_buy"
+      ],
+      "blocks": {
+        "price": {
+          "settings": {},
+          "type": "price"
+        },
+        "quick_buy": {
+          "settings": {},
+          "type": "quick_buy"
+        },
+        "title": {
+          "settings": {},
+          "type": "title"
+        }
+      },
+      "settings": {},
+      "type": "main-collection-product-grid"
+    }
+  }
+}

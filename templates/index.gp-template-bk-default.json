@@ -12,8 +12,8 @@
     "image_FKfD9d": {
       "type": "image",
       "settings": {
-        "image": "shopify://shop_images/hero.png",
-        "mobile_image": "shopify://shop_images/hero_62b0dbf2-083b-41ba-a60a-16849afd0167.png",
+        "image": "shopify:\/\/shop_images\/hero.png",
+        "mobile_image": "shopify:\/\/shop_images\/hero_62b0dbf2-083b-41ba-a60a-16849afd0167.png",
         "image_border_radius": 0,
         "link": "",
         "open_in_new_window": false,
@@ -29,7 +29,7 @@
           "type": "image",
           "settings": {
             "icon": "delivery",
-            "image": "shopify://shop_images/Logo_galeries_lafayette.jpg",
+            "image": "shopify:\/\/shop_images\/Logo_galeries_lafayette.jpg",
             "crop": false,
             "title": "",
             "caption": "",
@@ -46,7 +46,7 @@
           "type": "image",
           "settings": {
             "icon": "time-limit",
-            "image": "shopify://shop_images/Sephora-Logo.png",
+            "image": "shopify:\/\/shop_images\/Sephora-Logo.png",
             "crop": false,
             "title": "",
             "caption": "",
@@ -87,8 +87,8 @@
     "image_kbM6XB": {
       "type": "image",
       "settings": {
-        "image": "shopify://shop_images/benef_7a048300-63da-4b97-97b4-1c6940b74ec6.png",
-        "mobile_image": "shopify://shop_images/benef_7a048300-63da-4b97-97b4-1c6940b74ec6.png",
+        "image": "shopify:\/\/shop_images\/benef_7a048300-63da-4b97-97b4-1c6940b74ec6.png",
+        "mobile_image": "shopify:\/\/shop_images\/benef_7a048300-63da-4b97-97b4-1c6940b74ec6.png",
         "image_border_radius": 20,
         "link": "",
         "open_in_new_window": false,
@@ -103,7 +103,7 @@
         "custom_liquid_TTmqzJ": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n:root {\n  --social-proof-text-color: #000000;\n  --social-proof-star-color: #56463B;\n}\n\n.social-proof-slide__block-rating {\n    display: flex;\n    align-items: center;\n    justify-content: flex-start;\nfont-size: 14px;\n}\n\n.social-proof-slide__block-stars {\n    display: flex;\n    margin-right: 8px;\n    color: var(--social-proof-star-color);\n}\n\n.social-proof-slide__block-rating-text {\n    display: inline;\n    color: var(--social-proof-text-color);\n    content: var(--social-proof-rating-text);\n}\n\n.social-proof-star {\n    margin: 0;\n    padding: 0;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    width: 16px;\n    height: 16px;\n}\n\n.social-proof-star svg {\n    width: 16px;\n    height: 16px;\n    fill: var(--social-proof-star-color);\n}\n</style>\n</head>\n<body>\n\n<div class=\"social-proof-slide__block-rating mt-2\">\n  <span class=\"social-proof-slide__block-stars\">\n    <span class=\"social-proof-star\">\n      <svg xmlns=\"http://w3.org/2000/svg\" viewBox=\"0 0 576 512\">\n        <svg class=\"w-[16px] h-[16px]\" fill=\"currentColor\" stroke=\"currentColor\" xmlns=\"http://w3.org/2000/svg\" viewBox=\"0 0 576 512\">\n        <path d=\"M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z\"></path>\n      </svg>\n    </span>\n<span class=\"social-proof-star\">\n      <svg xmlns=\"http://w3.org/2000/svg\" viewBox=\"0 0 576 512\">\n        <svg class=\"w-[16px] h-[16px]\" fill=\"currentColor\" stroke=\"currentColor\" xmlns=\"http://w3.org/2000/svg\" viewBox=\"0 0 576 512\">\n        <path d=\"M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z\"></path>\n      </svg>\n    </span>\n<span class=\"social-proof-star\">\n      <svg xmlns=\"http://w3.org/2000/svg\" viewBox=\"0 0 576 512\">\n        <svg class=\"w-[16px] h-[16px]\" fill=\"currentColor\" stroke=\"currentColor\" xmlns=\"http://w3.org/2000/svg\" viewBox=\"0 0 576 512\">\n        <path d=\"M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z\"></path>\n      </svg>\n    </span>\n<span class=\"social-proof-star\">\n      <svg xmlns=\"http://w3.org/2000/svg\" viewBox=\"0 0 576 512\">\n        <svg class=\"w-[16px] h-[16px]\" fill=\"currentColor\" stroke=\"currentColor\" xmlns=\"http://w3.org/2000/svg\" viewBox=\"0 0 576 512\">\n        <path d=\"M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z\"></path>\n      </svg>\n    </span>\n<span class=\"social-proof-star\">\n      <svg xmlns=\"http://w3.org/2000/svg\" viewBox=\"0 0 576 512\">\n        <svg class=\"w-[16px] h-[16px]\" fill=\"currentColor\" stroke=\"currentColor\" xmlns=\"http://w3.org/2000/svg\" viewBox=\"0 0 576 512\">\n        <path d=\"M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z\"></path>\n      </svg>\n    </span>\n  </span>\n  <span class=\"social-proof-slide__block-rating-text\">\n    Noté 4.8 par +478 client(e)s\n  </span>\n</div>\n\n</body>\n</html>"
+            "custom_liquid": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n:root {\n  --social-proof-text-color: #000000;\n  --social-proof-star-color: #56463B;\n}\n\n.social-proof-slide__block-rating {\n    display: flex;\n    align-items: center;\n    justify-content: flex-start;\nfont-size: 14px;\n}\n\n.social-proof-slide__block-stars {\n    display: flex;\n    margin-right: 8px;\n    color: var(--social-proof-star-color);\n}\n\n.social-proof-slide__block-rating-text {\n    display: inline;\n    color: var(--social-proof-text-color);\n    content: var(--social-proof-rating-text);\n}\n\n.social-proof-star {\n    margin: 0;\n    padding: 0;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    width: 16px;\n    height: 16px;\n}\n\n.social-proof-star svg {\n    width: 16px;\n    height: 16px;\n    fill: var(--social-proof-star-color);\n}\n<\/style>\n<\/head>\n<body>\n\n<div class=\"social-proof-slide__block-rating mt-2\">\n  <span class=\"social-proof-slide__block-stars\">\n    <span class=\"social-proof-star\">\n      <svg xmlns=\"http:\/\/w3.org\/2000\/svg\" viewBox=\"0 0 576 512\">\n        <svg class=\"w-[16px] h-[16px]\" fill=\"currentColor\" stroke=\"currentColor\" xmlns=\"http:\/\/w3.org\/2000\/svg\" viewBox=\"0 0 576 512\">\n        <path d=\"M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z\"><\/path>\n      <\/svg>\n    <\/span>\n<span class=\"social-proof-star\">\n      <svg xmlns=\"http:\/\/w3.org\/2000\/svg\" viewBox=\"0 0 576 512\">\n        <svg class=\"w-[16px] h-[16px]\" fill=\"currentColor\" stroke=\"currentColor\" xmlns=\"http:\/\/w3.org\/2000\/svg\" viewBox=\"0 0 576 512\">\n        <path d=\"M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z\"><\/path>\n      <\/svg>\n    <\/span>\n<span class=\"social-proof-star\">\n      <svg xmlns=\"http:\/\/w3.org\/2000\/svg\" viewBox=\"0 0 576 512\">\n        <svg class=\"w-[16px] h-[16px]\" fill=\"currentColor\" stroke=\"currentColor\" xmlns=\"http:\/\/w3.org\/2000\/svg\" viewBox=\"0 0 576 512\">\n        <path d=\"M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z\"><\/path>\n      <\/svg>\n    <\/span>\n<span class=\"social-proof-star\">\n      <svg xmlns=\"http:\/\/w3.org\/2000\/svg\" viewBox=\"0 0 576 512\">\n        <svg class=\"w-[16px] h-[16px]\" fill=\"currentColor\" stroke=\"currentColor\" xmlns=\"http:\/\/w3.org\/2000\/svg\" viewBox=\"0 0 576 512\">\n        <path d=\"M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z\"><\/path>\n      <\/svg>\n    <\/span>\n<span class=\"social-proof-star\">\n      <svg xmlns=\"http:\/\/w3.org\/2000\/svg\" viewBox=\"0 0 576 512\">\n        <svg class=\"w-[16px] h-[16px]\" fill=\"currentColor\" stroke=\"currentColor\" xmlns=\"http:\/\/w3.org\/2000\/svg\" viewBox=\"0 0 576 512\">\n        <path d=\"M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z\"><\/path>\n      <\/svg>\n    <\/span>\n  <\/span>\n  <span class=\"social-proof-slide__block-rating-text\">\n    Noté 4.8 par +478 client(e)s\n  <\/span>\n<\/div>\n\n<\/body>\n<\/html>"
           }
         },
         "title_zwyW9J": {
@@ -146,17 +146,17 @@
         "custom_liquid_gR8Rwq": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<style>\n  .product__inventory {\n    padding-top: 10px; /* Adjust as needed */\n    padding-bottom: 10px; /* Adjust as needed */\n  }\n</style>\n\n<p class=\"product__inventory no-js-hidden\" id=\"Inventory-template--22213608309023__main\" role=\"status\"><svg width=\"15\" height=\"15\" aria-hidden=\"true\">\n    <circle cx=\"7.5\" cy=\"7.5\" r=\"7.5\" fill=\"rgba(255, 0, 0, 0.3)\"></circle>\n    <circle cx=\"7.5\" cy=\"7.5\" r=\"5\" stroke=\"rgb(255, 255, 255)\" stroke-width=\"1\" fill=\"rgb(255, 0, 0)\"></circle>\n</svg>2 pièces restantes</p>"
+            "custom_liquid": "<style>\n  .product__inventory {\n    padding-top: 10px; \/* Adjust as needed *\/\n    padding-bottom: 10px; \/* Adjust as needed *\/\n  }\n<\/style>\n\n<p class=\"product__inventory no-js-hidden\" id=\"Inventory-template--22213608309023__main\" role=\"status\"><svg width=\"15\" height=\"15\" aria-hidden=\"true\">\n    <circle cx=\"7.5\" cy=\"7.5\" r=\"7.5\" fill=\"rgba(255, 0, 0, 0.3)\"><\/circle>\n    <circle cx=\"7.5\" cy=\"7.5\" r=\"5\" stroke=\"rgb(255, 255, 255)\" stroke-width=\"1\" fill=\"rgb(255, 0, 0)\"><\/circle>\n<\/svg>2 pièces restantes<\/p>"
           }
         },
         "essential_countdown_app_block_jzLWpH": {
-          "type": "shopify://apps/essential-countdown/blocks/app-block/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
+          "type": "shopify:\/\/apps\/essential-countdown\/blocks\/app-block\/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
           "settings": {
             "id": "cm6pdh9jy00454ohfl688xxw8"
           }
         },
         "kaching_bundles_app_block_tJLCF7": {
-          "type": "shopify://apps/kaching-bundles/blocks/app-block/6c637362-a106-4a32-94ac-94dcfd68cdb8",
+          "type": "shopify:\/\/apps\/kaching-bundles\/blocks\/app-block\/6c637362-a106-4a32-94ac-94dcfd68cdb8",
           "settings": {
             "product": "{{section.settings.product}}"
           }
@@ -164,8 +164,8 @@
         "image_pWmGE6": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/derma_offert_8dbadc9b-98c2-4f62-bf95-99e9c1740fb0.png",
-            "mobile_image": "shopify://shop_images/derma_offert_8dbadc9b-98c2-4f62-bf95-99e9c1740fb0.png",
+            "image": "shopify:\/\/shop_images\/derma_offert_8dbadc9b-98c2-4f62-bf95-99e9c1740fb0.png",
+            "mobile_image": "shopify:\/\/shop_images\/derma_offert_8dbadc9b-98c2-4f62-bf95-99e9c1740fb0.png",
             "link": "",
             "open_in_new_window": false
           }
@@ -231,7 +231,7 @@
             "icon": "no-icon",
             "button_label": "",
             "button_link": "",
-            "body": "<p>Le <strong>Soin Anti-Cellulite Avancé TADA</strong> combine des traitements de qualité professionnelle dans un appareil portable facile à utiliser chez soi. Il associe la thérapie par lumière rouge, la chaleur infrarouge, une aspiration réglable (effet ventouse) et des techniques de drainage et de massage. Ces méthodes, couramment utilisées pour réduire la cellulite et améliorer l’élasticité de la peau, agissent en synergie pour cibler la cellulite tenace, stimuler la circulation et revitaliser votre peau. De plus, les niveaux d'aspiration sont ajustables pour garantir un confort optimal.</p><p><strong>Le résultat ?</strong> Une peau visiblement plus lisse, ferme et tonifiée, avec une réduction notable de la cellulite, de la peau relâchée, des zones affaissées et des vergetures – le tout depuis le confort de votre maison.</p><p><strong>Quand verrai-je une peau plus ferme ?</strong></p><p>Observez une peau visiblement plus ferme et lisse dès la première utilisation. Les résultats s'améliorent considérablement avec le temps, à mesure que votre peau se régénère et se raffermit.</p><p><strong>\"J’ai été victime d’arnaque dans d’autres boutiques.\"</strong></p><p>Pour garantir que vous recevez des produits authentiques et de haute qualité, commandez toujours directement depuis notre site officiel. Évitez les appareils contrefaits souvent vendus sur des plateformes comme Amazon.</p><p><strong>\"Trop de bleus – c’est douloureux.\"</strong></p><p>Notre appareil Tada est spécialement conçu pour minimiser les ecchymoses lorsqu’il est utilisé correctement. Suivez simplement les instructions détaillées incluses dans votre commande pour une expérience confortable et efficace</p>",
+            "body": "<p>Le <strong>Soin Anti-Cellulite Avancé TADA<\/strong> combine des traitements de qualité professionnelle dans un appareil portable facile à utiliser chez soi. Il associe la thérapie par lumière rouge, la chaleur infrarouge, une aspiration réglable (effet ventouse) et des techniques de drainage et de massage. Ces méthodes, couramment utilisées pour réduire la cellulite et améliorer l’élasticité de la peau, agissent en synergie pour cibler la cellulite tenace, stimuler la circulation et revitaliser votre peau. De plus, les niveaux d'aspiration sont ajustables pour garantir un confort optimal.<\/p><p><strong>Le résultat ?<\/strong> Une peau visiblement plus lisse, ferme et tonifiée, avec une réduction notable de la cellulite, de la peau relâchée, des zones affaissées et des vergetures – le tout depuis le confort de votre maison.<\/p><p><strong>Quand verrai-je une peau plus ferme ?<\/strong><\/p><p>Observez une peau visiblement plus ferme et lisse dès la première utilisation. Les résultats s'améliorent considérablement avec le temps, à mesure que votre peau se régénère et se raffermit.<\/p><p><strong>\"J’ai été victime d’arnaque dans d’autres boutiques.\"<\/strong><\/p><p>Pour garantir que vous recevez des produits authentiques et de haute qualité, commandez toujours directement depuis notre site officiel. Évitez les appareils contrefaits souvent vendus sur des plateformes comme Amazon.<\/p><p><strong>\"Trop de bleus – c’est douloureux.\"<\/strong><\/p><p>Notre appareil Tada est spécialement conçu pour minimiser les ecchymoses lorsqu’il est utilisé correctement. Suivez simplement les instructions détaillées incluses dans votre commande pour une expérience confortable et efficace<\/p>",
             "hide_block_if": false
           }
         },
@@ -243,7 +243,7 @@
             "icon": "no-icon",
             "button_label": "",
             "button_link": "",
-            "body": "<p>Non, le massage est <strong>doux mais efficace</strong>. Certaines personnes peuvent ressentir une légère sensation de chaleur ou de stimulation lors des premières utilisations, ce qui est <strong>normal</strong> et indique que le drainage est en cours.</p>",
+            "body": "<p>Non, le massage est <strong>doux mais efficace<\/strong>. Certaines personnes peuvent ressentir une légère sensation de chaleur ou de stimulation lors des premières utilisations, ce qui est <strong>normal<\/strong> et indique que le drainage est en cours.<\/p>",
             "hide_block_if": false
           }
         },
@@ -255,7 +255,7 @@
             "icon": "no-icon",
             "button_label": "",
             "button_link": "",
-            "body": "<p>Absolument ! Il est conçu pour fonctionner <strong>sur les cuisses, les fesses, le ventre, les bras et même les hanches</strong>. Grâce à son design ergonomique, il s’adapte aux courbes du corps pour un massage efficace.</p>",
+            "body": "<p>Absolument ! Il est conçu pour fonctionner <strong>sur les cuisses, les fesses, le ventre, les bras et même les hanches<\/strong>. Grâce à son design ergonomique, il s’adapte aux courbes du corps pour un massage efficace.<\/p>",
             "hide_block_if": false
           }
         },
@@ -267,7 +267,7 @@
             "icon": "no-icon",
             "button_label": "",
             "button_link": "",
-            "body": "<p>Oui, <strong>nous offrons la livraison gratuite</strong> pour toutes les commandes aujourd’hui !</p>",
+            "body": "<p>Oui, <strong>nous offrons la livraison gratuite<\/strong> pour toutes les commandes aujourd’hui !<\/p>",
             "hide_block_if": false
           }
         }
@@ -303,7 +303,7 @@
         "6bbf7a01-d3d2-4ead-90f4-4698d468453a": {
           "type": "text",
           "settings": {
-            "text": "<p>TADA</p>",
+            "text": "<p>TADA<\/p>",
             "text_size": "regular"
           }
         },
@@ -318,7 +318,7 @@
         "166245749775e9bb81-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Chez <strong>TADA</strong>, nous croyons que la beauté capillaire commence par le respect :</p><p><br/>✅ <strong>Respect de votre santé</strong>: Des ingrédients 100% d’origine végétale, sans compromis sur la qualité.</p><p><br/>✅ <strong>Respect de la planète</strong>: Emballages recyclables, sourcing éthique, zéro test animal.</p><p><br/>✅ <strong>Respect de votre temps</strong>: Des routines express qui s’adaptent à votre vie, pas l’inverse.</p>",
+            "text": "<p>Chez <strong>TADA<\/strong>, nous croyons que la beauté capillaire commence par le respect :<\/p><p><br\/>✅ <strong>Respect de votre santé<\/strong>: Des ingrédients 100% d’origine végétale, sans compromis sur la qualité.<\/p><p><br\/>✅ <strong>Respect de la planète<\/strong>: Emballages recyclables, sourcing éthique, zéro test animal.<\/p><p><br\/>✅ <strong>Respect de votre temps<\/strong>: Des routines express qui s’adaptent à votre vie, pas l’inverse.<\/p>",
             "text_size": "large"
           }
         }
@@ -329,7 +329,7 @@
         "166245749775e9bb81-1"
       ],
       "settings": {
-        "image": "shopify://shop_images/image_brand.png",
+        "image": "shopify:\/\/shop_images\/image_brand.png",
         "video_controls": false,
         "image_position": "right",
         "height": "large",
@@ -380,8 +380,8 @@
           "settings": {
             "author_name": "Nathalie, 57 an",
             "author_title": "Cliente vérifiée",
-            "quote": "<p>Après des années à cacher mes tempes clairsemées, cette huile a réveillé mes racines endormies.<strong>Baby hairs visibles en 15 jours</strong>! Même mon mari a remarqué :<em>\"On dirait tes cheveux de 30 ans !\"</em>Cerise sur le gâteau :<strong>pas de chimie agressive</strong>.</p>",
-            "image": "shopify://shop_images/Rectangle_105_1_1.jpg"
+            "quote": "<p>Après des années à cacher mes tempes clairsemées, cette huile a réveillé mes racines endormies.<strong>Baby hairs visibles en 15 jours<\/strong>! Même mon mari a remarqué :<em>\"On dirait tes cheveux de 30 ans !\"<\/em>Cerise sur le gâteau :<strong>pas de chimie agressive<\/strong>.<\/p>",
+            "image": "shopify:\/\/shop_images\/Rectangle_105_1_1.jpg"
           }
         },
         "166443277289597ba1-0": {
@@ -389,8 +389,8 @@
           "settings": {
             "author_name": "Amélie, 32 ans",
             "author_title": "Cliente vérifiée",
-            "quote": "<p>Cheveux fins + boulot de dingue = zéro patience pour les routines longues. Cette huile s’applique en 2 min chrono le soir. En 3 semaines : moins de cheveux dans la brosse, plus de volume. Mon secret ?<strong>Le ricin et le romarin qui bossent pendant que je dors.</strong></p>",
-            "image": "shopify://shop_images/review4.jpg"
+            "quote": "<p>Cheveux fins + boulot de dingue = zéro patience pour les routines longues. Cette huile s’applique en 2 min chrono le soir. En 3 semaines : moins de cheveux dans la brosse, plus de volume. Mon secret ?<strong>Le ricin et le romarin qui bossent pendant que je dors.<\/strong><\/p>",
+            "image": "shopify:\/\/shop_images\/review4.jpg"
           }
         },
         "7132688c-ac84-440d-aab1-88b359d1d273": {
@@ -398,8 +398,8 @@
           "settings": {
             "author_name": "Aïssatou",
             "author_title": "Cliente vérifiée",
-            "quote": "<p>Plus besoin de mélanger 5 huiles maison ! Le combo <strong>avocat + coco + ricin </strong>hydrate mes boucles sans les alourdir. <strong>Résultat : </strong>des twists qui tiennent 2 semaines, zéro casse au démêlage. Enfin une formule adaptée aux<strong>c heveux afro paresseux </strong>comme les miens !</p>",
-            "image": "shopify://shop_images/bonnet_soie06.png"
+            "quote": "<p>Plus besoin de mélanger 5 huiles maison ! Le combo <strong>avocat + coco + ricin <\/strong>hydrate mes boucles sans les alourdir. <strong>Résultat : <\/strong>des twists qui tiennent 2 semaines, zéro casse au démêlage. Enfin une formule adaptée aux<strong>c heveux afro paresseux <\/strong>comme les miens !<\/p>",
+            "image": "shopify:\/\/shop_images\/bonnet_soie06.png"
           }
         }
       },
@@ -410,7 +410,7 @@
       ],
       "settings": {
         "heading": "Avis",
-        "subheading": "<strong>Leur avis, notre meilleure pub !</strong>",
+        "subheading": "<strong>Leur avis, notre meilleure pub !<\/strong>",
         "section_heading_size": "text-size--large",
         "section_heading_layout": "section-heading--left section-heading--one-row",
         "cta_label": "",
@@ -507,7 +507,7 @@
       "disabled": true,
       "settings": {
         "heading": "",
-        "subheading": "Describe your company with <strong>great</strong> detail!",
+        "subheading": "Describe your company with <strong>great<\/strong> detail!",
         "section_heading_size": "text-size--regular",
         "section_heading_layout": "section-heading--left section-heading--one-row",
         "cta_label": "",
@@ -530,7 +530,7 @@
       "disabled": true,
       "settings": {
         "title": "Subscribe to our newsletter",
-        "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements or welcome customers to your store.</p>",
+        "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements or welcome customers to your store.<\/p>",
         "is_fullwidth": true,
         "color_background_main": "#f1eeec",
         "color_text_main": "#000000",
