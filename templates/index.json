@@ -168,8 +168,8 @@
             "show_preorder": false,
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": false,
-            "show_price": false,
-            "style": "primary",
+            "show_price": true,
+            "style": "outline",
             "color_text_buttons": "rgba(0,0,0,0)"
           }
         }
