@@ -161,15 +161,6 @@
             "product": "{{section.settings.product}}"
           }
         },
-        "image_pWmGE6": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/derma_offert_8dbadc9b-98c2-4f62-bf95-99e9c1740fb0.png",
-            "mobile_image": "shopify://shop_images/derma_offert_8dbadc9b-98c2-4f62-bf95-99e9c1740fb0.png",
-            "link": "",
-            "open_in_new_window": false
-          }
-        },
         "buy_buttons_Vxr6C9": {
           "type": "buy_buttons",
           "settings": {
@@ -193,7 +184,6 @@
         "custom_liquid_gR8Rwq",
         "essential_countdown_app_block_jzLWpH",
         "kaching_bundles_app_block_tJLCF7",
-        "image_pWmGE6",
         "buy_buttons_Vxr6C9"
       ],
       "settings": {
@@ -430,101 +420,6 @@
         "seo_h_tag": "h2"
       }
     },
-    "a2fc738d-a3ef-4d4c-a4b8-23e75b776a2d": {
-      "type": "text-columns-icons",
-      "blocks": {
-        "952fefed-52fc-4548-99ec-18780f45edd4": {
-          "type": "image",
-          "settings": {
-            "icon": "earth-globe",
-            "crop": false,
-            "title": "",
-            "caption": "Write about your brand's story, early beginnings, and share your mission.",
-            "link": "",
-            "open_in_new_window": false,
-            "color_background_main": "rgba(0,0,0,0)",
-            "color_icons_main": "rgba(0,0,0,0)",
-            "color_text_main": "#000000",
-            "color_borders_main": "rgba(0,0,0,0)",
-            "seo_h_tag": "h3"
-          }
-        },
-        "template--16437919940841__a2fc738d-a3ef-4d4c-a4b8-23e75b776a2d-16653952481cdb62be-0": {
-          "type": "image",
-          "settings": {
-            "icon": "star",
-            "crop": false,
-            "title": "",
-            "caption": "Tell customers about your values, how you're different, and what makes you unique.",
-            "link": "",
-            "open_in_new_window": false,
-            "color_background_main": "rgba(0,0,0,0)",
-            "color_icons_main": "rgba(0,0,0,0)",
-            "color_text_main": "rgba(0,0,0,0)",
-            "color_borders_main": "rgba(0,0,0,0)",
-            "seo_h_tag": "h3"
-          }
-        },
-        "3e0a2bdb-d051-44e4-83f3-1afa320bde87": {
-          "type": "image",
-          "settings": {
-            "icon": "wallet",
-            "crop": false,
-            "title": "",
-            "caption": "Explain why you're passionate about what you do, and what you hope to achieve.",
-            "link": "",
-            "open_in_new_window": false,
-            "color_background_main": "rgba(0,0,0,0)",
-            "color_icons_main": "rgba(0,0,0,0)",
-            "color_text_main": "rgba(0,0,0,0)",
-            "color_borders_main": "rgba(0,0,0,0)",
-            "seo_h_tag": "h3"
-          }
-        },
-        "cb83a160-9292-467c-a153-9199925931bb": {
-          "type": "image",
-          "settings": {
-            "icon": "giftbox",
-            "crop": true,
-            "title": "",
-            "caption": "Introduce your brand by showcasing examples of great works done through the years.",
-            "link": "",
-            "open_in_new_window": false,
-            "color_background_main": "rgba(0,0,0,0)",
-            "color_icons_main": "rgba(0,0,0,0)",
-            "color_text_main": "rgba(0,0,0,0)",
-            "color_borders_main": "rgba(0,0,0,0)",
-            "seo_h_tag": "h3"
-          }
-        }
-      },
-      "block_order": [
-        "952fefed-52fc-4548-99ec-18780f45edd4",
-        "template--16437919940841__a2fc738d-a3ef-4d4c-a4b8-23e75b776a2d-16653952481cdb62be-0",
-        "3e0a2bdb-d051-44e4-83f3-1afa320bde87",
-        "cb83a160-9292-467c-a153-9199925931bb"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading": "",
-        "subheading": "Describe your company with <strong>great</strong> detail!",
-        "section_heading_size": "text-size--regular",
-        "section_heading_layout": "section-heading--left section-heading--one-row",
-        "cta_label": "",
-        "cta_url": "",
-        "style": "slider",
-        "layout": "grid-4 grid-portable-3 grid-lap-2 grid-palm-1",
-        "border_radius": 10,
-        "hide_borders": true,
-        "opacity_on_hover": false,
-        "section_background_color": "rgba(0,0,0,0)",
-        "section_background_gradient": "",
-        "section_heading_color": "rgba(0,0,0,0)",
-        "gutter_decrease": false,
-        "remove_bottom_margin": false,
-        "seo_h_tag": "h2"
-      }
-    },
     "16643494714910a616": {
       "type": "newsletter",
       "disabled": true,
@@ -551,7 +446,6 @@
     "1662457498c47086cb",
     "bad1f478-44f7-460a-82d8-392d8886d0fd",
     "16644327731b38e13b",
-    "a2fc738d-a3ef-4d4c-a4b8-23e75b776a2d",
     "16643494714910a616"
   ]
 }
