@@ -258,12 +258,25 @@
             "body": "<p>Absolument ! Il est conçu pour fonctionner <strong>sur les cuisses, les fesses, le ventre, les bras et même les hanches</strong>. Grâce à son design ergonomique, il s’adapte aux courbes du corps pour un massage efficace.</p>",
             "hide_block_if": false
           }
+        },
+        "text_akphxi": {
+          "type": "text",
+          "settings": {
+            "title": "Est-ce que la livraison est gratuite ?",
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Oui, <strong>nous offrons la livraison gratuite</strong> pour toutes les commandes aujourd’hui !</p>",
+            "hide_block_if": false
+          }
         }
       },
       "block_order": [
         "text_CnbAkb",
         "text_8Lf4NR",
-        "text_FPYaVk"
+        "text_FPYaVk",
+        "text_akphxi"
       ],
       "settings": {
         "heading": "Bon à savoir",
