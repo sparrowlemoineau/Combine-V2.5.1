@@ -44,7 +44,7 @@
         "pause_on_hover": true,
         "horizontal_space": "regular-x-2",
         "text_size": "text-size--small",
-        "color_background_main": "#000000",
+        "color_background_main": "#bf525e",
         "color_text_main": "#ffffff",
         "remove_top_margin": true,
         "remove_bottom_margin": false
