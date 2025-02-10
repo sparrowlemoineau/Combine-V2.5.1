@@ -17,12 +17,26 @@
         "text_k8rKVU": {
           "type": "text",
           "settings": {
-            "marquee_text": "<strong>SOLDES D'HIVER DERNIERE DEMARQUE -50%</strong>"
+            "marquee_text": "<strong>SOLDES D'HIVER  -50%</strong>"
+          }
+        },
+        "text_qcjHpw": {
+          "type": "text",
+          "settings": {
+            "marquee_text": "<strong>30 JOURS SATISFAIT OU REMBOURSÉ </strong>"
+          }
+        },
+        "text_grAW4m": {
+          "type": "text",
+          "settings": {
+            "marquee_text": "<strong>GARANTIE 1 AN !</strong>"
           }
         }
       },
       "block_order": [
-        "text_k8rKVU"
+        "text_k8rKVU",
+        "text_qcjHpw",
+        "text_grAW4m"
       ],
       "settings": {
         "scroll_direction": "ltr",
@@ -30,7 +44,7 @@
         "pause_on_hover": true,
         "horizontal_space": "regular-x-2",
         "text_size": "text-size--small",
-        "color_background_main": "#A36754",
+        "color_background_main": "#000000",
         "color_text_main": "#ffffff",
         "remove_top_margin": true,
         "remove_bottom_margin": false
