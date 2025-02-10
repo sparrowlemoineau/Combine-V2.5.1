@@ -238,24 +238,24 @@
         "text_8Lf4NR": {
           "type": "text",
           "settings": {
-            "title": "Bénéfices",
+            "title": "Est-ce douloureux ?",
             "subtitle": "",
             "icon": "no-icon",
             "button_label": "",
             "button_link": "",
-            "body": "<p> Soutiennent l'épaisseur et la force visibles des cheveux2,3</p><p>Réduisent visiblement la casse des cheveux2</p><p>Rétablissent les nutriments directement au niveau du cuir chevelu4-6</p>",
+            "body": "<p>Non, le massage est <strong>doux mais efficace</strong>. Certaines personnes peuvent ressentir une légère sensation de chaleur ou de stimulation lors des premières utilisations, ce qui est <strong>normal</strong> et indique que le drainage est en cours.</p>",
             "hide_block_if": false
           }
         },
         "text_FPYaVk": {
           "type": "text",
           "settings": {
-            "title": "Formulations",
+            "title": "Puis-je l’utiliser sur d’autres parties du corps ?",
             "subtitle": "",
             "icon": "no-icon",
             "button_label": "",
             "button_link": "",
-            "body": "<p>sans silicones, sulfates, hormones, médicaments, parabènes, phtalates.</p>",
+            "body": "<p>Absolument ! Il est conçu pour fonctionner <strong>sur les cuisses, les fesses, le ventre, les bras et même les hanches</strong>. Grâce à son design ergonomique, il s’adapte aux courbes du corps pour un massage efficace.</p>",
             "hide_block_if": false
           }
         }
