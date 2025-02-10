@@ -23,6 +23,22 @@
             "menu_style": true
           }
         },
+        "text_ip6aqH": {
+          "type": "text",
+          "settings": {
+            "title": "Contact information",
+            "image_heading_size": 40,
+            "content": "",
+            "show_social_icons": true
+          }
+        },
+        "payment_wC7J9D": {
+          "type": "payment",
+          "settings": {
+            "title": "Supported payment methods",
+            "only_show_custom_icons": false
+          }
+        },
         "newsletter": {
           "type": "newsletter",
           "disabled": true,
@@ -33,6 +49,8 @@
       },
       "block_order": [
         "menu",
+        "text_ip6aqH",
+        "payment_wC7J9D",
         "newsletter"
       ],
       "settings": {
