@@ -179,7 +179,7 @@
     "cart_notes_enable": false,
     "cart_additional_buttons": true,
     "cart_drawer_actions": "show-checkout",
-    "cart_image_ratio": "0.666667",
+    "cart_image_ratio": "1",
     "cart_image_fit": false,
     "cart_upsell_product": "",
     "cart_recommendations": false,
