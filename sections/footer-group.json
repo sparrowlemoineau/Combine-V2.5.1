@@ -14,6 +14,15 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "text_ip6aqH": {
+          "type": "text",
+          "settings": {
+            "title": "Nous contactez",
+            "image_heading_size": 40,
+            "content": "<p><strong>Service client</strong>:<br/>contact@tadaaparis.com</p><p><strong>Horaires</strong> : Du Lun au Ven de 9h à 12h et de 13h à 18h / Sam et Dim de 10h à 12h</p>",
+            "show_social_icons": true
+          }
+        },
         "menu": {
           "type": "menu",
           "settings": {
@@ -21,15 +30,6 @@
             "menu": "footer",
             "menu_target": false,
             "menu_style": true
-          }
-        },
-        "text_ip6aqH": {
-          "type": "text",
-          "settings": {
-            "title": "Contact information",
-            "image_heading_size": 40,
-            "content": "",
-            "show_social_icons": true
           }
         },
         "payment_wC7J9D": {
@@ -48,8 +48,8 @@
         }
       },
       "block_order": [
-        "menu",
         "text_ip6aqH",
+        "menu",
         "payment_wC7J9D",
         "newsletter"
       ],
