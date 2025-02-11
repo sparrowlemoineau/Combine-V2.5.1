@@ -186,6 +186,7 @@
         "kaching_bundles_app_block_tJLCF7",
         "buy_buttons_Vxr6C9"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Notre Best Seller",
         "subheading": "",
@@ -310,6 +311,7 @@
         "166245749775e9bb81-0",
         "166245749775e9bb81-1"
       ],
+      "disabled": true,
       "settings": {
         "video": "shopify://files/videos/e3f3ca1c9c0c4e3fb9fc33c53abdfac3.HD-1080p-4.8Mbps-40756284.mp4",
         "video_controls": false,
@@ -365,6 +367,7 @@
         "166443277289597ba1-0",
         "7132688c-ac84-440d-aab1-88b359d1d273"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Avis",
         "subheading": "<strong>Leur avis, notre meilleure pub !</strong>",
