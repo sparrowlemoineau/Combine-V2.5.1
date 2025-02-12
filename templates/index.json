@@ -22,6 +22,31 @@
         "remove_bottom_margin": false
       }
     },
+    "marquee_wDQfi3": {
+      "type": "marquee",
+      "blocks": {
+        "text_8NVRYn": {
+          "type": "text",
+          "settings": {
+            "marquee_text": "-50% aujourd’hui seulement ! Livraison offerte !"
+          }
+        }
+      },
+      "block_order": [
+        "text_8NVRYn"
+      ],
+      "settings": {
+        "scroll_direction": "ltr",
+        "speed": 100,
+        "pause_on_hover": true,
+        "horizontal_space": "regular-x-2",
+        "text_size": "text-size--xlarge",
+        "color_background_main": "#ffaac7",
+        "color_text_main": "rgba(0,0,0,0)",
+        "remove_top_margin": true,
+        "remove_bottom_margin": false
+      }
+    },
     "text_columns_icons_fUBQiz": {
       "type": "text-columns-icons",
       "blocks": {
@@ -409,6 +434,7 @@
   },
   "order": [
     "image_FKfD9d",
+    "marquee_wDQfi3",
     "text_columns_icons_fUBQiz",
     "image_kbM6XB",
     "featured_product_F7c4rm",
