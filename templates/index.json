@@ -22,6 +22,22 @@
         "remove_bottom_margin": false
       }
     },
+    "video_gcH3kr": {
+      "type": "video",
+      "settings": {
+        "heading": "Adieu les pieds secs, bonjour la douceur !",
+        "subheading": "",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--center section-heading--two-rows",
+        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_title": "Video Title",
+        "title_size": "heading-size--large",
+        "color_background_main": "rgba(0,0,0,0)",
+        "color_text_main": "rgba(0,0,0,0)",
+        "gutter_decrease": false,
+        "seo_h_tag": "h3"
+      }
+    },
     "marquee_wDQfi3": {
       "type": "marquee",
       "blocks": {
@@ -433,6 +449,7 @@
   },
   "order": [
     "image_FKfD9d",
+    "video_gcH3kr",
     "marquee_wDQfi3",
     "text_columns_icons_fUBQiz",
     "image_kbM6XB",
