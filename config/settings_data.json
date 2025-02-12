@@ -162,6 +162,7 @@
     "body_font_primary": "helvetica_n4",
     "body_font_secondary": "space_mono_n4",
     "color_background_header": "#ffffff",
+    "color_background_main": "#fff5f7",
     "color_background_main_secondary": "#f2efec",
     "color_background_footer": "#1b1a1a",
     "color_text_footer": "#f1eeec",
