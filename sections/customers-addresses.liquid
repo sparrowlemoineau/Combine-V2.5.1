@@ -72,7 +72,7 @@
                   </div>
                 </div>
 
-                {%- form 'customer_address', address, class: 'account'- %}
+                {%- form 'customer_address', address, class: 'account' %}
 
                   <div class="account__form-row account__form-row--flex">
                     <div>
@@ -291,4 +291,13 @@
     "name": "t:sections.local-extra-words.sections.customers.addresses.name",
     "class": "section--remove-bottom-margin-after"
   }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- form 'customer_address', address, class: 'account'- %}"
+  to: "{%- form 'customer_address', address, class: 'account' %}"
+  position: 3747..3804
+{%- endcomment -%}
